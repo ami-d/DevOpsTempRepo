@@ -1,0 +1,1 @@
+function p2kwiet357809309808_frmDirectSaleProductList_onDestroy_seq0(eventobject, neworientation) {}

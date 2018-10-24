@@ -1,0 +1,34 @@
+{
+    "p2kwiet3578093091675_frmLogin_init_seq0": {
+        "id": "p2kwiet3578093091675_frmLogin_init_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_init_707243578093093387",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "initSyncSession",
+            "display": "initSyncSession",
+            "inputparams": [],
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION___f25cb767cf474ac182db089d73b188bd",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "validateApplicationVersion",
+            "display": "validateApplicationVersion",
+            "inputparams": [{
+                "name": "fromLogin",
+                "value": "\"false\""
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

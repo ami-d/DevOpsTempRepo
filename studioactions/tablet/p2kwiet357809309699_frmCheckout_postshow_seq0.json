@@ -1,0 +1,33 @@
+{
+    "p2kwiet357809309699_frmCheckout_postshow_seq0": {
+        "id": "p2kwiet357809309699_frmCheckout_postshow_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_postshow_195723578093095067",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnPostShowPreFillEmail",
+            "display": "eventOnPostShowPreFillEmail",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_427753578093098620",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "resetVarOnFrmCheckOutPostShow",
+            "display": "resetVarOnFrmCheckOutPostShow",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_242653578093094607",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnPostShowCheckoutForm",
+            "display": "eventOnPostShowCheckoutForm",
+            "inputparams": []
+        }]
+    }
+}

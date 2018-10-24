@@ -1,0 +1,129 @@
+{
+    "DNDConfig": null,
+    "_enabled_": false,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        1,
+        0,
+        1
+    ],
+    "_skin_": "sc6af22f66894bcba53685c76b790f63",
+    "_text_": "",
+    "android": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.AndroidComboBoxProperty",
+        "render": true
+    },
+    "canUpdateUI": true,
+    "containerweight": 94,
+    "contentalignment": 4,
+    "hexpand": false,
+    "id": "cmbGender",
+    "info": null,
+    "ipad": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.IPadComboBoxProperty",
+        "_margin_": [
+            0,
+            0,
+            30,
+            0
+        ],
+        "_padding_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "margin": [
+            0,
+            0,
+            30,
+            0
+        ],
+        "marginInPixel": true,
+        "padding": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "paddingInPixel": false,
+        "psp": {
+            "groupCells": false,
+            "viewConfig": {
+                "toggleViewConfig": {
+                    "enableTintColor": false,
+                    "equalSegments": true,
+                    "tintColor": "0000ff00",
+                    "viewStyle": 1
+                }
+            },
+            "viewType": 2
+        },
+        "render": true
+    },
+    "isvisible": true,
+    "kuid": "p2kwiet357809309361",
+    "margininpixel": false,
+    "masterdata": [
+        [
+            "Female",
+            "Female",
+            "strLblFemale"
+        ],
+        [
+            "Male",
+            "Male",
+            "strLblMale"
+        ]
+    ],
+    "name": "kony.ui.ComboBox",
+    "paddinginpixel": false,
+    "parent": "hbox13869366341372677",
+    "pf": "frmBatchAddMember",
+    "selectedkey": "Female",
+    "selectedkeyvalue": [
+        "Female",
+        "Female"
+    ],
+    "spa": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.SPAComboBoxProperty"
+    },
+    "spaandroidtablet": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.SPAAndroidTabletComboBoxProperty",
+        "render": true
+    },
+    "spaipad": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.SPAIPadComboBoxProperty",
+        "render": true
+    },
+    "spawindowstablet": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.SPAWindowsTabletComboBoxProperty",
+        "render": true
+    },
+    "vexpand": false,
+    "wType": "ComboBox",
+    "widgetalignment": 4,
+    "windows8": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.Windows8ComboBoxProperty",
+        "_margin_": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "margin": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "marginInPixel": true,
+        "render": true
+    }
+}

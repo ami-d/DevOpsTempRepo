@@ -1,0 +1,18 @@
+{
+    "p2kwiet357809309699_vboxWeighSection_onClick_seq0": {
+        "id": "p2kwiet357809309699_vboxWeighSection_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_990853578093095618",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonFootervboxWeighSectionCheckout",
+            "display": "eventonFootervboxWeighSectionCheckout",
+            "inputparams": []
+        }]
+    }
+}

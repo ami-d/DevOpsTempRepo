@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093095207_vbxAdvancedSearch_onClick_seq0": {
+        "id": "p2kwiet3578093095207_vbxAdvancedSearch_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_531893578093097961",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnClickVbxAdvancedSearch",
+            "display": "eventOnClickVbxAdvancedSearch",
+            "inputparams": []
+        }]
+    }
+}

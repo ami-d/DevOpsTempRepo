@@ -1,0 +1,67 @@
+{
+    "DNDConfig": null,
+    "_enabled_": false,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        1
+    ],
+    "_resize_": true,
+    "_skin_": "s36c71f41b3f455fa32a26abac13a9ba",
+    "allboxes": [],
+    "android": {
+        "@class": "com.kony.gen.viz.model.container.property.vbox.AndroidVBoxProperty",
+        "render": true
+    },
+    "borderCollapse": false,
+    "canUpdateUI": true,
+    "children": [
+        "hbox12443534673772707",
+        "line12443534677251693",
+        "scrollbox12443534677872493"
+    ],
+    "containerweight": 66,
+    "id": "vbox12443534672170962",
+    "info": null,
+    "ipad": {
+        "@class": "com.kony.gen.viz.model.container.property.vbox.IPadVBoxProperty",
+        "render": true
+    },
+    "isvisible": true,
+    "kuid": "p2kwiet357809309106",
+    "margininpixel": false,
+    "name": "kony.ui.Box",
+    "paddinginpixel": false,
+    "parent": "hboxProductList",
+    "pf": "frmAddAndWeighMemberTransaction",
+    "spa": {
+        "@class": "com.kony.gen.viz.model.container.property.vbox.SPAVBoxProperty"
+    },
+    "spaandroidtablet": {
+        "@class": "com.kony.gen.viz.model.container.property.vbox.SPAAndroidTabletVBoxProperty",
+        "render": true
+    },
+    "spaipad": {
+        "@class": "com.kony.gen.viz.model.container.property.vbox.SPAIPadVBoxProperty",
+        "render": true
+    },
+    "spawindowstablet": {
+        "@class": "com.kony.gen.viz.model.container.property.vbox.SPAWindowsTabletVBoxProperty",
+        "render": true
+    },
+    "templateType": "forms",
+    "wType": "VBox",
+    "widgetalignment": 1,
+    "windows8": {
+        "@class": "com.kony.gen.viz.model.container.property.vbox.Windows8VBoxProperty",
+        "render": true
+    }
+}

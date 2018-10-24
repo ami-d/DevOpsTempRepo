@@ -1,0 +1,25 @@
+{
+/*
+    "NSAppTransportSecurity" :
+    {
+        "NSAllowsArbitraryLoads" : true ,
+        "NSExceptionDomains" :
+            {
+                "example.com" :
+                    {
+                        "NSIncludesSubdomains" : true ,
+                        "NSExceptionAllowsInsecureHTTPLoads" : true
+                    }
+            }
+    } ,
+ 
+    "NSCameraUsageDescription" : "This is a dummy description"
+*/
+"UISupportedExternalAccessoryProtocols":["com.datecs.linea.pro.msr","com.datecs.linea.pro.bar","com.datecs.printer.escpos","com.datecs.iserial.communication","com.datecs.pinpad","com.landicorp.datapath","com.landi.datapath"],
+"NSLocationWhenInUseUsageDescription":"",
+"NSMicrophoneUsageDescription":"To read the data from the card reader",
+"NSCameraUsageDescription":"To scan the barcode data",
+"UIBackgroundModes":["audio","external-accessory","fetch"]
+
+
+}

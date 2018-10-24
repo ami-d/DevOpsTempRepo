@@ -1,0 +1,12 @@
+{
+    "p2kwiet3578093094183_vboxDoneImage_onClick_seq0": {
+        "id": "p2kwiet3578093094183_vboxDoneImage_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": []
+    }
+}

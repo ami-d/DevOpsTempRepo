@@ -1,0 +1,20 @@
+{
+    "p2kwiet3578093092425_btnScan_onClick_seq0": {
+        "id": "p2kwiet3578093092425_btnScan_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_7373578093094669",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onpreShowfrmTallyMeetingCashoutStartBarcodeScanner",
+            "display": "onpreShowfrmTallyMeetingCashoutStartBarcodeScanner",
+            "inputparams": [{
+                "name": "val"
+            }]
+        }]
+    }
+}

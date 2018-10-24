@@ -1,0 +1,27 @@
+{
+    "AS_Form_c873a228ac3f4b1e96b1ac29c64cc3c5": {
+        "id": "AS_Form_c873a228ac3f4b1e96b1ac29c64cc3c5",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "contextObj": {
+            "name": "frmATWTallyMeetingReport",
+            "type": "forms",
+            "platform": null,
+            "KUID": "36eb28026e8d44a4836fcb8c66b2fec8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_postShow_7278ddda802144e7aa6fac7bcc0efac6",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "DisplayATWTallyMettingReportData",
+            "display": "DisplayATWTallyMettingReportData",
+            "inputparams": []
+        }]
+    }
+}

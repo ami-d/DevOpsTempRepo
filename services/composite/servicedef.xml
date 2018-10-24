@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application desc="" id="MEGDevelopment" name="" smscode="">
+    <app-config/>
+    <services>
+        <service serviceGroup="" cachable="false" cacheduration="" groupType="" id="MeetingTallyJSON" type="CompositeConnector" smscode="" smsenabled="false">
+            <service-config>
+                <config-param name="exec_type" value="Concurrent"/>
+                <config-param name="service" value="GetTallyMeetingFeeREST"/>
+                <config-param name="service" value="GetTallyPaymentREST"/>
+                <config-param name="service" value="GetTallySaleREST"/>
+                <config-param name="service" value="GetTallySummaryREST"/>
+                <config-param name="service" value="GetTallyTimesheetREST"/>
+            </service-config>
+            <service-input/>
+            <service-output/>
+        </service>
+        <service serviceGroup="" cachable="false" cacheduration="" groupType="" id="MemberWeightAndMilestone" type="CompositeConnector" smscode="" smsenabled="false">
+            <service-config>
+                <config-param name="exec_type" value="Concurrent"/>
+                <config-param name="service" value="MemberWeight"/>
+                <config-param name="service" value="MemberMilestone"/>
+            </service-config>
+            <service-input/>
+            <service-output/>
+        </service>
+    </services>
+</application>

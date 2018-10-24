@@ -1,0 +1,16 @@
+{
+    "p2kwiet3578093093433_vbox1323126655416692_onClick_seq0": {
+        "id": "p2kwiet3578093093433_vbox1323126655416692_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_390133578093098263",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "popupAddEmail.dismiss();\nvar email = popupAddEmail.txtEmailAddress.text;\n\tvar valid = new validationcls;\n    valid.checkEmail(email);\n\terror =\"\";\n if(!isvalid || popupAddEmail.txtEmailAddress.text == \"\" || popupAddEmail.txtEmailAddress.text == undefined)\n   {\n \t\tfrmPayment.imgSendReceipt.src = \"icn_checkbox_unchecked.png\";\n        popupAddEmail.txtEmailAddress.text =\"\";\n   }"
+        }]
+    }
+}

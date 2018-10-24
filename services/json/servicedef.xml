@@ -1,0 +1,1354 @@
+<application desc="" id="MEGDevelopment" name="" smscode="">
+   <app-config>
+      <config-param name="APP_SMS_HEADER" value="null"/>
+   </app-config>
+   <services>
+      <service cachable="false" cacheduration="" id="ActivityLogInsertREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.devstage2.weightwatchers.com/api/ClickStreamLogApi/Insert"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="POST"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="request" target="" value="application/json"/>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="request" target="" value="M2Q4NzY3NTktOGE0ZS00NDRhLThkOWMtYTVjN2M1MjFiNWQw"/>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="request" target="" value="1234"/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="request" target="" value="55664"/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="request" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="request" target="" value="MEG"/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="request" target="" value="en-US"/>
+            </header>
+            <template-param name="message" value="{&quot;AppTransactions&quot;: &quot;$logMonitor&quot;}"/>
+            <param datatype="string" encode="true" name="logMonitor" sms-name="" src="request" value=""/>
+         </service-input>
+         <service-output>
+            <param datatype="boolean" format="None" formatvalue="" name="response" sms-name="" src="$.Data" target="response"/>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="AuthorizeServiceREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.qat2.weightwatchers.com/api/AuthenticationApi/Authorize?request.userName=$userName&amp;request.password=$pwd&amp;request.locationID=$locationId&amp;request.clientKey=$clientKey"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="GET"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="" target="" value="M2Q4NzY3NTktOGE0ZS00NDRhLThkOWMtYTVjN2M1MjFiNWQw"/>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="" target="" value="1234"/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="" target="" value="55664"/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="" target="" value="en-us"/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="" target="" value="MEG"/>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="" target="" value="application/json"/>
+            </header>
+            <param datatype="string" encode="false" name="userName" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="pwd" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="clientKey" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="locationId" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <dataset id="AuthorizeDetails" src=".">
+               <param datatype="string" format="None" formatvalue="" name="status" sms-name="" src="$.Data.Status" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="empNumber" sms-name="" src="$.Data.EmployeeNumber" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="accessToken" sms-name="" src="$.Data.AccessToken" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="expires" sms-name="" src="$.Data.Expires" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="refreshToken" sms-name="" src="$.Data.RefreshToken" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="FirstName" sms-name="" src="$.Data.FirstName" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LastName" sms-name="" src="$.Data.LastName" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="$.Data.EmployeeID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CountryID" sms-name="" src="$.Data.CountryID" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="CybersourceTransactionLogREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.devstage2.weightwatchers.com/api/ClickStreamLogApi/CybersourceTransactionLog"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="POST"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="request" target="" value="1234"/>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="request" target="" value="M2Q4NzY3NTktOGE0ZS00NDRhLThkOWMtYTVjN2M1MjFiNWQw"/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="request" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="request" target="" value="55664"/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="request" target="" value="MEG"/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="request" target="" value="en-us"/>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="request" target="" value="application/json"/>
+            </header>
+            <template-param name="message" value="{  &quot;LocationID&quot;: $LocationID,  &quot;TransactionAmount&quot;: $TransactionAmount,  &quot;EmployeeID&quot;: $EmployeeID,  &quot;MeetingOccurrenceID&quot;: $MeetingOccrID,  &quot;RegistrationNumber&quot;: &quot;$RegistrationNumber&quot;,  &quot;MemberID&quot;: $MemberID,  &quot;TransactionDate&quot;: &quot;$TransactionDate&quot;,  &quot;Token&quot;: &quot;$Token&quot;,  &quot;ExpirationDate&quot;: &quot;$ExpirationDate&quot;,  &quot;TransactionStatus&quot;: &quot;$TransactionStatus&quot;,  &quot;TransactionType&quot;: &quot;$TransactionType&quot;,  &quot;RequestId&quot;: &quot;$RequestId&quot;,  &quot;ReferenceNumber&quot;: &quot;$ReferenceNumber&quot;,  &quot;AuthorizationCode&quot;: &quot;$AuthorizationCode&quot; }"/>
+            <param datatype="string" encode="false" name="AuthorizationCode" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="ExpirationDate" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="ReferenceNumber" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="RequestId" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="Token" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="TransactionStatus" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="TransactionType" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="EmployeeID" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="LocationID" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="MeetingOccrID" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="MemberID" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="RegistrationNumber" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="TransactionAmount" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="TransactionDate" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <param datatype="string" format="None" formatvalue="" name="Status" sms-name="" src="$.Status" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="GetAppSettingREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.qat2.weightwatchers.com/api/LookupApi/GetAppSetting"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="POST"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="request" target="" value="1234"/>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="request" target="" value="M2Q4NzY3NTktOGE0ZS00NDRhLThkOWMtYTVjN2M1MjFiNWQw"/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="request" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="request" target="" value="55664"/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="request" target="" value="MEG"/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="request" target="" value="en-us"/>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="request" target="" value="application/json"/>
+            </header>
+            <template-param name="message" value="{    &quot;CountryID&quot;:&quot;$CountryID&quot;,    &quot;LanguageID&quot;:&quot;$LanguageID&quot; }"/>
+            <param datatype="string" encode="false" name="CountryID" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="false" name="LanguageID" sms-name="" src="request" value=""/>
+         </service-input>
+         <service-output>
+            <dataset id="AppSettings" src="$.Data">
+               <param datatype="string" format="None" formatvalue="" name="ActiveFromDate" sms-name="" src="$.ActiveFromDate" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CountryId" sms-name="" src="$.CountryId" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="IsActive" sms-name="" src="$.IsActive" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="IsApplicableToUI" sms-name="" src="$.IsApplicableToUI" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LanguageId" sms-name="" src="$.LanguageId" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="SettingDescription" sms-name="" src="$.SettingDescription" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="SettingName" sms-name="" src="$.SettingName" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="SettingTypeName" sms-name="" src="$.SettingTypeName" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="GetMemberReportREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.devstage2.weightwatchers.com/api/MemberApi/GetMemberReport"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="POST"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="request" target="" value="application/json"/>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="request" target="" value="1234"/>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="request" target="" value="M2Q4NzY3NTktOGE0ZS00NDRhLThkOWMtYTVjN2M1MjFiNWQw"/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="request" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="request" target="" value="55664"/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="request" target="" value="MEG"/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="request" target="" value="en-us"/>
+            </header>
+            <template-param name="message" value="{  &quot;MeetingOccurrenceID&quot;: &quot;$MeetingOccurrenceID&quot;,  &quot;MeetingDate&quot;: &quot;$MeetingDate&quot;,  &quot;LocationId&quot;: &quot;$LocationID&quot; }"/>
+            <param datatype="string" encode="false" name="LocationID" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="false" name="MeetingOccurrenceID" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="false" name="MeetingDate" sms-name="" src="request" value=""/>
+         </service-input>
+         <service-output>
+            <dataset id="MemberReport" src="$.Data">
+               <param datatype="string" format="None" formatvalue="" name="RegistrationNumber" sms-name="" src="$.RegistrationNumber" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MemberID" sms-name="" src="$.MemberID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="FirstName" sms-name="" src="$.FirstName" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LastName" sms-name="" src="$.LastName" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="GoalWeight" sms-name="" src="$.GoalWeight" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="Email" sms-name="" src="$.Email" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LastAchievedMileStoneID" sms-name="" src="$.LastAchievedMileStoneID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="SubscriptionType" sms-name="" src="$.MemberSubscription.SubscriptionType" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="DontContactByEmail" sms-name="" src="$.DontContactByEmail" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="DontContactByPhone" sms-name="" src="$.DontContactByPhone" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="Phone1" sms-name="" src="$.Phone1" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CurrentWeight" sms-name="" src="$.CurrentWeight" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="GetMemberWeightREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.devstage2.weightwatchers.com/api/WeightApi/Get?memberID=$MemberID"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="request" target="" value="M2Q4NzY3NTktOGE0ZS00NDRhLThkOWMtYTVjN2M1MjFiNWQw"/>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="request" target="" value="1234"/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="request" target="" value="55664"/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="request" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="request" target="" value="en-us"/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="request" target="" value="MEG"/>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="request" target="" value="application/json"/>
+            </header>
+            <param datatype="string" encode="false" name="MemberID" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <dataset id="MemberWeightList" src="$.Data">
+               <param datatype="string" format="None" formatvalue="" name="DPT" sms-name="" src="$.DailyPointsTarget" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="Height" sms-name="" src="$.Height" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LastModifiedDate" sms-name="" src="$.LastModifiedDate" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LocationID" sms-name="" src="$.LocationID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ManualWeighIn" sms-name="" src="$.ManualWeighIn" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MemberID" sms-name="" src="$.MemberID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="NoWeighIn" sms-name="" src="$.NoWeighIn" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="SessionNumber" sms-name="" src="$.SessionNumber" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="WeekNo" sms-name="" src="$.WeekNo" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="WeighInDate" sms-name="" src="$.WeighInDate" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="Weight" sms-name="" src="$.Weight" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="WeightLoss" sms-name="" src="$.WeightLoss" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="IsAttendingMeeting" sms-name="" src="$.IsAttendingMeeting" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CountryID" sms-name="" src="$.CountryID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="WeeklyPointsAllowance" sms-name="" src="$.WeeklyPointsAllowance" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="GetNoteREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.devstage2.weightwatchers.com/api/MemberNoteApi/Get?memberID=$MemberID"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="GET"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="request" target="" value="1234"/>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="request" target="" value="M2Q4NzY3NTktOGE0ZS00NDRhLThkOWMtYTVjN2M1MjFiNWQw"/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="request" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="request" target="" value="55664"/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="request" target="" value="MEG"/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="request" target="" value="en-us"/>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="request" target="" value="application/json"/>
+            </header>
+            <param datatype="string" encode="false" name="MemberID" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <dataset id="MemberNote" src="$.Data">
+               <param datatype="string" format="None" formatvalue="" name="Note" sms-name="" src="$.Note" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="ID" sms-name="" src="$.ID" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="$.EmployeeID" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="EntryDate" sms-name="" src="$.EntryDate" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="LastModifiedDate" sms-name="" src="$.LastModifiedDate" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="MemberID" sms-name="" src="$.MemberID" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="NoteTypeID" sms-name="" src="$.NoteTypeID" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeName" sms-name="" src="$.EmployeeName" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="CountryID" sms-name="" src="$.CountryID" target=""/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="GetTallyMeetingFeeREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.qat2.weightwatchers.com/api/TallyMeetingFeeApi/Get?reportInputRequest.meetingOccurrenceID=$MeetingOccrID&amp;reportInputRequest.meetingDate=$MeetingDate"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="GET"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="" target="" value="M2Q4NzY3NTktOGE0ZS00NDRhLThkOWMtYTVjN2M1MjFiNWQw"/>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="" target="" value="1234"/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="" target="" value="55664"/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="" target="" value="en-us"/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="" target="" value="MEG"/>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="" target="" value="application/json"/>
+            </header>
+            <param datatype="string" encode="false" name="MeetingDate" sms-name="" src="" value="2016-06-15"/>
+            <param datatype="string" encode="false" name="MeetingOccrID" sms-name="" src="" value="340004795"/>
+         </service-input>
+         <service-output>
+            <dataset id="TallyMeetingFees" src=".">
+               <param datatype="string" format="None" formatvalue="" name="CurrentAttendanceAmount" sms-name="" src="$.Data.CurrentAttendanceAmount" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CurrentAttendanceCount" sms-name="" src="$.Data.CurrentAttendanceCount" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EnrollmentsAmount" sms-name="" src="$.Data.EnrollmentsAmount" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EnrollmentsCount" sms-name="" src="$.Data.EnrollmentsCount" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="FreeLifetimeAttendanceCount" sms-name="" src="$.Data.FreeLifetimeAttendanceCount" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MissedWeekAttendanceAmount" sms-name="" src="$.Data.MissedWeekAttendanceAmount" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MissedWeekAttendanceCount" sms-name="" src="$.Data.MissedWeekAttendanceCount" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="PaidLifetimeAttendanceAmount" sms-name="" src="$.Data.PaidLifetimeAttendanceAmount" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="PaidLifetimeAttendanceCount" sms-name="" src="$.Data.PaidLifetimeAttendanceCount" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="PrePaidAttendanceCount" sms-name="" src="$.Data.PrePaidAttendanceCount" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="TotalMemberAttendance" sms-name="" src="$.Data.TotalMemberAttendance" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="TotalMemberFees" sms-name="" src="$.Data.TotalMemberFees" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="TotalPaidAttendance" sms-name="" src="$.Data.TotalPaidAttendance" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CountryID" sms-name="" src="$.Data.CountryID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LTPrepaidMember" sms-name="" src="$.Data.LTPrepaidMember" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="GetTallyPaymentREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.qat2.weightwatchers.com/api/TallypaymentApi/Get?reportInputRequest.meetingOccurrenceID=$MeetingOccrID&amp;reportInputRequest.meetingDate=$MeetingDate"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="GET"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="" target="" value="M2Q4NzY3NTktOGE0ZS00NDRhLThkOWMtYTVjN2M1MjFiNWQw"/>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="" target="" value="1234"/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="" target="" value="55664"/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="" target="" value="en-us"/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="" target="" value="MEG"/>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="" target="" value="application/json"/>
+            </header>
+            <param datatype="string" encode="false" name="MeetingDate" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="MeetingOccrID" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <dataset id="TallyPayment" src=".">
+               <param datatype="string" format="None" formatvalue="" name="Cash" sms-name="" src="$.Data.ActualPayments.Cash" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="Checks" sms-name="" src="$.Data.ActualPayments.Checks" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CreditCards" sms-name="" src="$.Data.ActualPayments.CreditCards" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CreditSlipsRedeemed" sms-name="" src="$.Data.ActualPayments.CreditSlipsRedeemed" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CreditSlipsIssued" sms-name="" src="$.Data.ActualPayments.CreditSlipsIssued" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="BankDepositNumber" sms-name="" src="$.Data.BankDepositNumber" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CreditCardSettlementNumber" sms-name="" src="$.Data.CreditCardSettlementNumber" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="$.Data.EmployeeID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MeetingID" sms-name="" src="$.Data.MeetingID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="StartUpFund" sms-name="" src="$.Data.StartUpFund" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="TallyDifferenceAmount" sms-name="" src="$.Data.TallyDifferenceAmount" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="TallyDifferenceReasonID" sms-name="" src="$.Data.TallyDifferenceReasonID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="Total" sms-name="" src="$.Data.Total" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CountryID" sms-name="" src="$.Data.CountryID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="DebitCardInteract" sms-name="" src="$.Data.ActualPayments.DebitCardInteract" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="GetTallySaleREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.qat2.weightwatchers.com/api/TallySalesApi/Get?reportInputRequest.meetingOccurrenceID=$MeetingOccrID&amp;reportInputRequest.meetingDate=$MeetingDate"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="GET"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="" target="" value="M2Q4NzY3NTktOGE0ZS00NDRhLThkOWMtYTVjN2M1MjFiNWQw"/>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="" target="" value="1234"/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="" target="" value="55664"/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="" target="" value="en-us"/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="" target="" value="MEG"/>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="" target="" value="application/json"/>
+            </header>
+            <param datatype="string" encode="false" name="MeetingDate" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="MeetingOccrID" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <dataset id="TallySale" src=".">
+               <param datatype="string" format="None" formatvalue="" name="EmployeeSales" sms-name="" src="$.Data.EmployeeSales" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MemberFees" sms-name="" src="$.Data.MemberFees" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="Prepayment" sms-name="" src="$.Data.Prepayment" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ProductReturn" sms-name="" src="$.Data.ProductReturn" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ProductSales" sms-name="" src="$.Data.ProductSales" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="SalesTax" sms-name="" src="$.Data.SalesTax" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="TotalSales" sms-name="" src="$.Data.TotalSales" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CountryID" sms-name="" src="$.Data.CountryID" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="GetTallySummaryREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.qat2.weightwatchers.com/api/TallySummaryApi/Get?reportInputRequest.meetingOccurrenceID=$MeetingOccrID&amp;reportInputRequest.meetingDate=$MeetingDate"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="GET"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="" target="" value="M2Q4NzY3NTktOGE0ZS00NDRhLThkOWMtYTVjN2M1MjFiNWQw"/>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="" target="" value="1234"/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="" target="" value="55664"/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="" target="" value="en-us"/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="" target="" value="MEG"/>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="" target="" value="application/json"/>
+            </header>
+            <param datatype="string" encode="false" name="MeetingDate" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="MeetingOccrID" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <dataset id="TallySummary" src=".">
+               <param datatype="string" format="None" formatvalue="" name="Coupons" sms-name="" src="$.Data.Coupons" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="$.Data.EmployeeID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="FivePercent" sms-name="" src="$.Data.FivePercent" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="Goal" sms-name="" src="$.Data.Goal" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="Lifetime" sms-name="" src="$.Data.Lifetime" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="Losing" sms-name="" src="$.Data.Losing" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MeetingID" sms-name="" src="$.Data.MeetingID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MonthlyPassesSold" sms-name="" src="$.Data.MonthlyPassesSold" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ThreeMonthsPassesSold" sms-name="" src="$.Data.ThreeMonthsPassesSold" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="Staying" sms-name="" src="$.Data.Staying" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="TenPercent" sms-name="" src="$.Data.TenPercent" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="TotalLoss" sms-name="" src="$.Data.TotalLoss" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="OneMonthPassesSold" sms-name="" src="$.Data.OneMonthPassesSold" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CountryID" sms-name="" src="$.Data.CountryID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="SixMonthsPassesSold" sms-name="" src="$.Data.SixMonthsPassesSold" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="TwentyWeekPassesSold" sms-name="" src="$.Data.TwentyWeekPassesSold" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MonthlyPassesActivated" sms-name="" src="$.Data.MonthlyPassesActivated" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="OneMonthPassesActivated" sms-name="" src="$.Data.OneMonthPassesActivated" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ThreeMonthsPassesActivated" sms-name="" src="$.Data.ThreeMonthsPassesActivated" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeAttendance" sms-name="" src="$.Data.EmployeeAttendance" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="SixMonthsPassesActivated" sms-name="" src="$.Data.SixMonthPassesActivated" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="SixMonthsPassesLTCActivated" sms-name="" src="$.Data.SixMonthLTCPassActivated" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="SixMonthLTCPassSold" sms-name="" src="$.Data.SixMonthLTCPassSold" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ThreeMonthLTCPassSold" sms-name="" src="$.Data.ThreeMonthLTCPassSold" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ThreeMonthLTCPassActivated" sms-name="" src="$.Data.ThreeMonthLTCPassActivated" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="TwelveMonthLTCPassSold" sms-name="" src="$.Data.TwelveMonthLTCPassSold" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="TwelveMonthLTCPassActivated" sms-name="" src="$.Data.TwelveMonthLTCPassActivated" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="GetTallyTimesheetREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.qat2.weightwatchers.com/api/TallyTimesheetApi/Get?reportInputRequest.meetingOccurrenceID=$MeetingOccrID&amp;reportInputRequest.meetingDate=$MeetingDate"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="GET"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="" target="" value="M2Q4NzY3NTktOGE0ZS00NDRhLThkOWMtYTVjN2M1MjFiNWQw"/>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="" target="" value="1234"/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="" target="" value="55664"/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="" target="" value="en-us"/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="" target="" value="MEG"/>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="" target="" value="application/json"/>
+            </header>
+            <param datatype="string" encode="true" name="MeetingDate" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="MeetingOccrID" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <dataset id="TallyTimesheet" src="$.Data">
+               <param datatype="string" format="None" formatvalue="" name="MeetingID" sms-name="" src="$.MeetingID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="$.EmployeeID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeNumber" sms-name="" src="$.EmployeeNumber" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeRole" sms-name="" src="$.EmployeeRole" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="TimeIn" sms-name="" src="$.TimeIn" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="TimeOut" sms-name="" src="$.TimeOut" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="BreakIn" sms-name="" src="$.BreakIn" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="BreakOut" sms-name="" src="$.BreakOut" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeName" sms-name="" src="$.EmployeeName" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CountryID" sms-name="" src="$.CountryID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MentorTraineeName" sms-name="" src="$.MentorTraineeName" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MeetingSetup" sms-name="" src="$.MeetingSetup" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="IssueSessionREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.devstage2.weightwatchers.com/api/AuthenticationApi/IssueSession?request.userName=$userName&amp;request.password=$pwd&amp;request.locationID=$locationId&amp;request.clientKey=$clientKey"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="GET"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="request" target="" value="M2Q4NzY3NTktOGE0ZS00NDRhLThkOWMtYTVjN2M1MjFiNWQw"/>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="request" target="" value="1234"/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="request" target="" value="55664"/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="request" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="request" target="" value="en-us"/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="request" target="" value="MEG"/>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="request" target="" value="application/json"/>
+            </header>
+            <param datatype="string" encode="false" name="userName" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="pwd" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="clientKey" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="locationId" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <param datatype="string" format="None" formatvalue="" name="status" sms-name="" src="$.Data.Status" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="empNumber" sms-name="" src="$.Data.EmployeeNumber" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="accessToken" sms-name="" src="$.Data.AccessToken" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="expires" sms-name="" src="$.Data.Expires" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="refreshToken" sms-name="" src="$.Data.RefreshToken" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="FirstName" sms-name="" src="$.Data.FirstName" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="LastName" sms-name="" src="$.Data.LastName" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="$.Data.EmployeeID" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="CountryID" sms-name="" src="$.Data.CountryID" target="response"/>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="LinkREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.devstage2.weightwatchers.com/api/LinkApi/Search"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="POST"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="request" target="" value="application/json"/>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="request" target="" value="1234"/>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="request" target="" value="M2Q4NzY3NTktOGE0ZS00NDRhLThkOWMtYTVjN2M1MjFiNWQw"/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="request" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="request" target="" value="55664"/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="request" target="" value="MEG"/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="request" target="" value="en-us"/>
+            </header>
+            <template-param name="message" value="{    &quot;SearchText&quot;: &quot;$SearchText&quot;,    &quot;WWRole&quot;: &quot;$WWRole&quot; }"/>
+            <param datatype="string" encode="false" name="SearchText" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="WWRole" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <dataset id="MembersList" src="$.Data">
+               <param datatype="string" format="None" formatvalue="" name="Email" sms-name="" src="$.Email" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="FirstName" sms-name="" src="$.FirstName" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LastName" sms-name="" src="$.LastName" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ShippingAddr1" sms-name="" src="$.ShippingAddress.Address1" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="SubscriptionType" sms-name="" src="$.MemberSubscription.SubscriptionType" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EmailID" sms-name="" src="$.Link.EmailID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EnterpriseID" sms-name="" src="$.Link.EnterpriseID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LinkType" sms-name="" src="$.Link.LinkType" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="UserName" sms-name="" src="$.Link.UserName" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CountryID" sms-name="" src="$.CountryID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ExpirationDate" sms-name="" src="$.MemberSubscription.ExpirationDate" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="LocationGetAllREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.qat2.weightwatchers.com/api/LocationApi/GetAll"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="POST"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="" target="" value=""/>
+            </header>
+            <template-param name="message" value="$locationid "/>
+            <param datatype="string" encode="false" name="locationid" sms-name="" src="request" value=""/>
+         </service-input>
+         <service-output>
+            <dataset id="LocationList" src="$.Data">
+               <param datatype="string" format="None" formatvalue="" name="isActive" sms-name="" src="$.Active" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="locationid" sms-name="" src="$.LocationID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="displayvalue" sms-name="" src="$.Name" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="locationnumber" sms-name="" src="$.LocationNumber" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="zip" sms-name="" src="$.ZipCode" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="city" sms-name="" src="$.City" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="stateId" sms-name="" src="$.StateID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="locationTypeId" sms-name="" src="$.LocationTypeID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="areaSiteNumber" sms-name="" src="$.AreaSiteName" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="IsTaxCollected" sms-name="" src="$.IsTaxCollected" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CountryID" sms-name="" src="$.CountryID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="IsCreditCardEnabled" sms-name="" src="$.IsCreditCardEnabled" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MPActivationEnabled" sms-name="" src="$.MPActivationEnabled" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="LocationSearchREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.qat2.weightwatchers.com/api/LocationApi/Search?locationNumberOrzipCode=$searchId"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value=""/>
+            <config-param name="isembedxmlpresent" value="true"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="" target="" value="application/json"/>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="" target="" value=""/>
+            </header>
+            <param datatype="string" encode="true" name="searchId" sms-name="" src="" value="10"/>
+         </service-input>
+         <service-output>
+            <dataset id="LocationList" src="$.Data">
+               <param datatype="string" format="None" formatvalue="" name="isActive" sms-name="" src="$.Active" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="locationid" sms-name="" src="$.LocationID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="displayvalue" sms-name="" src="$.Name" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="locationnumber" sms-name="" src="$.LocationNumber" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="zip" sms-name="" src="$.ZipCode" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="city" sms-name="" src="$.City" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="stateId" sms-name="" src="$.StateID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="locationTypeId" sms-name="" src="$.LocationTypeID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="areaSiteNumber" sms-name="" src="$.AreaSiteNumber" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="IsTaxCollected" sms-name="" src="$.IsTaxCollected" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CountryID" sms-name="" src="$.CountryID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="IsCreditCardEnabled" sms-name="" src="$.IsCreditCardEnabled" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MPActivationEnabled" sms-name="" src="$.MPActivationEnabled" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="MeetingSearchREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.qat2.weightwatchers.com/api/MeetingApi/Search"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="POST"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="request" target="" value="1234"/>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="request" target="" value="M2Q4NzY3NTktOGE0ZS00NDRhLThkOWMtYTVjN2M1MjFiNWQw"/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="request" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="request" target="" value="55664"/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="request" target="" value="MEG"/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="request" target="" value="en-us"/>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="request" target="" value="application/json"/>
+            </header>
+            <template-param name="message" value="{   &quot;MeetingOccurrenceID&quot;: $MeetingOccurrenceID,   &quot;MeetingDate&quot;: &quot;$MeetingDate&quot;,   &quot;BankDepositNumber&quot;: &quot;$BankDepositNumber&quot; }"/>
+            <param datatype="string" encode="true" name="MeetingOccurrenceID" sms-name="" src="request" value="254218335"/>
+            <param datatype="string" encode="true" name="MeetingDate" sms-name="" src="request" value="2016-08-03T00:00:00"/>
+            <param datatype="string" encode="true" name="BankDepositNumber" sms-name="" src="request" value="0"/>
+         </service-input>
+         <service-output>
+            <dataset id="Meeting" src=".">
+               <param datatype="string" format="None" formatvalue="" name="MeetingNumber" sms-name="" src="$.Data.MeetingNumber" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="MemberMilestoneREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.devstage2.weightwatchers.com/api/MemberMilestoneApi/Get?memberID=$MemberID"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="GET"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="request" target="" value="1234"/>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="request" target="" value="M2Q4NzY3NTktOGE0ZS00NDRhLThkOWMtYTVjN2M1MjFiNWQw"/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="request" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="request" target="" value="55664"/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="request" target="" value="MEG"/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="request" target="" value="en-us"/>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="request" target="" value="application/json"/>
+            </header>
+            <param datatype="string" encode="false" name="MemberID" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <dataset id="AchievedMilestones" src="$.Data.AchievedMilestones">
+               <param datatype="string" format="None" formatvalue="" name="AchMilestoneID" sms-name="" src="$.MilestoneID" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="AchReachedDate" sms-name="" src="$.ReachedDate" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="AchMemberID" sms-name="" src="$.MemberID" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="AchWeighInDate" sms-name="" src="$.WeighInDate" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="AchMemberMilestoneID" sms-name="" src="$.MemberMilestoneID" target=""/>
+            </dataset>
+            <dataset id="EligibleMilestones" src="$.Data.EligibleMilestones">
+               <param datatype="string" format="None" formatvalue="" name="ElgID" sms-name="" src="$.ID" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="ElgTargetWeight" sms-name="" src="$.TargetWeight" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="ElgMemberID" sms-name="" src="$.MemberID" target=""/>
+            </dataset>
+            <param datatype="string" format="None" formatvalue="" name="CountryID" sms-name="" src="$.Data.CountryID" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="PeripheralStatusLogREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.devstage2.weightwatchers.com/api/ClickStreamLogApi/PeripheralStatusLog"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="POST"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="request" target="" value="1234"/>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="request" target="" value="M2Q4NzY3NTktOGE0ZS00NDRhLThkOWMtYTVjN2M1MjFiNWQw"/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="request" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="request" target="" value="55664"/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="request" target="" value="MEG"/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="request" target="" value="en-us"/>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="request" target="" value="application/json"/>
+            </header>
+            <template-param name="message" value="{    &quot;DeviceID&quot;: &quot;$deviceID&quot;,    &quot;EmployeeID&quot;: &quot;$EmployeeID&quot;,    &quot;LocationID&quot;: &quot;$LocationID&quot;,    &quot;MetaInfo&quot;: &quot;$MetaInfo&quot;,    &quot;PeripheralType&quot;: &quot;$PeripheralType&quot;,    &quot;Status&quot;: &quot;$Status&quot; }"/>
+            <param datatype="string" encode="false" name="deviceID" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="MetaInfo" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="EmployeeID" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="LocationID" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="PeripheralType" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="Status" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <param datatype="string" format="None" formatvalue="" name="Status" sms-name="" src="$.Status" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="PreActivateREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.devstage2.weightwatchers.com/api/SubscriptionApi/PreActivate"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="POST"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="request" target="" value="application/json"/>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="request" target="" value="1234"/>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="request" target="" value="M2Q4NzY3NTktOGE0ZS00NDRhLThkOWMtYTVjN2M1MjFiNWQw"/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="request" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="request" target="" value="55664"/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="request" target="" value="MEG"/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="request" target="" value="en-US"/>
+            </header>
+            <template-param name="message" value="{    &quot;CommitmentDuration&quot;: &quot;$CommitmentDuration&quot;,    &quot;OfferId&quot;: &quot;$OfferId&quot;,    &quot;PlanType&quot;: &quot;$PlanType&quot;,    &quot;ProgramDuration&quot;: &quot;$ProgramDuration&quot;,    &quot;SubscriptionType&quot;: &quot;$SubscriptionType&quot; }"/>
+            <param datatype="string" encode="false" name="ProgramDuration" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="false" name="SubscriptionType" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="false" name="OfferId" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="false" name="CommitmentDuration" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="false" name="PlanType" sms-name="" src="request" value=""/>
+         </service-input>
+         <service-output>
+            <dataset id="PreActivationList" src=".">
+               <param datatype="string" format="None" formatvalue="" name="CouponCode" sms-name="" src="$.Data.CouponCode" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ExpirationDate" sms-name="" src="$.Data.ExpirationDate" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="RegNumberValidateREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.devstage2.weightwatchers.com/api/MemberApi/SearchMember"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="POST"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="request" target="" value="application/json"/>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="request" target="" value="1234"/>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="request" target="" value="M2Q4NzY3NTktOGE0ZS00NDRhLThkOWMtYTVjN2M1MjFiNWQw"/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="request" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="request" target="" value="55664"/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="request" target="" value="MEG"/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="request" target="" value="en-us"/>
+            </header>
+            <template-param name="message" value="{    &quot;memberId&quot;: &quot;$MemberID&quot;,    &quot;registrationNumber&quot;: &quot;$RegNumber&quot; }"/>
+            <param datatype="string" encode="false" name="RegNumber" sms-name="" src="" value=""/>
+            <param datatype="string" encode="false" name="MemberID" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <dataset id="SearchMemberResponse" src=".">
+               <param datatype="string" format="None" formatvalue="" name="IsUsed" sms-name="" src="$.Data" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="SaleReceiptREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.qat2.weightwatchers.com/api/SendCommApi/SaleReceipt"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="POST"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="request" target="" value="application/json"/>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="request" target="" value="1234"/>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="request" target="" value="M2Q4NzY3NTktOGE0ZS00NDRhLThkOWMtYTVjN2M1MjFiNWQw"/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="request" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="request" target="" value="55664"/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="request" target="" value="MEG"/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="request" target="" value="en-us"/>
+            </header>
+            <template-param name="message" value="{    &quot;ClientSaleTransactionID&quot;: &quot;$ClientSaleTransactionID&quot;,    &quot;EmailAddress&quot;: &quot;$EmailAddress&quot;,    &quot;LocationDescription&quot;: &quot;$LocationDescription&quot;,    &quot;LocationNumber&quot;: &quot;$LocationNumber&quot;,    &quot;LocationStateAbbr&quot;: &quot;$LocationStateAbbr&quot;,    &quot;LocationZip&quot;: &quot;$LocationZip&quot;,    &quot;Payment&quot;: $Payment,    &quot;SaleDate&quot;: &quot;$SaleDate&quot;,    &quot;SaleItem&quot;: $SaleItem }"/>
+            <param datatype="string" encode="true" name="LocationNumber" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="LocationDescription" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="LocationZip" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="LocationStateAbbr" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="ClientSaleTransactionID" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="SaleDate" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="EmailAddress" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="SaleItem" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="Payment" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <param datatype="string" format="None" formatvalue="" name="Status" sms-name="" src="$.Status" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="SearchEmployeeREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.devstage2.weightwatchers.com/api/EmployeeApi/Search"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="POST"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="request" target="" value="application/json"/>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="request" target="" value="M2Q4NzY3NTktOGE0ZS00NDRhLThkOWMtYTVjN2M1MjFiNWQw"/>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="request" target="" value="1234"/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="request" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="request" target="" value="55664"/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="request" target="" value="MEG"/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="request" target="" value="en-us"/>
+            </header>
+            <template-param name="message" value="{    &quot;FirstName&quot;: &quot;$FirstName&quot;,    &quot;LastName&quot;: &quot;$LastName&quot;,    &quot;LocationID&quot;: &quot;$LocationID&quot;,    &quot;SearchText&quot;: &quot;$searchText&quot;,    &quot;SearchType&quot;: &quot;$searchType&quot; }"/>
+            <param datatype="string" encode="true" name="FirstName" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="true" name="LastName" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="true" name="LocationID" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="true" name="searchText" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="true" name="searchType" sms-name="" src="request" value=""/>
+         </service-input>
+         <service-output>
+            <dataset id="EmployeeList" src="$.Data">
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="$.EmployeeID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="FirstName" sms-name="" src="$.FirstName" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LastName" sms-name="" src="$.LastName" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeNumber" sms-name="" src="$.EmployeeNumber" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CountryID" sms-name="" src="$.CountryID" target="response"/>
+               <param datatype="boolean" format="None" formatvalue="" name="IsCurrentWeekWeighed" sms-name="" src="$.IsCurrentWeekWeighed" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="SearchMemberREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.devstage2.weightwatchers.com/api/MemberApi/Search"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="POST"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="request" target="" value="application/json"/>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="request" target="" value="1234"/>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="request" target="" value="M2Q4NzY3NTktOGE0ZS00NDRhLThkOWMtYTVjN2M1MjFiNWQw"/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="request" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="request" target="" value="55664"/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="request" target="" value="MEG"/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="request" target="" value="en-us"/>
+            </header>
+            <template-param name="message" value="{    &quot;City&quot;: &quot;$city&quot;,    &quot;FirstName&quot;: &quot;$firstName&quot;,    &quot;LastName&quot;: &quot;$lastName&quot;,    &quot;LocationID&quot;: &quot;$locationId&quot;,    &quot;MaxResults&quot;: 100,    &quot;MeetingOccurrenceID&quot;: &quot;$mtngOccrId&quot;,    &quot;MemberCategory&quot;: &quot;$memCategory&quot;,    &quot;SearchText&quot;: &quot;$searchText&quot;,    &quot;SearchType&quot;: &quot;$searchType&quot;,    &quot;StateCode&quot;: &quot;$stateCode&quot;,    &quot;UserStatus&quot;: &quot;$userStatus&quot; }"/>
+            <param datatype="string" encode="false" name="locationId" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="false" name="mtngOccrId" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="false" name="userStatus" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="false" name="firstName" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="false" name="lastName" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="false" name="stateCode" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="false" name="city" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="false" name="memCategory" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="false" name="searchText" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="false" name="searchType" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="false" name="noLocationId" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="false" name="noUserStatus" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="false" name="noMemCategory" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="false" name="noMtngOccrId" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="false" name="noCity" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="false" name="noState" sms-name="" src="request" value=""/>
+         </service-input>
+         <service-output>
+            <dataset id="MembersList" src="$.Data">
+               <param datatype="string" format="None" formatvalue="" name="BillingAddr1" sms-name="" src="$.BillingAddress.Address1" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="BillingAddr2" sms-name="" src="$.BillingAddress.Address2" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="BillingCity" sms-name="" src="$.BillingAddress.City" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="BillingCountry" sms-name="" src="$.BillingAddress.Country" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="BillingState" sms-name="" src="$.BillingAddress.StateID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="BillingZipCode" sms-name="" src="$.BillingAddress.ZipCode" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="DeviceMemberID" sms-name="" src="$.ClientMemberID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ConsecutiveWeightGain" sms-name="" src="$.ConsecutiveWeightGain" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CurrentLifeTimeStatus" sms-name="" src="$.CurrentLifeTimeStatus" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="DateOfBirth" sms-name="" src="$.DateOfBirth" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="DontRecvCalls" sms-name="" src="$.DoNotReceiveCallsForEventsAndOthers" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="DontContByEmail" sms-name="" src="$.DontContactByEmail" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="DontCnctPhone" sms-name="" src="$.DontContactByPhone" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="DontCnctSMS" sms-name="" src="$.DontContactBySMS" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="DontSendCard" sms-name="" src="$.DontSendCards" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="DontSendCoupon" sms-name="" src="$.DontSendCoupons" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="Email" sms-name="" src="$.Email" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EmpID" sms-name="" src="$.EmployeeID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EnrollmentDate" sms-name="" src="$.EnrollmentDate" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="FeePaid" sms-name="" src="$.FeePaid" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="FirstName" sms-name="" src="$.FirstName" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="Gender" sms-name="" src="$.Gender" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="GoalWeight" sms-name="" src="$.GoalWeight" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="Height" sms-name="" src="$.Height" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="IncompleteData" sms-name="" src="$.IncompleteData" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LastAchievedMileStoneID" sms-name="" src="$.LastAchievedMileStoneID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LastContactDate" sms-name="" src="$.LastContactDate" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LastNoteEntryDate" sms-name="" src="$.LastNoteEntryDate" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LastName" sms-name="" src="$.LastName" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LocationID" sms-name="" src="$.LocationID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MeetingDate" sms-name="" src="$.MeetingDate" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MeetingOccuranceID" sms-name="" src="$.MeetingOccuranceID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MemberType" sms-name="" src="$.MemberType" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MemberStatus" sms-name="" src="$.Status" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MissedWeekPasses" sms-name="" src="$.CountLeft" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="NumberOfWeeksAttended" sms-name="" src="$.NumberOfWeeksAttended" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ServerMemberID" sms-name="" src="$.MemberID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="Phone1" sms-name="" src="$.Phone1" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="Phone2" sms-name="" src="$.Phone2" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="PhoneType1" sms-name="" src="$.PhoneType1" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="PhoneType2" sms-name="" src="$.PhoneType2" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="PreRegNumber" sms-name="" src="$.PreRegistrationNumber" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="PrevLifeTimeSta" sms-name="" src="$.PreviousLifeTimeStatus" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="RegDate" sms-name="" src="$.RegistrationDate" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="RegNumber" sms-name="" src="$.RegistrationNumber" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ShippingAddr1" sms-name="" src="$.ShippingAddress.Address1" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ShippingAddr2" sms-name="" src="$.ShippingAddress.Address2" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ShippingCity" sms-name="" src="$.ShippingAddress.City" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ShippingCountry" sms-name="" src="$.ShippingAddress.Country" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ShippingState" sms-name="" src="$.ShippingAddress.StateID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ShippingZipCode" sms-name="" src="$.ShippingAddress.ZipCode" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="StartDate" sms-name="" src="$.RegistrationDate" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="StartWeight" sms-name="" src="$.StartWeight" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ProductID" sms-name="" src="$.MemberSubscription.ProductID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="SubscriptnID" sms-name="" src="$.MemberSubscription.ID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="SubscriptnType" sms-name="" src="$.MemberSubscription.SubscriptionType" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ExpirationDate" sms-name="" src="$.MemberSubscription.ExpirationDate" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="SubMemberID" sms-name="" src="$.MemberSubscription.MemberID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CouponCode" sms-name="" src="$.MemberSubscription.CouponCode" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LastUsedDate" sms-name="" src="$.MemberSubscription.LastUsedDate" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="TransactionType" sms-name="" src="$.TransactionType" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="WeeksCompleted" sms-name="" src="$.WeeksCompleted" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="WeightGain" sms-name="" src="$.WeightGain" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="UniqueID" sms-name="" src="$.UniqueID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="UserComments" sms-name="" src="$.UserComments" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="UserStsEndPrd" sms-name="" src="$.UserStatusEndPeriod" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="UserStsChngRsn" sms-name="" src="$.UserStatusChangeReason" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EmailID" sms-name="" src="$.Link.EmailID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EnterpriseID" sms-name="" src="$.Link.EnterpriseID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LinkType" sms-name="" src="$.Link.LinkType" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="UserName" sms-name="" src="$.Link.UserName" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="TrackerID" sms-name="" src="$.MaintainenanceTracker.ID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MaintenanceMode" sms-name="" src="$.MaintainenanceTracker.MaintenanceMode" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="TrackerStartDate" sms-name="" src="$.MaintainenanceTracker.StartDate" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="FailedDate" sms-name="" src="$.MaintainenanceTracker.FailedDate" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="Eligible" sms-name="" src="$.MaintainenanceTracker.Eligible" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EligibleDate" sms-name="" src="$.MaintainenanceTracker.EligibleDate" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="PaidLastFee" sms-name="" src="$.MaintainenanceTracker.PaidLastFee" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="WeightCountMet" sms-name="" src="$.MaintainenanceTracker.WeightCountMet" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="SessionNumber" sms-name="" src="$.SessionNumber" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="IsCurrentWeekWeighed" sms-name="" src="$.IsCurrentWeekWeighed" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MemberRole" sms-name="" src="$.MemberRole" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ProgramDuration" sms-name="" src="$.MemberSubscription.ProgramDuration" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LastAttendanceDate" sms-name="" src="$.LastAttendanceDate" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="PersonalGoalWeightDate" sms-name="" src="$.LastPromptDate" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="PersonalGoalWeight" sms-name="" src="$.PersonalGoal" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CountryID" sms-name="" src="$.CountryID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="PlanType" sms-name="" src="$.MemberSubscription.PlanType" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CommitmentDuration" sms-name="" src="$.MemberSubscription.CommitmentDuration" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="RegStatus" sms-name="" src="$.RegistrationStatus" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="TallyTimesheetSearchREST" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.retail.qat2.weightwatchers.com/api/TallyTimesheetApi/Search?timeSheetSearchRequest.meetingOccurrenceID=$MeetingOccurrenceID&amp;timeSheetSearchRequest.meetingDate=$MeetingDate&amp;timeSheetSearchRequest.employeeID=$EmployeeID&amp;timeSheetSearchRequest.timeIn=$TimeIn&amp;timeSheetSearchRequest.timeOut=$TimeOut"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="GET"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="" target="" value="M2Q4NzY3NTktOGE0ZS00NDRhLThkOWMtYTVjN2M1MjFiNWQw"/>
+               <param datatype="string" format="None" formatvalue="" name="DeviceID" sms-name="" src="" target="" value="1234"/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="" target="" value="55664"/>
+               <param datatype="string" format="None" formatvalue="" name="LastSyncDate" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="Locale" sms-name="" src="" target="" value="en-ca"/>
+               <param datatype="string" format="None" formatvalue="" name="Source" sms-name="" src="" target="" value="MEG"/>
+               <param datatype="string" format="None" formatvalue="" name="Accept" sms-name="" src="" target="" value="application/json"/>
+            </header>
+            <param datatype="string" encode="true" name="MeetingOccurrenceID" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="MeetingDate" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="TimeIn" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="TimeOut" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="EmployeeID" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <dataset id="SearchTimesheet" src="$.Data">
+               <param datatype="string" format="None" formatvalue="" name="MeetingID" sms-name="" src="$.MeetingID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="$.EmployeeID" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeNumber" sms-name="" src="$.EmployeeNumber" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeRole" sms-name="" src="$.EmployeeRole" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="TimeIn" sms-name="" src="$.TimeIn" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="TimeOut" sms-name="" src="$.TimeOut" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CountryID" sms-name="" src="$.CountryID" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+   </services>
+</application>

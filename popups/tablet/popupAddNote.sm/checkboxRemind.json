@@ -1,0 +1,100 @@
+{
+    "DNDConfig": null,
+    "_enabled_": false,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": "vertical",
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sae4c14ac0804c5990b765fdb3d0fbb3",
+    "_text_": "",
+    "android": {
+        "@class": "com.kony.gen.viz.model.component.property.checkbox.AndroidCheckBoxProperty",
+        "itemOrientation": "vertical",
+        "render": true
+    },
+    "canUpdateUI": true,
+    "containerweight": 50,
+    "contentalignment": 5,
+    "context": {
+        "channel": "mobile",
+        "formID": "BasicWidgets1",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "focusskin": "s68fd4f261c949298ab797ed50af7ad2",
+    "id": "checkboxRemind",
+    "info": null,
+    "ipad": {
+        "@class": "com.kony.gen.viz.model.component.property.checkbox.IPadCheckBoxProperty",
+        "psp": {
+            "groupCells": false,
+            "viewType": 4
+        },
+        "render": true
+    },
+    "isvisible": true,
+    "itemorientation": "vertical",
+    "kuid": "p2kwiet3578093093443",
+    "margininpixel": false,
+    "masterdata": [
+        [
+            "Remind",
+            "Remind",
+            "strRemind"
+        ]
+    ],
+    "name": "kony.ui.CheckBoxGroup",
+    "paddinginpixel": false,
+    "parent": "hboxFooterSection",
+    "pf": "popupAddNote",
+    "selectedkey": null,
+    "selectedkeys": [],
+    "selectedkeyvalue": null,
+    "selectedkeyvalues": null,
+    "spa": {
+        "@class": "com.kony.gen.viz.model.component.property.checkbox.SPACheckBoxProperty",
+        "itemOrientation": "vertical"
+    },
+    "spaandroidtablet": {
+        "@class": "com.kony.gen.viz.model.component.property.checkbox.SPAAndroidTabletCheckBoxProperty",
+        "render": true
+    },
+    "spaipad": {
+        "@class": "com.kony.gen.viz.model.component.property.checkbox.SPAIPadCheckBoxProperty",
+        "render": true
+    },
+    "spawindowstablet": {
+        "@class": "com.kony.gen.viz.model.component.property.checkbox.SPAWindowsTabletCheckBoxProperty",
+        "render": true
+    },
+    "vexpand": false,
+    "wType": "CheckBoxGroup",
+    "widgetalignment": 5,
+    "windows8": {
+        "@class": "com.kony.gen.viz.model.component.property.checkbox.Windows8CheckBoxProperty",
+        "_margin_": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "itemOrientation": "vertical",
+        "margin": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "marginInPixel": true,
+        "render": true
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "p2kwiet3578093094275_imgDone_onDownloadComplete_seq0": {
+        "id": "p2kwiet3578093094275_imgDone_onDownloadComplete_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "imagesrc",
+            "value": "imagesrc"
+        }, {
+            "name": "issuccess",
+            "value": "issuccess"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onDownloadComplete_917483578093097341",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnClickSaveFreshStartWeight",
+            "display": "eventOnClickSaveFreshStartWeight",
+            "inputparams": []
+        }]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "AS_HBox_aaf78f206cde41f1aefc6c86038742fe": {
+        "id": "AS_HBox_aaf78f206cde41f1aefc6c86038742fe",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_3d95bf5ba3d2496ebbf4970091e04b39",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "evenOnClickHboxMeetingLocationSection",
+            "display": "evenOnClickHboxMeetingLocationSection",
+            "inputparams": []
+        }]
+    }
+}

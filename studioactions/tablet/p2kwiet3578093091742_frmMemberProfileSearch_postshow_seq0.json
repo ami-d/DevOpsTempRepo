@@ -1,0 +1,25 @@
+{
+    "p2kwiet3578093091742_frmMemberProfileSearch_postshow_seq0": {
+        "id": "p2kwiet3578093091742_frmMemberProfileSearch_postshow_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_postshow_2389357809309847",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"Form Advanced Search Post show\");"
+        }, {
+            "id": "customcode_postshow_769223578093092111",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "ClearAdvancedSearchFields",
+            "display": "ClearAdvancedSearchFields",
+            "inputparams": []
+        }]
+    }
+}

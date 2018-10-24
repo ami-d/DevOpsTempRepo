@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093095207_vbxAddnWeightMemberHome_onClick_seq0": {
+        "id": "p2kwiet3578093095207_vbxAddnWeightMemberHome_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_88533357809309701",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnClickAddIconHeader",
+            "display": "eventOnClickAddIconHeader",
+            "inputparams": []
+        }]
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "p2kwiet3578093094322_vboxCancelImage_onClick_seq0": {
+        "id": "p2kwiet3578093094322_vboxCancelImage_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_535043578093098001",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "popupMissedWeeks.destroy();\n isMissedWeekPopupShowed=false;"
+        }, {
+            "id": "customcode_onClick_174013578093097818",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "loadMissedWeekData",
+            "display": "loadMissedWeekData",
+            "inputparams": []
+        }]
+    }
+}

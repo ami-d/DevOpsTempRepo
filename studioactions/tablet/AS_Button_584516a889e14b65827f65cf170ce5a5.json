@@ -1,0 +1,18 @@
+{
+    "AS_Button_584516a889e14b65827f65cf170ce5a5": {
+        "id": "AS_Button_584516a889e14b65827f65cf170ce5a5",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_144118082c2341959b559d346bee38e6",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "navigateToTallyTimesheet",
+            "display": "navigateToTallyTimesheet",
+            "inputparams": []
+        }]
+    }
+}

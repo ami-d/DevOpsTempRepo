@@ -1,0 +1,19 @@
+{
+    "p2kwiet3578093093388_frmViewMemberProfile_preshow_seq0": {
+        "id": "p2kwiet3578093093388_frmViewMemberProfile_preshow_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_preshow_107503578093092064",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "IsViewMember = FlowForScreens.ViewMember;\n isSynForMPActivationFromProfile=false;"
+        }]
+    }
+}

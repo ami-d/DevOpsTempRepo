@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093094434_button141833632557495_onClick_seq0": {
+        "id": "p2kwiet3578093094434_button141833632557495_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_263843578093095011",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "submitNextMeeting",
+            "display": "submitNextMeeting",
+            "inputparams": []
+        }]
+    }
+}

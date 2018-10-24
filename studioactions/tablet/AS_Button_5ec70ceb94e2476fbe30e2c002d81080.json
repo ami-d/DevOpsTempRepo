@@ -1,0 +1,30 @@
+{
+    "AS_Button_5ec70ceb94e2476fbe30e2c002d81080": {
+        "id": "AS_Button_5ec70ceb94e2476fbe30e2c002d81080",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "context",
+            "value": "context"
+        }],
+        "contextObj": {
+            "name": "vbox357809309770",
+            "type": "templates",
+            "platform": "",
+            "KUID": "p2kwiet3578093092086"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___1f7ee7bbc42c46448c32c29423a64019",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnWeekNoMeeting",
+            "display": "eventOnWeekNoMeeting",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

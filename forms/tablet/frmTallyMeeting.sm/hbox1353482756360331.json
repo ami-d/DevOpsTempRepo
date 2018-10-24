@@ -1,0 +1,77 @@
+{
+    "DNDConfig": null,
+    "_enabled_": false,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_position_": 3,
+    "_resize_": true,
+    "_skin_": "s186aaf209594f26ac22f21d3e6f0b4e",
+    "allboxes": [],
+    "android": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.AndroidHBoxProperty",
+        "_position_": 3,
+        "position": 3,
+        "render": true
+    },
+    "borderCollapse": false,
+    "canUpdateUI": true,
+    "children": [
+        "lblCurrentAttendMissedWeek",
+        "label1353482756360335",
+        "lblCurrAttendMissedWeekInfo",
+        "lblCurrAttendMissedWeekInfo1"
+    ],
+    "containerweight": 100,
+    "id": "hbox1353482756360331",
+    "info": null,
+    "ipad": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.IPadHBoxProperty",
+        "_position_": 3,
+        "position": 3,
+        "render": true
+    },
+    "isvisible": true,
+    "kuid": "p2kwiet3578093092114",
+    "layoutalignment": 3,
+    "margininpixel": false,
+    "name": "kony.ui.Box",
+    "paddinginpixel": false,
+    "parent": "frmTallyMeeting",
+    "pf": "frmTallyMeeting",
+    "spa": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.SPAHBoxProperty"
+    },
+    "spaandroidtablet": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.SPAAndroidTabletHBoxProperty",
+        "render": true
+    },
+    "spaipad": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.SPAIPadHBoxProperty",
+        "render": true
+    },
+    "spawindowstablet": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.SPAWindowsTabletHBoxProperty",
+        "render": true
+    },
+    "templateType": "forms",
+    "wType": "HBox",
+    "widgetalignment": 1,
+    "windows8": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.Windows8HBoxProperty",
+        "_position_": 3,
+        "position": 3,
+        "render": true
+    }
+}

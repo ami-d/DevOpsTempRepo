@@ -1,0 +1,25 @@
+{
+    "p2kwiet357809309699_frmCheckout_preshow_seq0": {
+        "id": "p2kwiet357809309699_frmCheckout_preshow_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_preshow_872253578093095607",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnPreShowSetHeaderLabel",
+            "display": "eventOnPreShowSetHeaderLabel",
+            "inputparams": []
+        }, {
+            "id": "expression_preshow_11383578093095441",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(frmCheckout.lblSubType.text == \"Pay as you go\")\n {\n frmCheckout.btnScan.setVisibility(false); // Added by Dileep Chejerla\n }"
+        }]
+    }
+}

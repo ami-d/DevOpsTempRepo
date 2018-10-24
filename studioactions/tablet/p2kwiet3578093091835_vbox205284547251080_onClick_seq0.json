@@ -1,0 +1,21 @@
+{
+    "p2kwiet3578093091835_vbox205284547251080_onClick_seq0": {
+        "id": "p2kwiet3578093091835_vbox205284547251080_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_196053578093093200",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonClickvboxForEnterAmountSection",
+            "display": "eventonClickvboxForEnterAmountSection",
+            "inputparams": [{
+                "name": "digit",
+                "value": "frmPayment.lblSeven.text"
+            }]
+        }]
+    }
+}

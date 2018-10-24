@@ -1,0 +1,39 @@
+{
+    "p2kwiet3578093092425_txtCreditCard_onTextChange_seq0": {
+        "id": "p2kwiet3578093092425_txtCreditCard_onTextChange_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "changedtext",
+            "value": "changedtext"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onTextChange_745433578093094285",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "removeCommaFromInMyBankTextBox",
+            "display": "removeCommaFromInMyBankTextBox",
+            "inputparams": [{
+                "name": "textBox",
+                "value": "\"txtCreditCard\""
+            }]
+        }, {
+            "id": "customcode_onTextChange_183533578093093484",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnTextChangeInMyBankTextboxes",
+            "display": "eventOnTextChangeInMyBankTextboxes",
+            "inputparams": [{
+                "name": "inMyBankAmount",
+                "value": "frmTallyMeetingCashout.txtCreditCard.text"
+            }, {
+                "name": "megDrawerAmount",
+                "value": "frmTallyMeetingCashout.lblMEGCreditCard.text"
+            }, {
+                "name": "lblDifference",
+                "value": "\"lblDiffCreditCard\""
+            }]
+        }]
+    }
+}

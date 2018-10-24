@@ -1,0 +1,27 @@
+{
+    "p2kwiet3578093092425_frmTallyMeetingCashout_postshow_seq0": {
+        "id": "p2kwiet3578093092425_frmTallyMeetingCashout_postshow_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_postshow_27077357809309750",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "checkContinueState",
+            "display": "checkContinueState",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_15313578093099724",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "bindMeetingAndLocationData",
+            "display": "bindMeetingAndLocationData",
+            "inputparams": []
+        }]
+    }
+}

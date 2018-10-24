@@ -1,0 +1,16 @@
+{
+    "p2kwiet3578093093179_vboxCancelImage_onClick_seq0": {
+        "id": "p2kwiet3578093093179_vboxCancelImage_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_531293578093091068",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "boTallyMeetingReport.isfromTallyReportFlow = false;\nkony.print(\"prevForm  \" + prevForm);\nif(checkValidString(prevForm))\n  {\n    if(prevForm ==frmSelectMeeting.id)\n      {\n      \tfrmSelectMeeting.show();\n      }\n    else if(prevForm ==frmHomeScreenNoMeeting.id)\n    {\n      frmHomeScreenNoMeeting.show();\n      setAWSLocation(false);\n    } \n    else if(prevForm ==frmHomeScreen.id)\n    {\n      frmHomeScreen.show();\n    }\n   prevForm =\"\";\n  }else\n    {\nif(kony.application.getPreviousForm().id==frmSelectMeeting.id){\n frmSelectMeeting.show();\n }\n else\n {\n if (glbMeetingNum != \"\") {\n frmHomeScreen.show();\n } else if (glbMeetingNum == \"\") {\n frmHomeScreenNoMeeting.show();\n }\n \n }}"
+        }]
+    }
+}

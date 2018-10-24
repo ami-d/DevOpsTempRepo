@@ -1,0 +1,28 @@
+{
+    "p2kwiet3578093093479_segmentSearchLocationsResult_onRowClick_seq0": {
+        "id": "p2kwiet3578093093479_segmentSearchLocationsResult_onRowClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "sectionNumber",
+            "value": "sectionNumber"
+        }, {
+            "name": "rowNumber",
+            "value": "rowNumber"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onRowClick_165193578093097019",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": ""
+        }, {
+            "id": "customcode_onRowClick_16873578093094592",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnClickAddLocationPopupRow",
+            "display": "eventOnClickAddLocationPopupRow",
+            "inputparams": []
+        }]
+    }
+}

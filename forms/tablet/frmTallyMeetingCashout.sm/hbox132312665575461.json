@@ -1,0 +1,71 @@
+{
+    "DNDConfig": null,
+    "_enabled_": false,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_resize_": true,
+    "_skin_": "sba6874252ac44c49b5804420a58257c",
+    "allboxes": [],
+    "android": {
+        "@class": "com.kony.gen.viz.model.container.property.vbox.AndroidVBoxProperty",
+        "render": true
+    },
+    "borderCollapse": false,
+    "canUpdateUI": true,
+    "children": [
+        "txtBankDepositSlip3No"
+    ],
+    "containerweight": 52,
+    "donotUpdateContainerWeight": false,
+    "id": "hbox132312665575461",
+    "info": null,
+    "ipad": {
+        "@class": "com.kony.gen.viz.model.container.property.vbox.IPadVBoxProperty",
+        "render": true
+    },
+    "isvisible": true,
+    "kuid": "28a20e49887f4de398bd9b7a154467d2",
+    "margininpixel": false,
+    "name": "kony.ui.Box",
+    "paddInPixel": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "paddinginpixel": false,
+    "parent": "hboxbankslip3",
+    "pf": "frmTallyMeetingCashout",
+    "spa": {
+        "@class": "com.kony.gen.viz.model.container.property.vbox.SPAVBoxProperty"
+    },
+    "spaandroidtablet": {
+        "@class": "com.kony.gen.viz.model.container.property.vbox.SPAAndroidTabletVBoxProperty",
+        "render": true
+    },
+    "spaipad": {
+        "@class": "com.kony.gen.viz.model.container.property.vbox.SPAIPadVBoxProperty",
+        "render": true
+    },
+    "spawindowstablet": {
+        "@class": "com.kony.gen.viz.model.container.property.vbox.SPAWindowsTabletVBoxProperty",
+        "render": true
+    },
+    "wType": "VBox",
+    "widgetalignment": 5,
+    "windows8": {
+        "@class": "com.kony.gen.viz.model.container.property.vbox.Windows8VBoxProperty",
+        "render": true
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "p2kwiet357809309699_txtSubscriptionID_iPad_onEndEditing_seq0": {
+        "id": "p2kwiet357809309699_txtSubscriptionID_iPad_onEndEditing_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "changedtext",
+            "value": "changedtext"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onEndEditing_38179357809309351",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onEndEditingForSubID",
+            "display": "onEndEditingForSubID",
+            "inputparams": []
+        }]
+    }
+}

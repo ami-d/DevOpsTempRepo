@@ -1,0 +1,16 @@
+{
+    "p2kwiet3578093094488_vboxCancelImage_onClick_seq0": {
+        "id": "p2kwiet3578093094488_vboxCancelImage_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_225123578093091597",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(checkValidString(glbNumberOfBanks))popupNumberOfBanks.pickerBanks.selectedKeys = [parseInt(glbNumberOfBanks)-1];\n popupNumberOfBanks.dismiss();\n "
+        }]
+    }
+}

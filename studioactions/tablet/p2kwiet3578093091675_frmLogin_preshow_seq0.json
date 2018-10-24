@@ -1,0 +1,25 @@
+{
+    "p2kwiet3578093091675_frmLogin_preshow_seq0": {
+        "id": "p2kwiet3578093091675_frmLogin_preshow_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_preshow_402643578093095057",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmLogin.tbxLogin.text=\"\";\n frmLogin.tbxPassword.text=\"\";"
+        }, {
+            "id": "customcode_preshow_569983578093093191",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnPostShowLogin",
+            "display": "eventOnPostShowLogin",
+            "inputparams": []
+        }]
+    }
+}

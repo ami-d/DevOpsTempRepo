@@ -1,0 +1,25 @@
+{
+    "p2kwiet3578093094322_popupMissedWeeks_init_seq0": {
+        "id": "p2kwiet3578093094322_popupMissedWeeks_init_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_init_941423578093091649",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "isMissedWeekPopupShowed=true;"
+        }, {
+            "id": "customcode_init_407363578093096319",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "loadMissedWeekData",
+            "display": "loadMissedWeekData",
+            "inputparams": []
+        }]
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "p2kwiet3578093092761_vbox1388753862174093_onClick_seq0": {
+        "id": "p2kwiet3578093092761_vbox1388753862174093_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "context",
+            "value": "context"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_33550357809309129",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnClickAddTimeFromSegmentEdit",
+            "display": "eventOnClickAddTimeFromSegmentEdit",
+            "inputparams": []
+        }]
+    }
+}

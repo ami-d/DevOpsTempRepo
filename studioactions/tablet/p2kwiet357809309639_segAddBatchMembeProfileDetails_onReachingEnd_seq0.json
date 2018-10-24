@@ -1,0 +1,12 @@
+{
+    "p2kwiet357809309639_segAddBatchMembeProfileDetails_onReachingEnd_seq0": {
+        "id": "p2kwiet357809309639_segAddBatchMembeProfileDetails_onReachingEnd_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": []
+    }
+}

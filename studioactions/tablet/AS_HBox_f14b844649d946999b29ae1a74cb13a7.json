@@ -1,0 +1,18 @@
+{
+    "AS_HBox_f14b844649d946999b29ae1a74cb13a7": {
+        "id": "AS_HBox_f14b844649d946999b29ae1a74cb13a7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTallyMeetingCashout",
+            "type": "forms",
+            "platform": "",
+            "KUID": "p2kwiet3578093092425"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

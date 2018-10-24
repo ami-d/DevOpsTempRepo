@@ -1,0 +1,118 @@
+function addWidgetspopupEditMemberProfile() {
+    var hbox1415357248875 = new kony.ui.Box({
+        "id": "hbox1415357248875",
+        "isVisible": true,
+        "orientation": constants.BOX_LAYOUT_HORIZONTAL,
+        "position": constants.BOX_POSITION_AS_NORMAL
+    }, {
+        "containerWeight": 100,
+        "layoutAlignment": constants.BOX_LAYOUT_ALIGN_FROM_LEFT,
+        "layoutType": constants.CONTAINER_LAYOUT_BOX,
+        "margin": [0, 0, 0, 0],
+        "marginInPixel": false,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false,
+        "percent": true,
+        "vExpand": false,
+        "widgetAlignment": constants.WIDGET_ALIGN_TOP_LEFT
+    }, {});
+    var vbox1415357248876 = new kony.ui.Box({
+        "id": "vbox1415357248876",
+        "isVisible": true,
+        "orientation": constants.BOX_LAYOUT_VERTICAL
+    }, {
+        "containerWeight": 100,
+        "layoutType": constants.CONTAINER_LAYOUT_BOX,
+        "margin": [0, 0, 0, 0],
+        "marginInPixel": false,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false,
+        "vExpand": false,
+        "widgetAlignment": constants.WIDGET_ALIGN_TOP_LEFT
+    }, {});
+    var editMemberProfileSegment = new kony.ui.SegmentedUI2({
+        "data": [{
+            "lblEdit": kony.i18n.getLocalizedString("strEditProfile")
+        }, {
+            "lblEdit": kony.i18n.getLocalizedString("strChangeMemberStatus")
+        }, {
+            "lblEdit": kony.i18n.getLocalizedString("strChangeTypeToLifetime")
+        }, {
+            "lblEdit": kony.i18n.getLocalizedString("strChangeStartWeight")
+        }],
+        "groupCells": false,
+        "id": "editMemberProfileSegment",
+        "isVisible": true,
+        "needPageIndicator": true,
+        "onRowClick": p2kwiet3578093093898_editMemberProfileSegment_onRowClick_seq0,
+        "retainSelection": false,
+        "rowFocusSkin": "selectedRowBackgroundColor",
+        "rowSkin": "seg2Normal",
+        "rowTemplate": vbox357809309861,
+        "screenLevelWidget": false,
+        "scrollingEvents": {},
+        "sectionHeaderSkin": "seg2Header",
+        "selectionBehavior": constants.SEGUI_DEFAULT_BEHAVIOR,
+        "separatorColor": "efeff400",
+        "separatorRequired": true,
+        "separatorThickness": 1,
+        "showScrollbars": false,
+        "viewConfig": {},
+        "viewType": constants.SEGUI_VIEW_TYPE_TABLEVIEW,
+        "widgetDataMap": {
+            "lblEdit": "lblEdit"
+        },
+        "widgetSkin": "segWhite"
+    }, {
+        "containerHeightReference": constants.CONTAINER_HEIGHT_BY_FORM_REFERENCE,
+        "containerWeight": 100,
+        "layoutAlignment": constants.BOX_LAYOUT_ALIGN_FROM_LEFT,
+        "margin": [0, 0, 0, 0],
+        "marginInPixel": false,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false,
+        "widgetAlignment": constants.WIDGET_ALIGN_TOP_LEFT
+    }, {
+        "bounces": true,
+        "editStyle": constants.SEGUI_EDITING_STYLE_NONE,
+        "enableDictionary": false,
+        "indicator": constants.SEGUI_NONE,
+        "progressIndicatorColor": constants.PROGRESS_INDICATOR_COLOR_WHITE,
+        "searchCriteria": constants.SEGUI_SEARCH_CRITERIA_STARTSWITH,
+        "showProgressIndicator": true
+    });
+    vbox1415357248876.add(editMemberProfileSegment);
+    hbox1415357248875.add(vbox1415357248876);
+    popupEditMemberProfile.add(hbox1415357248875);
+};
+
+function popupEditMemberProfileGlobals() {
+    popupEditMemberProfile = new kony.ui.Popup({
+        "addWidgets": addWidgetspopupEditMemberProfile,
+        "id": "popupEditMemberProfile",
+        "isModal": false,
+        "skin": "frm",
+        "transparencyBehindThePopup": 100
+    }, {
+        "containerHeightReference": constants.CONTAINER_HEIGHT_BY_FORM_REFERENCE,
+        "containerWeight": 50,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "bounces": true,
+        "configureExtendTop": false,
+        "extendTop": false,
+        "footerOverlap": false,
+        "headerOverlap": false,
+        "inTransitionConfig": {
+            "transitionDirection": "none",
+            "transitionEffect": "none"
+        },
+        "inputAccessoryViewType": constants.FORM_INPUTACCESSORYVIEW_DEFAULT,
+        "outTransitionConfig": {
+            "transitionDirection": "none",
+            "transitionEffect": "none"
+        },
+        "popupStyle": constants.POPUP_TYPE_NATIVE_STYLE
+    });
+};

@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093094237_vboxDoneImage_onClick_seq0": {
+        "id": "p2kwiet3578093094237_vboxDoneImage_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_96876357809309187",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonClickVboxDoneMemberStatus",
+            "display": "eventonClickVboxDoneMemberStatus",
+            "inputparams": []
+        }]
+    }
+}

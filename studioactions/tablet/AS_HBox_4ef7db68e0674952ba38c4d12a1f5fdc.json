@@ -1,0 +1,18 @@
+{
+    "AS_HBox_4ef7db68e0674952ba38c4d12a1f5fdc": {
+        "id": "AS_HBox_4ef7db68e0674952ba38c4d12a1f5fdc",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_19ba8daeeeeb473c8c09b482f362f1f4",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "evenOnClickOffersRegion",
+            "display": "evenOnClickOffersRegion",
+            "inputparams": []
+        }]
+    }
+}

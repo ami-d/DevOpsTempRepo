@@ -1,0 +1,20 @@
+{
+    "AS_VBox_0ada088895354dabb0c253887015df8a": {
+        "id": "AS_VBox_0ada088895354dabb0c253887015df8a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_0b84af8915b549299ebf6283cb51af7c",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "dismissPriceOverrideReasonPopup",
+            "display": "dismissPriceOverrideReasonPopup",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

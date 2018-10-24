@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093091187_vboxSearchIcon_onClick_seq0": {
+        "id": "p2kwiet3578093091187_vboxSearchIcon_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_804433578093095091",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnClickSearchRefferalIcon",
+            "display": "eventOnClickSearchRefferalIcon",
+            "inputparams": []
+        }]
+    }
+}

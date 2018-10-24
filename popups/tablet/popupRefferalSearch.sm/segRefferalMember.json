@@ -1,0 +1,159 @@
+{
+    "DNDConfig": null,
+    "_data_": [],
+    "_enabled_": false,
+    "_indicator_": "none",
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "seg2Normal",
+    "alternaterowskin": "s41f19dee8974694aa2732e5ddaf1926",
+    "android": {
+        "@class": "com.kony.gen.viz.model.container.property.segment2.AndroidSegment2Property",
+        "psp": {
+            "dockSectionHeaders": false
+        },
+        "render": true,
+        "viewConfig": {
+            "coverflowConfig": {
+                "isCircular": true,
+                "projectionAngle": 60
+            }
+        },
+        "viewType": "tableview"
+    },
+    "canUpdateUI": true,
+    "containerheightreference": 2,
+    "containerweight": 100,
+    "context": {
+        "channel": "mobile",
+        "formID": "AdvancedWidgetsSegements",
+        "templateType": "segments",
+        "topLevelBox": false
+    },
+    "counter": 3,
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "p2kwiet3578093094848",
+    "groupcells": false,
+    "hasSections": false,
+    "hiddencolumns": {
+        "MemberID": "text",
+        "RegNumber": "text"
+    },
+    "id": "segRefferalMember",
+    "ide_onRowClick": "p2kwiet3578093094846_segRefferalMember_onRowClick_seq0",
+    "info": null,
+    "ipad": {
+        "@class": "com.kony.gen.viz.model.container.property.segment2.IPadSegment2Property",
+        "psp": {
+            "bounces": true,
+            "editStyle": "none",
+            "enableDictionary": false,
+            "progressIndicatorColor": "white",
+            "searchCriteria": 1,
+            "showProgressIndicator": true
+        },
+        "render": true,
+        "viewConfig": {
+            "coverflowConfig": {}
+        },
+        "viewType": "tableview"
+    },
+    "isvisible": true,
+    "kuid": "p2kwiet3578093094843",
+    "layoutalignment": 3,
+    "margininpixel": false,
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "paddinginpixel": false,
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "vbox265694744305104",
+    "pf": "popupRefferalSearch",
+    "retainselection": false,
+    "rowTemplateId": "p2kwiet3578093094848",
+    "rowcounter": 2,
+    "rowfocusskin": "s629f2e2fa03499f85f6395ac90391b7",
+    "rowskin": "s1a119b7ccb74518b0d5da08d03c6686",
+    "screenlevelwidget": false,
+    "scrollingevents": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s22ca03d7eb641fd8c2d0f5a47d8ecfb",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "selectionbehaviorconfig": {},
+    "separatorcolor": "c9c9c800",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "spa": {
+        "@class": "com.kony.gen.viz.model.container.property.segment2.SPASegment2Property"
+    },
+    "spaandroidtablet": {
+        "@class": "com.kony.gen.viz.model.container.property.segment2.SPAAndroidTabletSegment2Property",
+        "render": true
+    },
+    "spaipad": {
+        "@class": "com.kony.gen.viz.model.container.property.segment2.SPAIPadSegment2Property",
+        "render": true
+    },
+    "spawindowstablet": {
+        "@class": "com.kony.gen.viz.model.container.property.segment2.SPAWindowsTabletSegment2Property",
+        "render": true
+    },
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 1,
+    "widgetdatamap": {
+        "hbox265694744309009": "hbox265694744309009",
+        "lblsegCity": "lblsegCity",
+        "lblsegFirstName": "lblsegFirstName",
+        "lblsegLastName": "lblsegLastName",
+        "lblsegPhone": "lblsegPhone",
+        "lblsegState": "lblsegState",
+        "vbox265694744309011": "vbox265694744309011",
+        "vbox265694744309015": "vbox265694744309015",
+        "vbox265694744309019": "vbox265694744309019",
+        "vbox265694744309023": "vbox265694744309023",
+        "vbox265694744309027": "vbox265694744309027",
+        "vbox265694744317302": "vbox265694744317302",
+        "vbox265694744317303": "vbox265694744317303",
+        "vbox265694744317304": "vbox265694744317304",
+        "vbox265694744317305": "vbox265694744317305",
+        "vbox265694744317306": "vbox265694744317306"
+    },
+    "windows8": {
+        "@class": "com.kony.gen.viz.model.container.property.segment2.Windows8Segment2Property",
+        "_margin_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "margin": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "marginInPixel": false,
+        "render": true
+    }
+}

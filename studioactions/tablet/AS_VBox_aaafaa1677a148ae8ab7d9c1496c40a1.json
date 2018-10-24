@@ -1,0 +1,18 @@
+{
+    "AS_VBox_aaafaa1677a148ae8ab7d9c1496c40a1": {
+        "id": "AS_VBox_aaafaa1677a148ae8ab7d9c1496c40a1",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_02b9c0f8f1174a52a9c9f2a58fd5ddac",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonClickvboxDoneImagePriceOverrideReasonPopup",
+            "display": "eventonClickvboxDoneImagePriceOverrideReasonPopup",
+            "inputparams": []
+        }]
+    }
+}

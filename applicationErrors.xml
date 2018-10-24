@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project name="MEGDevelopment" path="/Users/praveenkalal/Downloads/MEGDevelopment">
+    <channel type="mobile"/>
+    <channel type="tablet">
+        <container file="frmEnrollNewMemberPayment.kl" path="forms/tablet/" name="frmEnrollNewMemberPayment" type="forms">
+            <specialcharacters>lbl_ProcessMember_SubHeader_lbl2</specialcharacters>
+            <specialcharacters>lbl_ProcessMember_subHeader_1</specialcharacters>
+            <specialcharacters>lbl_ProcessMember_subSubHeader</specialcharacters>
+        </container>
+        <container file="frmDirectSaleProductList.kl" path="forms/tablet/" name="frmDirectSaleProductList" type="forms">
+            <specialcharacters>lbl_ProcessMember_subSubHeader</specialcharacters>
+            <specialcharacters>lbl_ProcessMember_SubHeader_lbl2</specialcharacters>
+            <specialcharacters>lbl_ProcessMember_subHeader_1</specialcharacters>
+        </container>
+        <container file="frmCheckout.kl" path="forms/tablet/" name="frmCheckout" type="forms">
+            <specialcharacters>lbl_ProcessMember_SubHeader_lbl2</specialcharacters>
+            <specialcharacters>lbl_ProcessMember_subHeader_1</specialcharacters>
+        </container>
+        <container file="frmViewMemberProfile.kl" path="forms/tablet/" name="frmViewMemberProfile" type="forms">
+            <specialcharacters>lbl_ProcessMember_notes</specialcharacters>
+        </container>
+        <container file="frmAddAndWeighMemberTransaction.kl" path="forms/tablet/" name="frmAddAndWeighMemberTransaction" type="forms">
+            <specialcharacters>lbl_ProcessMember_subSubHeader</specialcharacters>
+            <specialcharacters>lbl_ProcessMember_SubHeader_lbl2</specialcharacters>
+            <specialcharacters>lbl_ProcessMember_subHeader_1</specialcharacters>
+        </container>
+    </channel>
+    <channel type="desktop"/>
+    <keywordSkinID>titleBar</keywordSkinID>
+</project>

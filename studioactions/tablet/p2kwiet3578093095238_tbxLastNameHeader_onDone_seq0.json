@@ -1,0 +1,21 @@
+{
+    "p2kwiet3578093095238_tbxLastNameHeader_onDone_seq0": {
+        "id": "p2kwiet3578093095238_tbxLastNameHeader_onDone_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "changedtext",
+            "value": "changedtext"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onDone_757173578093097141",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "getSimpleSearchData",
+            "display": "getSimpleSearchData",
+            "inputparams": []
+        }]
+    }
+}

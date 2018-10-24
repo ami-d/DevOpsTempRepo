@@ -1,0 +1,16 @@
+{
+    "p2kwiet3578093091541_txtNotes_onDone_seq0": {
+        "id": "p2kwiet3578093091541_txtNotes_onDone_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onDone_47297357809309434",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "isNoteUpdated = true;"
+        }]
+    }
+}

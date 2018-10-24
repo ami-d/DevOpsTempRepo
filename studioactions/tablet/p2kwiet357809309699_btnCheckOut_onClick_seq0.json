@@ -1,0 +1,18 @@
+{
+    "p2kwiet357809309699_btnCheckOut_onClick_seq0": {
+        "id": "p2kwiet357809309699_btnCheckOut_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_202593578093097588",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonClickCheckOut",
+            "display": "eventonClickCheckOut",
+            "inputparams": []
+        }]
+    }
+}

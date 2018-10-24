@@ -1,0 +1,27 @@
+{
+    "AS_Popup_ce60218950344b0e83b8c6ae4a7f4631": {
+        "id": "AS_Popup_ce60218950344b0e83b8c6ae4a7f4631",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "popupAWSPriceOverrideReason",
+            "type": "popups",
+            "platform": "",
+            "KUID": "a29c5b4fb20145cbb3caa87d7fdad732"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___3cf38dde582f4a09acbe30c4e7372540",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "bindReasonPicker",
+            "display": "bindReasonPicker",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

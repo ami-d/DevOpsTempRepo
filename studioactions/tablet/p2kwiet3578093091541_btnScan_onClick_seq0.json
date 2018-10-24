@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093091541_btnScan_onClick_seq0": {
+        "id": "p2kwiet3578093091541_btnScan_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_556733578093099168",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "startBarcodeForSubID",
+            "display": "startBarcodeForSubID",
+            "inputparams": []
+        }]
+    }
+}

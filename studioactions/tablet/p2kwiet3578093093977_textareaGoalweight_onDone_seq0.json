@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093093977_textareaGoalweight_onDone_seq0": {
+        "id": "p2kwiet3578093093977_textareaGoalweight_onDone_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onDone_266263578093095019",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onDoneTextChangeGoalWeight",
+            "display": "onDoneTextChangeGoalWeight",
+            "inputparams": []
+        }]
+    }
+}

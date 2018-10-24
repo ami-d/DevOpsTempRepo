@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093091416_vboxStateSection_onClick_seq0": {
+        "id": "p2kwiet3578093091416_vboxStateSection_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_638373578093097085",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onPopupOpenStateInReEnroll",
+            "display": "onPopupOpenStateInReEnroll",
+            "inputparams": []
+        }]
+    }
+}

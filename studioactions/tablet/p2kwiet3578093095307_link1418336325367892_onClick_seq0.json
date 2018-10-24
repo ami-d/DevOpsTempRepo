@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093095307_link1418336325367892_onClick_seq0": {
+        "id": "p2kwiet3578093095307_link1418336325367892_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_857273578093093775",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "showMissedWeeks",
+            "display": "showMissedWeeks",
+            "inputparams": []
+        }]
+    }
+}

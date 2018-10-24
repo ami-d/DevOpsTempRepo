@@ -1,0 +1,31 @@
+{
+    "AS_Form_5c12d72b057545f6aae2c8791b5c1d0b": {
+        "id": "AS_Form_5c12d72b057545f6aae2c8791b5c1d0b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "contextObj": {
+            "name": "frmPreRegAddMember",
+            "type": "forms",
+            "platform": null,
+            "KUID": "f68c3a90f8924603858fdf1a10ad9053"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_postShow_6f9eacf51b7f4e35a66faed646579038",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "boEnrollMember.generateDeviceLevelMemberID();"
+        }, {
+            "id": "INVOKE_FUNCTION__ide_postShow_729fb68d9a3740f8b492c8d79b11f037",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "generateIncrementalMemberID",
+            "display": "generateIncrementalMemberID",
+            "inputparams": []
+        }]
+    }
+}

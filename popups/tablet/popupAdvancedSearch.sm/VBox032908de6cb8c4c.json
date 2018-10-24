@@ -1,0 +1,38 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizVBox",
+    "DNDConfig": null,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_position_": 3,
+    "_skin_": "sf0db4431b4c4c36961b6f1c2ba1dbbc",
+    "allboxes": [],
+    "canUpdateUI": true,
+    "children": [
+        "hboxCityState",
+        "hboxMeetingLocation"
+    ],
+    "containerweight": 100,
+    "contextmenu": null,
+    "id": "VBox032908de6cb8c4c",
+    "info": null,
+    "isvisible": true,
+    "kuid": "08ff9c0f52734b21bb008c186015714d",
+    "layouttype": 0,
+    "name": "kony.ui.Box",
+    "parent": "HBox0796c3984cdf342",
+    "pf": "popupAdvancedSearch",
+    "wType": "VBox",
+    "widgetalignment": 1
+}

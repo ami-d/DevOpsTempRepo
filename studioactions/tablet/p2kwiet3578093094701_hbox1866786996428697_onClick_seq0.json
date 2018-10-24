@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093094701_hbox1866786996428697_onClick_seq0": {
+        "id": "p2kwiet3578093094701_hbox1866786996428697_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_636643578093094246",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonClickvbocHeightSectionInPreactivation",
+            "display": "eventonClickvbocHeightSectionInPreactivation",
+            "inputparams": []
+        }]
+    }
+}

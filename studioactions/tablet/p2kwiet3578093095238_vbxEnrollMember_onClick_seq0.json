@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093095238_vbxEnrollMember_onClick_seq0": {
+        "id": "p2kwiet3578093095238_vbxEnrollMember_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_778293578093097644",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnClickPlusIconHeader",
+            "display": "eventOnClickPlusIconHeader",
+            "inputparams": []
+        }]
+    }
+}

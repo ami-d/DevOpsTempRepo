@@ -1,0 +1,94 @@
+{
+    "DNDConfig": null,
+    "_base64_": null,
+    "_enabled_": false,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s557c23cddd64919b6a59b715863a5e5",
+    "_src_": "icn_hope_aerrow.png",
+    "_text_": "icn_hope_aerrow.png",
+    "android": {
+        "@class": "com.kony.gen.viz.model.component.property.image2.AndroidImage2Property",
+        "render": true
+    },
+    "canUpdateUI": true,
+    "containerweight": 5,
+    "contentalignment": 5,
+    "hexpand": false,
+    "id": "image212443534675486836",
+    "imagescalemode": 1,
+    "info": null,
+    "ipad": {
+        "@class": "com.kony.gen.viz.model.component.property.image2.IPadImage2Property",
+        "_padding_": [
+            0,
+            0,
+            0,
+            6
+        ],
+        "padding": [
+            0,
+            0,
+            0,
+            6
+        ],
+        "paddingInPixel": true,
+        "psp": {
+            "glossyEffect": 0
+        },
+        "render": true
+    },
+    "isvisible": true,
+    "kuid": "p2kwiet357809309938",
+    "margininpixel": false,
+    "name": "kony.ui.Image2",
+    "paddinginpixel": false,
+    "parent": "hboxSubType",
+    "pf": "frmEditMemberProfile",
+    "spa": {
+        "@class": "com.kony.gen.viz.model.component.property.image2.SPAImage2Property"
+    },
+    "spaandroidtablet": {
+        "@class": "com.kony.gen.viz.model.component.property.image2.SPAAndroidTabletImage2Property",
+        "render": true
+    },
+    "spaipad": {
+        "@class": "com.kony.gen.viz.model.component.property.image2.SPAIPadImage2Property",
+        "render": true
+    },
+    "spawindowstablet": {
+        "@class": "com.kony.gen.viz.model.component.property.image2.SPAWindowsTabletImage2Property",
+        "render": true
+    },
+    "srcType": 1,
+    "vexpand": false,
+    "wType": "Image",
+    "widgetalignment": 5,
+    "windows8": {
+        "@class": "com.kony.gen.viz.model.component.property.image2.Windows8Image2Property",
+        "_margin_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "margin": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "marginInPixel": false,
+        "render": true
+    }
+}

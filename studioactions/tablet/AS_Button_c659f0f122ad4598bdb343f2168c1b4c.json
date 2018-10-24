@@ -1,0 +1,24 @@
+{
+    "AS_Button_c659f0f122ad4598bdb343f2168c1b4c": {
+        "id": "AS_Button_c659f0f122ad4598bdb343f2168c1b4c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmATWTallyMeetingReport",
+            "type": "forms",
+            "platform": null,
+            "KUID": "36eb28026e8d44a4836fcb8c66b2fec8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_dbe997e978874c2998976299ce398482",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onclickSubmitATWTallyReport",
+            "display": "onclickSubmitATWTallyReport",
+            "inputparams": []
+        }]
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "p2kwiet3578093091675_btnLogin_onClick_seq0": {
+        "id": "p2kwiet3578093091675_btnLogin_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_544313578093097825",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnClickLogin",
+            "display": "eventOnClickLogin",
+            "inputparams": [],
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION___b615e29e16c44506a3a4901b17546123",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "validateApplicationVersion",
+            "display": "validateApplicationVersion",
+            "inputparams": [{
+                "name": "fromLogin",
+                "value": "\"true\""
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

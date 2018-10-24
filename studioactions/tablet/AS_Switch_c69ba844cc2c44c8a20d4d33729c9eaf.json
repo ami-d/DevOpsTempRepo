@@ -1,0 +1,19 @@
+{
+    "AS_Switch_d7e51182ecd3454185eb20c44ab8bcb3": {
+        "id": "AS_Switch_d7e51182ecd3454185eb20c44ab8bcb3",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Switch_c69ba844cc2c44c8a20d4d33729c9eaf",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEnrollNewMember",
+            "type": "forms",
+            "platform": "",
+            "KUID": "p2kwiet3578093091187"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "p2kwiet3578093095117_vbox13932202681386599_onClick_seq0": {
+        "id": "p2kwiet3578093095117_vbox13932202681386599_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_930633578093093262",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "ClearVariables();\n glbMemberId =0;\n if(isSearchPage)\n {\n isSearchPage=false;\n frmMemberProfileSearch.show();\n }\n else\n {\n if(isPMFromHomeScreen == true)\n {\n isPMFromHomeScreen =false;\n }\n evenOnPostShowHomeScreen();\n //frmHomeScreen.show();\n }\n isLifetimeInChangeMemberType = false;"
+        }]
+    }
+}

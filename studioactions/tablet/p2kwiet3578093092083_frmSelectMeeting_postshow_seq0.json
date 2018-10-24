@@ -1,0 +1,67 @@
+{
+    "p2kwiet3578093092083_frmSelectMeeting_postshow_seq0": {
+        "id": "p2kwiet3578093092083_frmSelectMeeting_postshow_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_postshow_709743578093098829",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "getAllProductData",
+            "display": "getAllProductData",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_686673578093098246",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnPostShowSelectMeetingForm",
+            "display": "eventOnPostShowSelectMeetingForm",
+            "inputparams": [],
+            "disabled": false
+        }, {
+            "id": "customcode_postshow_385763578093091478",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "createMilestoneLookUp",
+            "display": "createMilestoneLookUp",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_608833578093099208",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "setDataFromAppSetting",
+            "display": "setDataFromAppSetting",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_94240357809309610",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "createStateLookUp",
+            "display": "createStateLookUp",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_561143578093093719",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "setHeight",
+            "display": "setHeight",
+            "inputparams": []
+        }, {
+            "id": "INVOKE_FUNCTION___d9850326d10a439a8b31c298f26dbe41",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "ingenicoLogin",
+            "display": "ingenicoLogin",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }, {
+            "id": "ADD_SNIPPET__0c0b3dc7e3314833a1b6f918ccfeb1af",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "glbIsWeekChanged = false;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

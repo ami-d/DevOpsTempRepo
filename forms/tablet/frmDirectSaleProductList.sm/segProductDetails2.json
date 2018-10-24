@@ -1,0 +1,155 @@
+{
+    "DNDConfig": null,
+    "_data_": [],
+    "_enabled_": false,
+    "_indicator_": "none",
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "seg2Normal",
+    "android": {
+        "@class": "com.kony.gen.viz.model.container.property.segment2.AndroidSegment2Property",
+        "psp": {
+            "dockSectionHeaders": false
+        },
+        "render": true,
+        "viewConfig": {
+            "coverflowConfig": {
+                "isCircular": true,
+                "projectionAngle": 60
+            }
+        },
+        "viewType": "tableview"
+    },
+    "canUpdateUI": true,
+    "containerheightreference": 1,
+    "containerweight": 100,
+    "context": {
+        "channel": "mobile",
+        "formID": "AdvancedWidgetsSegements",
+        "templateType": "segments",
+        "topLevelBox": false
+    },
+    "counter": 3,
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "p2kwiet357809309815",
+    "groupcells": false,
+    "hasSections": false,
+    "hiddencolumns": {
+        "lblFullDesc3": "text",
+        "lblIsPrepaymentPlan": "text",
+        "lblProductMaxQuantity": "text",
+        "lblProductTax": "text",
+        "lblSelectedProductID3": "text",
+        "lblTaxRate": "text"
+    },
+    "id": "segProductDetails2",
+    "ide_onRowClick": "p2kwiet357809309808_segProductDetails2_onRowClick_seq0",
+    "info": null,
+    "ipad": {
+        "@class": "com.kony.gen.viz.model.container.property.segment2.IPadSegment2Property",
+        "psp": {
+            "bounces": false,
+            "editStyle": "none",
+            "enableDictionary": false,
+            "progressIndicatorColor": "white",
+            "searchCriteria": 1,
+            "showProgressIndicator": true
+        },
+        "render": true,
+        "viewConfig": {
+            "coverflowConfig": {}
+        },
+        "viewType": "tableview"
+    },
+    "isvisible": true,
+    "kuid": "p2kwiet357809309779",
+    "layoutalignment": 3,
+    "margininpixel": false,
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "paddinginpixel": false,
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "vbox12443534677807209",
+    "pf": "frmDirectSaleProductList",
+    "retainselection": false,
+    "rowTemplateId": "p2kwiet357809309815",
+    "rowcounter": 2,
+    "rowfocusskin": "s8ffe7a1417d4b7489f63eb6fac1b803",
+    "rowskin": "sc0ad484ac1c4bf59dcf9a3b48daafcd",
+    "screenlevelwidget": false,
+    "scrollingevents": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s4387742b51240ebb076008f26cbedeb",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "selectionbehaviorconfig": {},
+    "separatorcolor": "efeff400",
+    "separatorrequired": true,
+    "separatorthickness": 15,
+    "showscrollbars": false,
+    "spa": {
+        "@class": "com.kony.gen.viz.model.container.property.segment2.SPASegment2Property"
+    },
+    "spaandroidtablet": {
+        "@class": "com.kony.gen.viz.model.container.property.segment2.SPAAndroidTabletSegment2Property",
+        "render": true
+    },
+    "spaipad": {
+        "@class": "com.kony.gen.viz.model.container.property.segment2.SPAIPadSegment2Property",
+        "render": true
+    },
+    "spawindowstablet": {
+        "@class": "com.kony.gen.viz.model.container.property.segment2.SPAWindowsTabletSegment2Property",
+        "render": true
+    },
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 1,
+    "widgetdatamap": {
+        "hbox12443534679326614": "hbox12443534679326614",
+        "hbox12443534679326618": "hbox12443534679326618",
+        "hbox12443534679326622": "hbox12443534679326622",
+        "img3": "img3",
+        "lblDesc3": "lblDesc3",
+        "lblPrice3": "lblPrice3",
+        "lblProdID3": "lblProdID3",
+        "vbox12443534679326616": "vbox12443534679326616",
+        "vbox12443534679326624": "vbox12443534679326624"
+    },
+    "windows8": {
+        "@class": "com.kony.gen.viz.model.container.property.segment2.Windows8Segment2Property",
+        "_margin_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "margin": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "marginInPixel": false,
+        "render": true
+    }
+}

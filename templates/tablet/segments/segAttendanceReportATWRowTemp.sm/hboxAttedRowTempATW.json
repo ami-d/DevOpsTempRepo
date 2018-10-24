@@ -1,0 +1,82 @@
+{
+    "DNDConfig": null,
+    "_enabled_": false,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_position_": 3,
+    "_resize_": true,
+    "_skin_": "scfed8734cbe491a845f2b07b5f6efee",
+    "allboxes": [],
+    "android": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.AndroidHBoxProperty",
+        "_position_": 3,
+        "position": 3,
+        "render": true
+    },
+    "borderCollapse": false,
+    "canUpdateUI": true,
+    "children": [
+        "vbox1866786996453096",
+        "vbox18667869961623637",
+        "vbox1866786996453100",
+        "vbox1866786996453104",
+        "vbox1866786996453108",
+        "vbox18667869961323748",
+        "vbox03e1ed5dfad1b4c"
+    ],
+    "containerId": true,
+    "containerweight": 100,
+    "id": "hboxAttedRowTempATW",
+    "info": null,
+    "ipad": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.IPadHBoxProperty",
+        "_position_": 3,
+        "position": 3,
+        "render": true
+    },
+    "isTemplate": true,
+    "isvisible": true,
+    "kuid": "59950b3f15e64fe19c46abd3aa614cfe",
+    "layoutalignment": 3,
+    "margininpixel": false,
+    "name": "kony.ui.Box",
+    "paddinginpixel": false,
+    "parent": "segAttendanceReportATWRowTemp",
+    "pf": "segAttendanceReportATWRowTemp",
+    "spa": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.SPAHBoxProperty"
+    },
+    "spaandroidtablet": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.SPAAndroidTabletHBoxProperty",
+        "render": true
+    },
+    "spaipad": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.SPAIPadHBoxProperty",
+        "render": true
+    },
+    "spawindowstablet": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.SPAWindowsTabletHBoxProperty",
+        "render": true
+    },
+    "templateType": "forms",
+    "wType": "HBox",
+    "widgetalignment": 1,
+    "windows8": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.Windows8HBoxProperty",
+        "_position_": 3,
+        "position": 3,
+        "render": true
+    }
+}

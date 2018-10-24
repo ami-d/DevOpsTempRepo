@@ -1,0 +1,1 @@
+function p2kwiet3578093092083_segMeetingsList_onRowClick_seq0(eventobject, sectionNumber, rowNumber) {}

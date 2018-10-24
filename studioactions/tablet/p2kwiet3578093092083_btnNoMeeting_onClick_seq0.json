@@ -1,0 +1,24 @@
+{
+    "p2kwiet3578093092083_btnNoMeeting_onClick_seq0": {
+        "id": "p2kwiet3578093092083_btnNoMeeting_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_170323578093095890",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "createMilestoneLookUp",
+            "display": "createMilestoneLookUp",
+            "inputparams": []
+        }, {
+            "id": "customcode_onClick_281933578093097794",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnClickNoMeeting",
+            "display": "eventOnClickNoMeeting",
+            "inputparams": []
+        }]
+    }
+}

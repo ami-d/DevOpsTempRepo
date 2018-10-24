@@ -1,0 +1,16 @@
+{
+    "p2kwiet3578093091276_vboxFooterMemberSection_onClick_seq0": {
+        "id": "p2kwiet3578093091276_vboxFooterMemberSection_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_72993357809309820",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "isMissedWeekPopupShowed=false;\n popupMissedWeeks.destroy();"
+        }]
+    }
+}

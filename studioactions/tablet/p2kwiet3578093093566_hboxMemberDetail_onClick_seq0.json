@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093093566_hboxMemberDetail_onClick_seq0": {
+        "id": "p2kwiet3578093093566_hboxMemberDetail_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_382583578093099894",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonClickhboxEmpSearchSection",
+            "display": "eventonClickhboxEmpSearchSection",
+            "inputparams": []
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "p2kwiet3578093091089_vboxCancelImage_onClick_seq0": {
+        "id": "p2kwiet3578093091089_vboxCancelImage_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_2503578093094688",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmViewMemberProfile.show();\n if(glbLinkType == \"None\" || glbLinkType == \"\" || glbLinkType == \"Unlink\")\n frmEditMemberProfile.btnLinkUnlink.text = \"Link\";\n else \n frmEditMemberProfile.btnLinkUnlink.text = \"Unlink\";\n frmCheckout.lblSubType.text = \"\";"
+        }, {
+            "id": "customcode_onClick_274803578093093238",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "clearEditMemberFields",
+            "display": "clearEditMemberFields",
+            "inputparams": [{
+                "name": "inputVal",
+                "value": "false"
+            }]
+        }]
+    }
+}

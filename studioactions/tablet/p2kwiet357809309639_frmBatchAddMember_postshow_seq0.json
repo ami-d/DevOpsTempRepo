@@ -1,0 +1,31 @@
+{
+    "p2kwiet357809309639_frmBatchAddMember_postshow_seq0": {
+        "id": "p2kwiet357809309639_frmBatchAddMember_postshow_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_postshow_699933578093093660",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "boEnrollMember.generateDeviceLevelMemberID();"
+        }, {
+            "id": "customcode_postshow_619883578093097751",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "generateIncrementalMemberID",
+            "display": "generateIncrementalMemberID",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_647373578093094350",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onPostShowfrmAddBatchMember",
+            "display": "onPostShowfrmAddBatchMember",
+            "inputparams": []
+        }]
+    }
+}

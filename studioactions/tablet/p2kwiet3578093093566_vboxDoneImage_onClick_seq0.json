@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093093566_vboxDoneImage_onClick_seq0": {
+        "id": "p2kwiet3578093093566_vboxDoneImage_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_97033578093093973",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnClickAddTimeSaveData",
+            "display": "eventOnClickAddTimeSaveData",
+            "inputparams": []
+        }]
+    }
+}

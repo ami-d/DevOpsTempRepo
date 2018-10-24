@@ -1,0 +1,21 @@
+{
+    "p2kwiet3578093092253_vbox12443534676066565_onClick_seq0": {
+        "id": "p2kwiet3578093092253_vbox12443534676066565_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "navigation_onClick_97693357809309702",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmHomeScreen",
+            "formKUID": "p2kwiet3578093091611",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "enableMappingEditor": true
+        }]
+    }
+}

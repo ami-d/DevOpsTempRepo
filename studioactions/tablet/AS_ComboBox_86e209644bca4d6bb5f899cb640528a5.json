@@ -1,0 +1,18 @@
+{
+    "AS_ComboBox_86e209644bca4d6bb5f899cb640528a5": {
+        "id": "AS_ComboBox_86e209644bca4d6bb5f899cb640528a5",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onSelection_a7d163e0c79c46a09da194667538b170",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnSelectionCmbLocationCityState",
+            "display": "eventOnSelectionCmbLocationCityState",
+            "inputparams": []
+        }]
+    }
+}

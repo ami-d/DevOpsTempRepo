@@ -1,0 +1,16 @@
+{
+    "p2kwiet3578093091187_vboxPayment_onClick_seq0": {
+        "id": "p2kwiet3578093091187_vboxPayment_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_160093578093091506",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//frmEnrollNewMember.imgEnrollNormal.src=\"icn_enroll_selected.png\""
+        }]
+    }
+}

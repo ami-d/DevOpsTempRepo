@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093095307_link1418336325368343_onClick_seq0": {
+        "id": "p2kwiet3578093095307_link1418336325368343_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_740043578093095721",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "makeLifeTimeMember",
+            "display": "makeLifeTimeMember",
+            "inputparams": []
+        }]
+    }
+}

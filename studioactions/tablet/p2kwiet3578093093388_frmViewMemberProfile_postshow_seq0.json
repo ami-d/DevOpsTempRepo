@@ -1,0 +1,21 @@
+{
+    "p2kwiet3578093093388_frmViewMemberProfile_postshow_seq0": {
+        "id": "p2kwiet3578093093388_frmViewMemberProfile_postshow_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_postshow_114793578093097683",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onPostShowViewMemberProfile",
+            "display": "onPostShowViewMemberProfile",
+            "inputparams": []
+        }]
+    }
+}

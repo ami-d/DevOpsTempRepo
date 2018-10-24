@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093093433_vboxAddEmail_onClick_seq0": {
+        "id": "p2kwiet3578093093433_vboxAddEmail_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_365713578093093528",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "saveEmail",
+            "display": "saveEmail",
+            "inputparams": []
+        }]
+    }
+}

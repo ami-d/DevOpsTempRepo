@@ -1,0 +1,22 @@
+{
+    "p2kwiet357809309699_vboxFooterMemberSection_onClick_seq0": {
+        "id": "p2kwiet357809309699_vboxFooterMemberSection_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_181133578093094655",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnClickMemberSectionForFlow",
+            "display": "eventOnClickMemberSectionForFlow",
+            "inputparams": []
+        }, {
+            "id": "expression_onClick_331253578093091198",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "isMissedWeekPopupShowed=false;\n popupMissedWeeks.destroy();"
+        }]
+    }
+}

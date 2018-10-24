@@ -1,0 +1,21 @@
+{
+    "p2kwiet3578093091615_vboxProductList_onClick_seq0": {
+        "id": "p2kwiet3578093091615_vboxProductList_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "context",
+            "value": "context"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_718863578093093555",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonClickCheckedInProductSale",
+            "display": "eventonClickCheckedInProductSale",
+            "inputparams": []
+        }]
+    }
+}

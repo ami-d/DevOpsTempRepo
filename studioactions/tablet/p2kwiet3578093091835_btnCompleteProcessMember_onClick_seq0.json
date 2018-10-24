@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093091835_btnCompleteProcessMember_onClick_seq0": {
+        "id": "p2kwiet3578093091835_btnCompleteProcessMember_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_422093578093098594",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "checkValidationsForCompleteTrasaction",
+            "display": "checkValidationsForCompleteTrasaction",
+            "inputparams": []
+        }]
+    }
+}

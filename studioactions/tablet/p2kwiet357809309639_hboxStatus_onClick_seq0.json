@@ -1,0 +1,18 @@
+{
+    "p2kwiet357809309639_hboxStatus_onClick_seq0": {
+        "id": "p2kwiet357809309639_hboxStatus_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_685683578093096683",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonOpenStatusPopup",
+            "display": "eventonOpenStatusPopup",
+            "inputparams": []
+        }]
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "AS_HBox_9ae2d1e12a614521b009a401353c2a81": {
+        "id": "AS_HBox_9ae2d1e12a614521b009a401353c2a81",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": []
+    }
+}

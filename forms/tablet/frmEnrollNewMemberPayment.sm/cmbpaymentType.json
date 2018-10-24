@@ -1,0 +1,121 @@
+{
+    "DNDConfig": null,
+    "_enabled_": false,
+    "_margin_": [
+        0,
+        2,
+        5,
+        2
+    ],
+    "_padding_": [
+        0,
+        3,
+        0,
+        3
+    ],
+    "_skin_": "s6b14ccb3de64c6c8b74e3f6cfd75ed6",
+    "_text_": "",
+    "android": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.AndroidComboBoxProperty",
+        "render": true
+    },
+    "canUpdateUI": true,
+    "containerweight": 82,
+    "contentalignment": 5,
+    "hexpand": true,
+    "id": "cmbpaymentType",
+    "info": null,
+    "ipad": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.IPadComboBoxProperty",
+        "_padding_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "padding": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "paddingInPixel": false,
+        "psp": {
+            "groupCells": false,
+            "viewConfig": {
+                "toggleViewConfig": {
+                    "enableTintColor": false,
+                    "equalSegments": true,
+                    "tintColor": "0000ff00",
+                    "viewStyle": 1
+                }
+            },
+            "viewType": 2
+        },
+        "render": true
+    },
+    "isvisible": true,
+    "kuid": "p2kwiet3578093091254",
+    "margininpixel": false,
+    "masterdata": [
+        [
+            "1",
+            "Cash",
+            "strCash"
+        ],
+        [
+            "13",
+            "Credit",
+            "strCredit"
+        ],
+        [
+            "2",
+            "Check",
+            "strCheck"
+        ]
+    ],
+    "name": "kony.ui.ComboBox",
+    "paddinginpixel": false,
+    "parent": "hbox12443534673065184",
+    "pf": "frmEnrollNewMemberPayment",
+    "selectedkey": "1",
+    "selectedkeyvalue": [
+        "1",
+        "Cash"
+    ],
+    "spa": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.SPAComboBoxProperty"
+    },
+    "spaandroidtablet": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.SPAAndroidTabletComboBoxProperty",
+        "render": true
+    },
+    "spaipad": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.SPAIPadComboBoxProperty",
+        "render": true
+    },
+    "spawindowstablet": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.SPAWindowsTabletComboBoxProperty",
+        "render": true
+    },
+    "vexpand": false,
+    "wType": "ComboBox",
+    "widgetalignment": 5,
+    "windows8": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.Windows8ComboBoxProperty",
+        "_margin_": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "margin": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "marginInPixel": true,
+        "render": true
+    }
+}

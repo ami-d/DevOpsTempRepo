@@ -1,0 +1,22 @@
+{
+    "p2kwiet3578093094805_btnEnroll_onClick_seq0": {
+        "id": "p2kwiet3578093094805_btnEnroll_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_267233578093098519",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "popupReEntrollOrActiveTermedMember.dismiss();"
+        }, {
+            "id": "customcode_onClick_55575357809309275",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onClickEventForReenrollTermedMember",
+            "display": "onClickEventForReenrollTermedMember",
+            "inputparams": []
+        }]
+    }
+}

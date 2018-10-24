@@ -1,0 +1,18 @@
+{
+    "AS_HBox_bce8982617c547d0a429962b905d7f8a": {
+        "id": "AS_HBox_bce8982617c547d0a429962b905d7f8a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_0ad0d0ce64804adbbcd890a48ef2bdd3",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "checkBoxToggle",
+            "display": "checkBoxToggle",
+            "inputparams": []
+        }]
+    }
+}

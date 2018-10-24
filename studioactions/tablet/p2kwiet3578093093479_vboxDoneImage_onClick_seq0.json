@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093093479_vboxDoneImage_onClick_seq0": {
+        "id": "p2kwiet3578093093479_vboxDoneImage_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_657953578093093720",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnClickSaveAddLocationData",
+            "display": "eventOnClickSaveAddLocationData",
+            "inputparams": []
+        }]
+    }
+}

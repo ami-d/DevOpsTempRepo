@@ -1,0 +1,22 @@
+{
+    "AS_VBox_c285088fe44d4b22a0c0986546803ce5": {
+        "id": "AS_VBox_c285088fe44d4b22a0c0986546803ce5",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmPreRegAddMember",
+            "type": "forms",
+            "platform": null,
+            "KUID": "f68c3a90f8924603858fdf1a10ad9053"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_02c4a768ed0749ae823bc1cafed2c5c7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "ClearVariables();\n//evenOnPostShowHomeScreen();\nfrmHomeScreen.show();"
+        }]
+    }
+}

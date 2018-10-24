@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<compositeRoot>
+    <compcategory>
+        <application desc="" id="" name="" smscode="">
+            <app-config/>
+            <services>
+                <service serviceGroup="" cachable="false" cacheduration="" groupType="" id="MemberWeightAndMilestone" type="CompositeConnector" smscode="" smsenabled="false">
+                    <service-config>
+                        <config-param name="exec_type" value="Concurrent"/>
+                        <config-param name="service" value="MemberWeight"/>
+                        <config-param name="service" value="MemberMilestone"/>
+                    </service-config>
+                    <service-input/>
+                    <service-output/>
+                </service>
+            </services>
+        </application>
+        <catname>composite</catname>
+    </compcategory>
+</compositeRoot>

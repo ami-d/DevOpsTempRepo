@@ -1,0 +1,18 @@
+{
+    "AS_Button_cfc35518a8a1415c90b05c00c6505bee": {
+        "id": "AS_Button_cfc35518a8a1415c90b05c00c6505bee",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_aa07a86d53114d5f8b11901a17d4d3e8",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onclickSubmitTallyReport",
+            "display": "onclickSubmitTallyReport",
+            "inputparams": []
+        }]
+    }
+}

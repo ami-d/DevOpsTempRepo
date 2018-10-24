@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093091089_switchParticipateSurveys_onslide_seq0": {
+        "id": "p2kwiet3578093091089_switchParticipateSurveys_onslide_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onslide_730663578093092359",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonSlideswitchParticipateSurveysEditProfile",
+            "display": "eventonSlideswitchParticipateSurveysEditProfile",
+            "inputparams": []
+        }]
+    }
+}

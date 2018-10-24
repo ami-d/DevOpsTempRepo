@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093095117_vboxEditPopup_onClick_seq0": {
+        "id": "p2kwiet3578093095117_vboxEditPopup_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_854853578093092660",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onEditProfilePopupOpen",
+            "display": "onEditProfilePopupOpen",
+            "inputparams": []
+        }]
+    }
+}

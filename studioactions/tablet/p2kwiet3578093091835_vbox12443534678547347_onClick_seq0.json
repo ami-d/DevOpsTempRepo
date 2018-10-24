@@ -1,0 +1,23 @@
+{
+    "p2kwiet3578093091835_vbox12443534678547347_onClick_seq0": {
+        "id": "p2kwiet3578093091835_vbox12443534678547347_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_153443578093096362",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "testBTDevice",
+            "display": "testBTDevice",
+            "inputparams": [{
+                "name": "isConnInBG",
+                "value": ""
+            }, {
+                "name": "isRepair"
+            }]
+        }]
+    }
+}

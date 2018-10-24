@@ -1,0 +1,18 @@
+{
+    "p2kwiet357809309808_vbox390007167166976_onClick_seq0": {
+        "id": "p2kwiet357809309808_vbox390007167166976_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_717963578093095285",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "makeCartAsEmpty",
+            "display": "makeCartAsEmpty",
+            "inputparams": []
+        }]
+    }
+}

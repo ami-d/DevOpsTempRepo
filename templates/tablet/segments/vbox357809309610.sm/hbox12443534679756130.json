@@ -1,0 +1,75 @@
+{
+    "DNDConfig": null,
+    "_enabled_": false,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_position_": 3,
+    "_resize_": true,
+    "_skin_": "scfed8734cbe491a845f2b07b5f6efee",
+    "allboxes": [],
+    "android": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.AndroidHBoxProperty",
+        "_position_": 3,
+        "position": 3,
+        "render": true
+    },
+    "borderCollapse": false,
+    "canUpdateUI": true,
+    "children": [
+        "img2",
+        "vbox12443534679756134"
+    ],
+    "containerweight": 100,
+    "id": "hbox12443534679756130",
+    "info": null,
+    "ipad": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.IPadHBoxProperty",
+        "_position_": 3,
+        "position": 3,
+        "render": true
+    },
+    "isvisible": true,
+    "kuid": "p2kwiet357809309765",
+    "layoutalignment": 3,
+    "margininpixel": false,
+    "name": "kony.ui.Box",
+    "paddinginpixel": false,
+    "parent": "vbox12443534679756124",
+    "pf": "vbox357809309610",
+    "spa": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.SPAHBoxProperty"
+    },
+    "spaandroidtablet": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.SPAAndroidTabletHBoxProperty",
+        "render": true
+    },
+    "spaipad": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.SPAIPadHBoxProperty",
+        "render": true
+    },
+    "spawindowstablet": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.SPAWindowsTabletHBoxProperty",
+        "render": true
+    },
+    "templateType": "forms",
+    "wType": "HBox",
+    "widgetalignment": 1,
+    "windows8": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.Windows8HBoxProperty",
+        "_position_": 3,
+        "position": 3,
+        "render": true
+    }
+}

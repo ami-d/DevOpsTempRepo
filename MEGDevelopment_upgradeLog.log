@@ -1,0 +1,62 @@
+This file contains the changes made to the project during upgrade to Kony Visualizer. Please verify the changes
+=======================================================================================================
+
+Upgrade Issues
+==============
+Below replacements were made in your project. Please verify these changes.
+
+frmEnrollNewMemberPayment.kl( forms/tablet/ ) : 
+'lbl_ProcessMember_subHeader_1' has been renamed to : 'lblProcessMembersubHeader1studio2'
+'lbl_ProcessMember_subSubHeader' has been renamed to : 'lblProcessMembersubSubHeaderstudio3'
+'lbl_ProcessMember_SubHeader_lbl2' has been renamed to : 'lblProcessMemberSubHeaderlbl2studio1'
+
+frmDirectSaleProductList.kl( forms/tablet/ ) : 
+'lbl_ProcessMember_subSubHeader' has been renamed to : 'lblProcessMembersubSubHeaderstudio4'
+'lbl_ProcessMember_SubHeader_lbl2' has been renamed to : 'lblProcessMemberSubHeaderlbl2studio5'
+'lbl_ProcessMember_subHeader_1' has been renamed to : 'lblProcessMembersubHeader1studio6'
+
+frmCheckout.kl( forms/tablet/ ) : 
+'lbl_ProcessMember_SubHeader_lbl2' has been renamed to : 'lblProcessMemberSubHeaderlbl2studio7'
+'lbl_ProcessMember_subHeader_1' has been renamed to : 'lblProcessMembersubHeader1studio8'
+
+frmViewMemberProfile.kl( forms/tablet/ ) : 
+'lbl_ProcessMember_notes' has been renamed to : 'lblProcessMembernotesstudio9'
+
+frmAddAndWeighMemberTransaction.kl( forms/tablet/ ) : 
+'lbl_ProcessMember_subHeader_1' has been renamed to : 'lblProcessMembersubHeader1studio12'
+'lbl_ProcessMember_subSubHeader' has been renamed to : 'lblProcessMembersubSubHeaderstudio10'
+'lbl_ProcessMember_SubHeader_lbl2' has been renamed to : 'lblProcessMemberSubHeaderlbl2studio11'
+
+skin( /Users/praveenkalal/Downloads/MEGDevelopment/themes ) : 
+'titleBar' has been renamed to : 'titleBarstudio1'
+
+Following widget id(s) were found in modules and have been replaced across channels to maintain consistency.
+............................................................................................................. 
+
+'lbl_ProcessMember_subHeader_1' has been renamed to : 'lblProcessMembersubHeader1studio6'
+'lbl_ProcessMember_subHeader_1' has been renamed to : 'lblProcessMembersubHeader1studio6'
+'lbl_ProcessMember_subSubHeader' has been renamed to : 'lblProcessMembersubSubHeaderstudio4'
+'lbl_ProcessMember_SubHeader_lbl2' has been renamed to : 'lblProcessMemberSubHeaderlbl2studio11'
+'lbl_ProcessMember_subSubHeader' has been renamed to : 'lblProcessMembersubSubHeaderstudio4'
+'lbl_ProcessMember_SubHeader_lbl2' has been renamed to : 'lblProcessMemberSubHeaderlbl2studio5'
+'lbl_ProcessMember_SubHeader_lbl2' has been renamed to : 'lblProcessMemberSubHeaderlbl2studio5'
+'lbl_ProcessMember_subHeader_1' has been renamed to : 'lblProcessMembersubHeader1studio6'
+'lbl_ProcessMember_SubHeader_lbl2' has been renamed to : 'lblProcessMemberSubHeaderlbl2studio11'
+'lbl_ProcessMember_subHeader_1' has been renamed to : 'lblProcessMembersubHeader1studio8'
+'lbl_ProcessMember_subSubHeader' has been renamed to : 'lblProcessMembersubSubHeaderstudio4'
+'lbl_ProcessMember_subHeader_1' has been renamed to : 'lblProcessMembersubHeader1studio6'
+'lbl_ProcessMember_subSubHeader' has been renamed to : 'lblProcessMembersubSubHeaderstudio4'
+'lbl_ProcessMember_subHeader_1' has been renamed to : 'lblProcessMembersubHeader1studio6'
+'lbl_ProcessMember_SubHeader_lbl2' has been renamed to : 'lblProcessMemberSubHeaderlbl2studio5'
+'lbl_ProcessMember_SubHeader_lbl2' has been renamed to : 'lblProcessMemberSubHeaderlbl2studio1'
+'lbl_ProcessMember_SubHeader_lbl2' has been renamed to : 'lblProcessMemberSubHeaderlbl2studio11'
+'lbl_ProcessMember_subSubHeader' has been renamed to : 'lblProcessMembersubSubHeaderstudio4'
+'lbl_ProcessMember_subHeader_1' has been renamed to : 'lblProcessMembersubHeader1studio12'
+'lbl_ProcessMember_subSubHeader' has been renamed to : 'lblProcessMembersubSubHeaderstudio4'
+
+
+Checking for Warnings in project
+================================
+After replacement of all the Upgrade issues, we found the following instances of widget ids, keywords in your modules.Please verify that these changes are as per your requirement.
+
+ File '/Users/praveenkalal/Downloads/MEGDevelopment/modules/js/Globals.js' : 'lbl_ProcessMember_subHeader_1', 'lbl_ProcessMember_SubHeader_lbl2', 'lbl_ProcessMember_notes'

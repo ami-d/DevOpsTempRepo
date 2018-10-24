@@ -1,0 +1,19 @@
+{
+    "p2kwiet3578093095360_btnReopen_onClick_seq0": {
+        "id": "p2kwiet3578093095360_btnReopen_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "context",
+            "value": "context"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_95423578093094757",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "alertForReOpenTalliedMeetingConfirmationHomeScreen();"
+        }]
+    }
+}

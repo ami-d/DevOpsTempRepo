@@ -1,0 +1,22 @@
+{
+    "AS_VBox_82aa0d3129b74c95bf08218af2128e60": {
+        "id": "AS_VBox_82aa0d3129b74c95bf08218af2128e60",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmATWTallyReports",
+            "type": "forms",
+            "platform": null,
+            "KUID": "30deef9e917c4d3e9a5d8e70e0bce686"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_21be2024f82d4df1a515c8e32d1fa808",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"prevForm \" + prevForm);\nif(checkValidString(prevForm))\n  {\n    if(prevForm ==frmSelectMeeting.id)\n      {\n      \tfrmSelectMeeting.show();\n      }\n    else if(prevForm ==frmHomeScreenNoMeeting.id)\n    {\n      frmHomeScreenNoMeeting.show();\n      setAWSLocation(false);\n    } \n    else if(prevForm ==frmHomeScreen.id)\n    {\n      frmHomeScreen.show();\n    }\n     prevForm =\"\";\n  }else\n    {\nif(kony.application.getPreviousForm().id==frmSelectMeeting.id){\n frmSelectMeeting.show();\n }\n else\n {\n if (glbMeetingNum != \"\") {\n frmHomeScreen.show();\n } else if (glbMeetingNum == \"\") {\n frmHomeScreenNoMeeting.show();\n }\n \n }}"
+        }]
+    }
+}

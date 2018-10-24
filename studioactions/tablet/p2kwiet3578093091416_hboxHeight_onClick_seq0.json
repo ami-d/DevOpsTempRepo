@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093091416_hboxHeight_onClick_seq0": {
+        "id": "p2kwiet3578093091416_hboxHeight_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_464653578093097901",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnClickAddIndividualHeight",
+            "display": "eventOnClickAddIndividualHeight",
+            "inputparams": []
+        }]
+    }
+}

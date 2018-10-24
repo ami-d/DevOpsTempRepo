@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093094754_btnSimpleRet_onClick_seq0": {
+        "id": "p2kwiet3578093094754_btnSimpleRet_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_827993578093098125",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnSelectReturnBtn",
+            "display": "eventOnSelectReturnBtn",
+            "inputparams": []
+        }]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "AS_VBox_97d0e787fe5f43869a6d7a5b213dff34": {
+        "id": "AS_VBox_97d0e787fe5f43869a6d7a5b213dff34",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "contextObj": {
+            "name": "popupWeek",
+            "type": "popups",
+            "platform": null,
+            "KUID": "9c11bea2fcb74f3f94ecde22f185f2b6"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_af46a1a68560474689670429a8de8bca",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonClickDoneWeekPopUp",
+            "display": "eventonClickDoneWeekPopUp",
+            "inputparams": []
+        }]
+    }
+}

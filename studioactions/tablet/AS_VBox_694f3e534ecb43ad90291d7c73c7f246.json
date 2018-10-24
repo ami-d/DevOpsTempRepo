@@ -1,0 +1,16 @@
+{
+    "AS_VBox_694f3e534ecb43ad90291d7c73c7f246": {
+        "id": "AS_VBox_694f3e534ecb43ad90291d7c73c7f246",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_b0b89dcf52644dc49fc8c5afbf88fe88",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "popupAddEmail.dismiss();\n if(popupAddEmail.txtEmailAddress.text == \"\" || popupAddEmail.txtEmailAddress.text == undefined)\n frmPayment.imgSendReceipt.src = \"icn_checkbox_unchecked.png\";"
+        }]
+    }
+}

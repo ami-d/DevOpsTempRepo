@@ -1,0 +1,21 @@
+{
+    "p2kwiet3578093093594_popupAddWeigh_onhide_seq0": {
+        "id": "p2kwiet3578093093594_popupAddWeigh_onhide_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onhide_413053578093093481",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "ClearWeightInfo",
+            "display": "ClearWeightInfo",
+            "inputparams": []
+        }]
+    }
+}

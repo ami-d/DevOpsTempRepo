@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093091089_switchReceiveMsgs_onslide_seq0": {
+        "id": "p2kwiet3578093091089_switchReceiveMsgs_onslide_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onslide_913963578093093476",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonSlideswitchReceiveMsgsEditProfile",
+            "display": "eventonSlideswitchReceiveMsgsEditProfile",
+            "inputparams": []
+        }]
+    }
+}

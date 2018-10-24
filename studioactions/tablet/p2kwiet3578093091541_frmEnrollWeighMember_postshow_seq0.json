@@ -1,0 +1,51 @@
+{
+    "p2kwiet3578093091541_frmEnrollWeighMember_postshow_seq0": {
+        "id": "p2kwiet3578093091541_frmEnrollWeighMember_postshow_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_postshow_478543578093096477",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnPostshowFrmEnrollWeighMember",
+            "display": "eventOnPostshowFrmEnrollWeighMember",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_954633578093095976",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "loadMissedWeekData",
+            "display": "loadMissedWeekData",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_721373578093095624",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnPostShowPreFillEmail",
+            "display": "eventOnPostShowPreFillEmail",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_515363578093097949",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "resetVarOnFrmCheckOutPostShow",
+            "display": "resetVarOnFrmCheckOutPostShow",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_278053578093096358",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnPostShowCheckoutForm",
+            "display": "eventOnPostShowCheckoutForm",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_774433578093096631",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "displayPersonalGoalMessage",
+            "display": "displayPersonalGoalMessage",
+            "inputparams": []
+        }]
+    }
+}

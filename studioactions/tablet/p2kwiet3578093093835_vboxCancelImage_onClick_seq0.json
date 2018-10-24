@@ -1,0 +1,16 @@
+{
+    "p2kwiet3578093093835_vboxCancelImage_onClick_seq0": {
+        "id": "p2kwiet3578093093835_vboxCancelImage_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_561513578093093007",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "popupCurrentMeeting.dismiss();"
+        }]
+    }
+}

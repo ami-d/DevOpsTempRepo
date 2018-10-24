@@ -1,0 +1,27 @@
+{
+    "AS_VBox_6ecef52c65e5428db9b800da9a65b6d3": {
+        "id": "AS_VBox_6ecef52c65e5428db9b800da9a65b6d3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmPreRegAddMember",
+            "type": "forms",
+            "platform": null,
+            "KUID": "f68c3a90f8924603858fdf1a10ad9053"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___3e6f5dc0ccf949ed98456616d48c3930",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnClickHeightSectionPreRegMemberPage",
+            "display": "eventOnClickHeightSectionPreRegMemberPage",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

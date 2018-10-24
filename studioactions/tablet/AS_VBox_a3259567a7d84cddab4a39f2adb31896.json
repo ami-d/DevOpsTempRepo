@@ -1,0 +1,18 @@
+{
+    "AS_VBox_a3259567a7d84cddab4a39f2adb31896": {
+        "id": "AS_VBox_a3259567a7d84cddab4a39f2adb31896",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_d752af44614844f4901046018ddba85a",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onclickvboxDoneImageCheckedInMember",
+            "display": "onclickvboxDoneImageCheckedInMember",
+            "inputparams": []
+        }]
+    }
+}

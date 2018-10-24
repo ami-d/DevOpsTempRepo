@@ -1,0 +1,16 @@
+{
+    "p2kwiet3578093093681_vboxCancelImage_onClick_seq0": {
+        "id": "p2kwiet3578093093681_vboxCancelImage_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_316413578093097332",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "popupBMINote.textareaBMINote.text =\"\";\n popupBMINote.dismiss();"
+        }]
+    }
+}

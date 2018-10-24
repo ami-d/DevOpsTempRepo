@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093091541_vboxNoWeighIn_onClick_seq0": {
+        "id": "p2kwiet3578093091541_vboxNoWeighIn_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_27223578093096211",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonClickbtnNWI",
+            "display": "eventonClickbtnNWI",
+            "inputparams": []
+        }]
+    }
+}

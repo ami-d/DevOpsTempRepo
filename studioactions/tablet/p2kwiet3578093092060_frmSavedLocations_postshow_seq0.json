@@ -1,0 +1,21 @@
+{
+    "p2kwiet3578093092060_frmSavedLocations_postshow_seq0": {
+        "id": "p2kwiet3578093092060_frmSavedLocations_postshow_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_postshow_175473578093091159",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "getSavedLocationData",
+            "display": "getSavedLocationData",
+            "inputparams": []
+        }]
+    }
+}

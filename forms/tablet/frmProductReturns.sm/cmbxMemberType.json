@@ -1,0 +1,128 @@
+{
+    "DNDConfig": null,
+    "_enabled_": false,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sc6af22f66894bcba53685c76b790f63",
+    "_text_": "",
+    "android": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.AndroidComboBoxProperty",
+        "render": true
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "hexpand": false,
+    "id": "cmbxMemberType",
+    "ide_onSelection": "p2kwiet3578093092017_cmbxMemberType_onSelection_seq0",
+    "info": null,
+    "ipad": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.IPadComboBoxProperty",
+        "_margin_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_padding_": [
+            0,
+            2,
+            0,
+            2
+        ],
+        "margin": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "marginInPixel": true,
+        "padding": [
+            0,
+            2,
+            0,
+            2
+        ],
+        "paddingInPixel": true,
+        "psp": {
+            "groupCells": false,
+            "viewConfig": {
+                "toggleViewConfig": {
+                    "enableTintColor": true,
+                    "equalSegments": true,
+                    "tintColor": "00c0f300",
+                    "viewStyle": 1
+                }
+            },
+            "viewType": 2
+        },
+        "render": true
+    },
+    "isvisible": true,
+    "kuid": "p2kwiet3578093092012",
+    "margininpixel": false,
+    "masterdata": [
+        [
+            "members",
+            "Members",
+            "strMembers"
+        ],
+        [
+            "nonmembers",
+            "Non Members",
+            "strNonMembers"
+        ],
+        [
+            "employeesale",
+            "Employees",
+            "strEmployeeSale"
+        ]
+    ],
+    "name": "kony.ui.ComboBox",
+    "parent": "vbox1332450755642987",
+    "pf": "frmProductReturns",
+    "selectedkey": "members",
+    "selectedkeyvalue": [
+        "members",
+        "Members"
+    ],
+    "spa": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.SPAComboBoxProperty"
+    },
+    "spaandroidtablet": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.SPAAndroidTabletComboBoxProperty",
+        "render": true
+    },
+    "spaipad": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.SPAIPadComboBoxProperty",
+        "render": true
+    },
+    "spawindowstablet": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.SPAWindowsTabletComboBoxProperty",
+        "render": true
+    },
+    "vexpand": false,
+    "wType": "ComboBox",
+    "widgetalignment": 4,
+    "windows8": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.Windows8ComboBoxProperty",
+        "_margin_": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "margin": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "marginInPixel": true,
+        "render": true
+    }
+}

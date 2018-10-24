@@ -1,0 +1,45 @@
+{
+    "p2kwiet3578093091972_txtAreaWeightProcess_iPad_onEndEditing_seq0": {
+        "id": "p2kwiet3578093091972_txtAreaWeightProcess_iPad_onEndEditing_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "changedtext",
+            "value": "changedtext"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onEndEditing_213663578093094060",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onDoneCurrentWeight",
+            "display": "onDoneCurrentWeight",
+            "inputparams": []
+        }, {
+            "id": "customcode_onEndEditing_64201357809309164",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonDoneTextAreaProcessMemberWeighCalculations",
+            "display": "eventonDoneTextAreaProcessMemberWeighCalculations",
+            "inputparams": [{
+                "name": "txtAreaWeightProcess",
+                "value": "frmProcessMember.txtAreaWeightProcess.text"
+            }, {
+                "name": "viewFlow",
+                "value": ""
+            }, {
+                "name": "isProcess",
+                "value": "true"
+            }]
+        }, {
+            "id": "customcode_onEndEditing_479213578093093330",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onClickIsMemberLoosingWeightRapidly",
+            "display": "onClickIsMemberLoosingWeightRapidly",
+            "inputparams": [{
+                "name": "currentWeight",
+                "value": "frmProcessMember.txtAreaWeightProcess.text"
+            }]
+        }]
+    }
+}

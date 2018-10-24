@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093095275_link1418336325852741_onClick_seq0": {
+        "id": "p2kwiet3578093095275_link1418336325852741_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_970253578093097880",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "showPersonalGoalWeight",
+            "display": "showPersonalGoalWeight",
+            "inputparams": []
+        }]
+    }
+}

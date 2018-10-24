@@ -1,0 +1,21 @@
+{
+    "p2kwiet3578093092761_vbox385389561521639_onClick_seq0": {
+        "id": "p2kwiet3578093092761_vbox385389561521639_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "context",
+            "value": "context"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_789333578093091443",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnClickDeleteTimesheetRecord",
+            "display": "eventOnClickDeleteTimesheetRecord",
+            "inputparams": []
+        }]
+    }
+}

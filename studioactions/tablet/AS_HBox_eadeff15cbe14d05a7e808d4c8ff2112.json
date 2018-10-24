@@ -1,0 +1,18 @@
+{
+    "AS_HBox_eadeff15cbe14d05a7e808d4c8ff2112": {
+        "id": "AS_HBox_eadeff15cbe14d05a7e808d4c8ff2112",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_49c55157f34248bba84ce7190703ed87",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonClickhboxState",
+            "display": "eventonClickhboxState",
+            "inputparams": []
+        }]
+    }
+}

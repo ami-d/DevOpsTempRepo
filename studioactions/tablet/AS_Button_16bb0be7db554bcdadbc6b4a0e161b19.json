@@ -1,0 +1,18 @@
+{
+    "AS_Button_16bb0be7db554bcdadbc6b4a0e161b19": {
+        "id": "AS_Button_16bb0be7db554bcdadbc6b4a0e161b19",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEnrollNewMember",
+            "type": "forms",
+            "platform": "",
+            "KUID": "p2kwiet3578093091187"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

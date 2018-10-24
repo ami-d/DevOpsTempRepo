@@ -1,0 +1,23 @@
+{
+    "AS_VBox_e6813219e218448ba594cb3bbacf05f5": {
+        "id": "AS_VBox_e6813219e218448ba594cb3bbacf05f5",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_7b1906934767409b9128615c437fb3b1",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "testBTDevice",
+            "display": "testBTDevice",
+            "inputparams": [{
+                "name": "isConnInBG",
+                "value": ""
+            }, {
+                "name": "isRepair"
+            }]
+        }]
+    }
+}

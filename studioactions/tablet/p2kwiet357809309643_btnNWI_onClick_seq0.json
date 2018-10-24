@@ -1,0 +1,21 @@
+{
+    "p2kwiet357809309643_btnNWI_onClick_seq0": {
+        "id": "p2kwiet357809309643_btnNWI_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "context",
+            "value": "context"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_309363578093093768",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonClickBatchSegWeighHistory",
+            "display": "eventonClickBatchSegWeighHistory",
+            "inputparams": []
+        }]
+    }
+}

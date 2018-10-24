@@ -1,0 +1,18 @@
+{
+    "AS_HBox_958e35ab050d41d79f2b6fe3624cdc25": {
+        "id": "AS_HBox_958e35ab050d41d79f2b6fe3624cdc25",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_9629e3a0505b457589c75a3d820b433c",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "evenOnClickAWSPriceOverRideReason",
+            "display": "evenOnClickAWSPriceOverRideReason",
+            "inputparams": []
+        }]
+    }
+}

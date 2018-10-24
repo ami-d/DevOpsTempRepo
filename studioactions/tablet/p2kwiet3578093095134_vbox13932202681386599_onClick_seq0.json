@@ -1,0 +1,34 @@
+{
+    "p2kwiet3578093095134_vbox13932202681386599_onClick_seq0": {
+        "id": "p2kwiet3578093095134_vbox13932202681386599_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_164443578093096019",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "ClearVariables",
+            "display": "ClearVariables",
+            "inputparams": []
+        }, {
+            "id": "customcode_onClick_69900357809309914",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonClickCancelEnrollHeader",
+            "display": "eventonClickCancelEnrollHeader",
+            "inputparams": []
+        }, {
+            "id": "customcode_onClick_135883578093094063",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "ClearInputFields",
+            "display": "ClearInputFields",
+            "inputparams": []
+        }, {
+            "id": "expression_onClick_873123578093094701",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "isLifetimeInChangeMemberType = false;\n popupMissedWeeks.destroy();"
+        }]
+    }
+}

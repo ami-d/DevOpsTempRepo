@@ -1,0 +1,21 @@
+{
+    "AS_Button_5c84767819054bb5a5ffbed06cd58ae7": {
+        "id": "AS_Button_5c84767819054bb5a5ffbed06cd58ae7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_120b020fb1e940d1ad2c23b6deb83c82",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onpreShowfrmTallyMeetingCashoutStartBarcodeScanner",
+            "display": "onpreShowfrmTallyMeetingCashoutStartBarcodeScanner",
+            "inputparams": [{
+                "name": "val",
+                "value": "frmTallyMeetingCashout.lbl2ndSlip.text"
+            }]
+        }]
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        4,
+        4,
+        4,
+        4
+    ],
+    "_skin_": "sb728e3956284a1f8d9c72315d010470",
+    "_text_": "",
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sec51d025fee4516820d8b41e9da3467",
+    "id": "btnBarCodeScan",
+    "ide_onClick": "AS_Button_971728afd90f4e0da052d061ec325792",
+    "info": null,
+    "isvisible": true,
+    "kuid": "e0baead3d6764684b9120e8b7b5bf041",
+    "name": "kony.ui.Button",
+    "parent": "vboxBarCodeScan",
+    "pf": "frmEnrollReturningMember",
+    "wType": "Button"
+}

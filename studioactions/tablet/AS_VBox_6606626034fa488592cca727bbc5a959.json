@@ -1,0 +1,22 @@
+{
+    "AS_VBox_6606626034fa488592cca727bbc5a959": {
+        "id": "AS_VBox_6606626034fa488592cca727bbc5a959",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmATWTallyMeetingReport",
+            "type": "forms",
+            "platform": null,
+            "KUID": "36eb28026e8d44a4836fcb8c66b2fec8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_7a14f3f1bff842dd94bbe24982fdae8b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmHomeScreen.show();"
+        }]
+    }
+}

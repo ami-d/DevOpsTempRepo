@@ -1,0 +1,23 @@
+{
+    "p2kwiet357809309135_frmAddAndWeighMemberTransaction_postshow_seq0": {
+        "id": "p2kwiet357809309135_frmAddAndWeighMemberTransaction_postshow_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_postshow_897163578093097128",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(deviceLevelTransactId != null && deviceLevelTransactId != undefined && deviceLevelTransactId != \"\")\n {\n kony.print(\"deviceLevelTransactId==>>>\"+deviceLevelTransactId);\n }\n else\n {\n boEnrollMember.generateDeviceLevelTransactID();\n kony.print(\"Generated deviceLevelTransactId==>>>\"+deviceLevelTransactId);\n }"
+        }, {
+            "id": "expression_postshow_645593578093098745",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.application.getPreviousForm().id != frmPayment.id){\n onPostShowgetProductsAddWeighScreen();\n onPostShowPopulateOpenPromotion();\n }"
+        }]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093091611_vboxLastNameSortChk_onClick_seq0": {
+        "id": "p2kwiet3578093091611_vboxLastNameSortChk_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_895553578093099171",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnClickVBoxCheckedinSorting",
+            "display": "eventOnClickVBoxCheckedinSorting",
+            "inputparams": []
+        }]
+    }
+}

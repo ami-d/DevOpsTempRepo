@@ -1,0 +1,1143 @@
+<application desc="" id="MEGDevelopment" name="" smscode="">
+   <app-config>
+      <config-param name="APP_SMS_HEADER" value="null"/>
+   </app-config>
+   <services>
+      <service cachable="false" cacheduration="" id="ActivityLogInsert" passwordencrypted="true" smscode="" smsenabled="false" type="soapserviceConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.meg.qat2.weightwatchers.com/ClickStreamLog.svc"/>
+            <config-param name="soapAction" value="http://www.weightwatchers.com/meg/ClickStreamLogService/IClickStreamLogService/Insert"/>
+            <config-param name="userid" value=""/>
+            <config-param name="soap-version" value="1.1"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <template-param name="message" value="&lt;soapenv:Envelope xmlns:clic=&quot;http://www.weightwatchers.com/meg/ClickStreamLogService&quot; xmlns:con=&quot;http://api.meg.weightwatchers.com/Contract&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;soapenv:Header&gt;&lt;con:MegHeader&gt;&lt;!--Optional:--&gt;&lt;con:AccessToken&gt;$accessToken&lt;/con:AccessToken&gt;&lt;!--Optional:--&gt;&lt;con:DeviceID&gt;$deviceID&lt;/con:DeviceID&gt;&lt;!--Optional:--&gt;&lt;con:EmployeeID&gt;$SPID&lt;/con:EmployeeID&gt;&lt;!--Optional:--&gt;&lt;con:LastSyncDate&gt;$HeaderDate&lt;/con:LastSyncDate&gt;&lt;con:Locale&gt;$locale&lt;/con:Locale&gt;&lt;!--Optional:--&gt;&lt;con:Source&gt;$Source&lt;/con:Source&gt;&lt;/con:MegHeader&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;clic:Insert&gt;&lt;!--Optional:--&gt;&lt;clic:ClickStreamLog&gt;&lt;!--Optional:--&gt;&lt;con:AppTransactions&gt;&lt;![CDATA[$logMonitor]]&gt;&lt;/con:AppTransactions&gt;&lt;/clic:ClickStreamLog&gt;&lt;/clic:Insert&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;">
+               <param datatype="string" encode="true" name="accessToken" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="deviceID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="SPID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="HeaderDate" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="logMonitor" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="Source" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="locale" sms-name="" src="" value=""/>
+            </template-param>
+         </service-input>
+         <service-output>
+            <param datatype="boolean" format="None" formatvalue="" name="response" sms-name="" src="//InsertResult" srcformatvalue="" target="response"/>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" srcformatvalue="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="CybersourceTransactionLog" passwordencrypted="true" smscode="" smsenabled="false" type="soapserviceConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.meg.qat2.weightwatchers.com/ClickStreamLog.svc"/>
+            <config-param name="soapAction" value="http://www.weightwatchers.com/meg/ClickStreamLogService/IClickStreamLogService/CybersourceTransactionLog"/>
+            <config-param name="userid" value=""/>
+            <config-param name="soap-version" value="1.1"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <template-param name="message" value="&lt;soapenv:Envelope xmlns:clic=&quot;http://www.weightwatchers.com/meg/ClickStreamLogService&quot; xmlns:con=&quot;http://api.meg.weightwatchers.com/Contract&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;soapenv:Header&gt;&lt;con:MegHeader&gt;&lt;!--Optional:--&gt;&lt;con:AccessToken&gt;$accessToken&lt;/con:AccessToken&gt;&lt;!--Optional:--&gt;&lt;con:DeviceID&gt;$deviceID&lt;/con:DeviceID&gt;&lt;!--Optional:--&gt;&lt;con:EmployeeID&gt;$SPID&lt;/con:EmployeeID&gt;&lt;!--Optional:--&gt;&lt;con:LastSyncDate&gt;$HeaderDate&lt;/con:LastSyncDate&gt;&lt;con:Locale&gt;$locale&lt;/con:Locale&gt;&lt;!--Optional:--&gt;&lt;con:Source&gt;$Source&lt;/con:Source&gt;&lt;/con:MegHeader&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;clic:CybersourceTransactionLog&gt;&lt;!--Optional:--&gt;&lt;clic:request&gt;&lt;!--Optional:--&gt;&lt;con:AuthorizationCode&gt;$AuthorizationCode&lt;/con:AuthorizationCode&gt;&lt;!--Optional:--&gt;&lt;con:ExpirationDate&gt;$ExpirationDate&lt;/con:ExpirationDate&gt;&lt;!--Optional:--&gt;&lt;con:ReferenceNumber&gt;$ReferenceNumber&lt;/con:ReferenceNumber&gt;&lt;!--Optional:--&gt;&lt;con:RequestId&gt;$RequestId&lt;/con:RequestId&gt;&lt;!--Optional:--&gt;&lt;con:Token&gt;$Token&lt;/con:Token&gt;&lt;!--Optional:--&gt;&lt;con:TransactionStatus&gt;$TransactionStatus&lt;/con:TransactionStatus&gt;&lt;!--Optional:--&gt;&lt;con:TransactionType&gt;$TransactionType&lt;/con:TransactionType&gt;&lt;!--Optional:--&gt;&lt;con:EmployeeID&gt;$EmployeeID&lt;/con:EmployeeID&gt;&lt;!--Optional:--&gt;&lt;con:LocationID&gt;$LocationID&lt;/con:LocationID&gt;&lt;!--Optional:--&gt;&lt;con:MeetingOccurrenceID&gt;$MeetingOccrID&lt;/con:MeetingOccurrenceID&gt;&lt;!--Optional:--&gt;&lt;con:MemberID&gt;$MemberID&lt;/con:MemberID&gt;&lt;con:RegistrationNumber&gt;$RegistrationNumber&lt;/con:RegistrationNumber&gt;&lt;!--Optional:--&gt;&lt;con:TransactionAmount&gt;$TransactionAmount&lt;/con:TransactionAmount&gt;&lt;!--Optional:--&gt;&lt;con:TransactionDate&gt;$TransactionDate&lt;/con:TransactionDate&gt;&lt;/clic:request&gt;&lt;/clic:CybersourceTransactionLog&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;">
+               <param datatype="string" encode="true" name="accessToken" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="deviceID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="SPID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="HeaderDate" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="locale" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="Source" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="AuthorizationCode" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="ExpirationDate" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="ReferenceNumber" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="RequestId" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="Token" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="TransactionStatus" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="TransactionType" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="EmployeeID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="LocationID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="MeetingOccrID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="MemberID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="RegistrationNumber" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="TransactionAmount" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="TransactionDate" sms-name="" src="" value=""/>
+            </template-param>
+         </service-input>
+         <service-output>
+            <param datatype="boolean" format="None" formatvalue="" name="response" sms-name="" src="//CybersourceTransactionLogResponse/CybersourceTransactionLogResult" srcformatvalue="" target="response"/>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" srcformatvalue="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="GetActivationStatus" passwordencrypted="true" smscode="" smsenabled="false" type="soapserviceConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.meg.qat2.weightwatchers.com/Subscription.svc"/>
+            <config-param name="soapAction" value="http://api.meg.weightwatchers.com/Service/GetActivationStatus"/>
+            <config-param name="userid" value=""/>
+            <config-param name="soap-version" value="1.1"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <template-param name="message" value="&lt;soapenv:Envelope xmlns:con=&quot;http://api.meg.weightwatchers.com/Contract&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:sub=&quot;http://www.weightwatchers.com/meg/SubscriptionService&quot;&gt;&lt;soapenv:Header&gt;&lt;con:MegHeader&gt;&lt;!--Optional:--&gt;&lt;con:AccessToken&gt;$accessToken&lt;/con:AccessToken&gt;&lt;!--Optional:--&gt;&lt;con:DeviceID&gt;$deviceID&lt;/con:DeviceID&gt;&lt;!--Optional:--&gt;&lt;con:EmployeeID&gt;$SPID&lt;/con:EmployeeID&gt;&lt;!--Optional:--&gt;&lt;con:LastSyncDate&gt;$HeaderDate&lt;/con:LastSyncDate&gt;&lt;con:Locale&gt;$locale&lt;/con:Locale&gt;&lt;!--Optional:--&gt;&lt;con:Source&gt;$Source&lt;/con:Source&gt;&lt;/con:MegHeader&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;sub:GetActivationStatus&gt;&lt;!--Optional:--&gt;&lt;sub:memberID&gt;$MemberID&lt;/sub:memberID&gt;&lt;/sub:GetActivationStatus&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;">
+               <param datatype="string" encode="true" name="accessToken" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="deviceID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="SPID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="HeaderDate" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="MemberID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="Source" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="locale" sms-name="" src="" value=""/>
+            </template-param>
+         </service-input>
+         <service-output>
+            <dataset id="MemberSubscription" src="//GetActivationStatusResult/a:MemberSubscription">
+               <param datatype="string" format="None" formatvalue="" name="CreatedDate" sms-name="" src="a:CreatedDate" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LastUsedDate" sms-name="" src="a:LastUsedDate" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CouponCode" sms-name="" src="a:CouponCode" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ExpirationDate" sms-name="" src="a:ExpirationDate" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ProductID" sms-name="" src="a:ProductID" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ProgramDuration" sms-name="" src="a:ProgramDuration" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="SubscriptionType" sms-name="" src="a:SubscriptionType" srcformatvalue="" target="response"/>
+            </dataset>
+            <param datatype="string" format="None" formatvalue="" name="ActivationStatus" sms-name="" src="//GetActivationStatusResult/a:ActivationStatus" srcformatvalue="" target="response"/>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" srcformatvalue="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="GetMemberReport" passwordencrypted="true" smscode="" smsenabled="false" type="soapserviceConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.meg.qat2.weightwatchers.com/Member.svc"/>
+            <config-param name="soapAction" value="http://www.weightwatchers.com/meg/MemberService/IMemberService/GetMemberReport"/>
+            <config-param name="userid" value=""/>
+            <config-param name="soap-version" value="1.1"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <template-param name="message" value="&lt;soapenv:Envelope xmlns:con=&quot;http://api.meg.weightwatchers.com/Contract&quot; xmlns:mem=&quot;http://www.weightwatchers.com/meg/MemberService&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;soapenv:Header&gt;&lt;con:MegHeader&gt;&lt;!--Optional:--&gt;&lt;con:AccessToken&gt;$AccessToken&lt;/con:AccessToken&gt;&lt;!--Optional:--&gt;&lt;con:DeviceID&gt;$DeviceID&lt;/con:DeviceID&gt;&lt;!--Optional:--&gt;&lt;con:EmployeeID&gt;$SPID&lt;/con:EmployeeID&gt;&lt;!--Optional:--&gt;&lt;con:LastSyncDate&gt;?&lt;/con:LastSyncDate&gt;&lt;con:Locale&gt;$locale&lt;/con:Locale&gt;&lt;!--Optional:--&gt;&lt;con:Source&gt;$Source&lt;/con:Source&gt;&lt;/con:MegHeader&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;mem:GetMemberReport&gt;&lt;!--Optional:--&gt;&lt;mem:meetingDetails&gt;&lt;con:LocationId&gt;$LocationID&lt;/con:LocationId&gt;&lt;con:MeetingDate&gt;$MeetingDate&lt;/con:MeetingDate&gt;&lt;con:MeetingOccurrenceID&gt;$MeetingOccurrenceID&lt;/con:MeetingOccurrenceID&gt;&lt;/mem:meetingDetails&gt;&lt;/mem:GetMemberReport&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;">
+               <param datatype="string" encode="false" name="DeviceID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="AccessToken" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="SPID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="locale" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="LocationID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="Source" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="MeetingDate" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="MeetingOccurrenceID" sms-name="" src="" value=""/>
+            </template-param>
+         </service-input>
+         <service-output>
+            <dataset id="MemberReport" src="//GetMemberReportResult">
+               <param datatype="string" format="None" formatvalue="" name="RegistrationNumber" sms-name="" src="a:MemberResponse/a:RegistrationNumber" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MemberID" sms-name="" src="a:MemberResponse/a:MemberID" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="FirstName" sms-name="" src="a:MemberResponse/a:FirstName" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LastName" sms-name="" src="a:MemberResponse/a:LastName" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="GoalWeight" sms-name="" src="a:MemberResponse/a:GoalWeight" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="Email" sms-name="" src="a:MemberResponse/a:Email" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LastAchievedMileStoneID" sms-name="" src="a:MemberResponse/a:LastAchievedMileStoneID" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="SubscriptionType" sms-name="" src="a:MemberResponse/a:MemberSubscription/a:SubscriptionType" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="DontContactByEmail" sms-name="" src="a:MemberResponse/a:DontContactByEmail" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="DontContactByPhone" sms-name="" src="a:MemberResponse/a:DontContactByPhone" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="Phone1" sms-name="" src="a:MemberResponse/a:Phone1" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CurrentWeight" sms-name="" src="a:MemberResponse/a:CurrentWeight" srcformatvalue="" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" srcformatvalue="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="GetNote" passwordencrypted="true" smscode="" smsenabled="false" type="soapserviceConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.meg.qat2.weightwatchers.com/MemberNote.svc"/>
+            <config-param name="soapAction" value="http://api.meg.weightwatchers.com/Service/IMemberNoteService/Get"/>
+            <config-param name="userid" value=""/>
+            <config-param name="soap-version" value="1.1"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <template-param name="message" value="&lt;soapenv:Envelope xmlns:con=&quot;http://api.meg.weightwatchers.com/Contract&quot; xmlns:ser=&quot;http://api.meg.weightwatchers.com/Service&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;soapenv:Header&gt;&lt;con:MegHeader&gt;&lt;!--Optional:--&gt;&lt;con:AccessToken&gt;$accessToken&lt;/con:AccessToken&gt;&lt;con:DeviceID&gt;$deviceID&lt;/con:DeviceID&gt;&lt;con:EmployeeID&gt;$SPID&lt;/con:EmployeeID&gt;&lt;con:LastSyncDate&gt;$HeaderDate&lt;/con:LastSyncDate&gt;&lt;con:Locale&gt;$locale&lt;/con:Locale&gt;&lt;!--Optional:--&gt;&lt;con:Source&gt;$Source&lt;/con:Source&gt;&lt;/con:MegHeader&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;ser:Get&gt;&lt;ser:memberID&gt;$MemberID&lt;/ser:memberID&gt;&lt;/ser:Get&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;">
+               <param datatype="string" encode="true" name="MemberID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="deviceID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="accessToken" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="SPID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="HeaderDate" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="Source" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="locale" sms-name="" src="" value=""/>
+            </template-param>
+         </service-input>
+         <service-output>
+            <dataset id="MemberNote" src="//GetResult">
+               <param datatype="string" format="None" formatvalue="" name="Note" sms-name="" src="a:MemberNoteResponse/a:Note" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="ID" sms-name="" src="a:MemberNoteResponse/a:ID" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="a:MemberNoteResponse/a:EmployeeID" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="EntryDate" sms-name="" src="a:MemberNoteResponse/a:EntryDate" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="LastModifiedDate" sms-name="" src="a:MemberNoteResponse/a:LastModifiedDate" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="MemberID" sms-name="" src="a:MemberNoteResponse/a:MemberID" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="NoteTypeID" sms-name="" src="a:MemberNoteResponse/a:NoteTypeID" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeName" sms-name="" src="a:MemberNoteResponse/a:EmployeeName" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="CountryID" sms-name="" src="a:MemberNoteResponse/a:CountryID" srcformatvalue="" target=""/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" srcformatvalue="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="IssueSession" passwordencrypted="true" smscode="" smsenabled="false" type="soapserviceConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.meg.qat2.weightwatchers.com/Authentication.svc"/>
+            <config-param name="soapAction" value="http://api.meg.weightwatchers.com/Service/IAuthenticationService/IssueSession"/>
+            <config-param name="userid" value=""/>
+            <config-param name="soap-version" value="1.1"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <template-param name="message" value="&lt;soapenv:Envelope xmlns:con=&quot;http://api.meg.weightwatchers.com/Contract&quot; xmlns:ser=&quot;http://api.meg.weightwatchers.com/Service&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;soapenv:Header&gt;&lt;con:MegHeader&gt;&lt;con:AccessToken&gt;$accessToken&lt;/con:AccessToken&gt;&lt;con:DeviceID&gt;$deviceID&lt;/con:DeviceID&gt;&lt;con:EmployeeID&gt;$SPID&lt;/con:EmployeeID&gt;&lt;con:LastSyncDate&gt;$HeaderDate&lt;/con:LastSyncDate&gt;&lt;con:Locale&gt;$locale&lt;/con:Locale&gt;&lt;!--Optional:--&gt;&lt;con:Source&gt;$Source&lt;/con:Source&gt;&lt;/con:MegHeader&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;ser:IssueSession&gt;&lt;ser:request&gt;&lt;con:ClientKey&gt;$clientKey&lt;/con:ClientKey&gt;&lt;con:LocationID&gt;$locationId&lt;/con:LocationID&gt;&lt;con:Password&gt;$pwd&lt;/con:Password&gt;&lt;con:UserName&gt;$userName&lt;/con:UserName&gt;&lt;/ser:request&gt;&lt;/ser:IssueSession&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;">
+               <param datatype="string" encode="true" name="accessToken" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="deviceID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="clientKey" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="locationId" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="pwd" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="userName" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="HeaderDate" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="SPID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="Source" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="locale" sms-name="" src="" value=""/>
+            </template-param>
+         </service-input>
+         <service-output>
+            <param datatype="string" format="None" formatvalue="" name="status" sms-name="" src="//a:Status" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="empNumber" sms-name="" src="//a:EmployeeNumber" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="accessToken" sms-name="" src="//a:AccessToken" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="expires" sms-name="" src="//a:Expires" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="refreshToken" sms-name="" src="//a:RefreshToken" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="FirstName" sms-name="" src="//a:FirstName" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="LastName" sms-name="" src="//a:LastName" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="//a:EmployeeID" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="CountryID" sms-name="" src="//a:CountryID" srcformatvalue="" target="response"/>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" srcformatvalue="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="Link" passwordencrypted="true" smscode="" smsenabled="false" type="soapserviceConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.meg.qat2.weightwatchers.com/Link.svc"/>
+            <config-param name="soapAction" value="http://www.weightwatchers.com/meg/LinkService/ILinkService/Search"/>
+            <config-param name="userid" value=""/>
+            <config-param name="soap-version" value="1.1"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <template-param name="message" value="&lt;soapenv:Envelope xmlns:con=&quot;http://api.meg.weightwatchers.com/Contract&quot; xmlns:lin=&quot;http://www.weightwatchers.com/meg/LinkService&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;soapenv:Header&gt;&lt;con:MegHeader&gt;&lt;!--Optional:--&gt;&lt;con:AccessToken&gt;$accessToken&lt;/con:AccessToken&gt;&lt;!--Optional:--&gt;&lt;con:DeviceID&gt;$deviceID&lt;/con:DeviceID&gt;&lt;!--Optional:--&gt;&lt;con:EmployeeID&gt;$SPID&lt;/con:EmployeeID&gt;&lt;!--Optional:--&gt;&lt;con:LastSyncDate&gt;$HeaderDate&lt;/con:LastSyncDate&gt;&lt;con:Locale&gt;$locale&lt;/con:Locale&gt;&lt;!--Optional:--&gt;&lt;con:Source&gt;$Source&lt;/con:Source&gt;&lt;/con:MegHeader&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;lin:Search&gt;&lt;!--Optional:--&gt;&lt;lin:linkCriteria&gt;&lt;!--Optional:--&gt;&lt;con:SearchText&gt;$SearchText&lt;/con:SearchText&gt;&lt;con:WWRole&gt;$WWRole&lt;/con:WWRole&gt;&lt;/lin:linkCriteria&gt;&lt;/lin:Search&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;">
+               <param datatype="string" encode="true" name="accessToken" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="deviceID" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="SPID" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="HeaderDate" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="SearchText" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="WWRole" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="Source" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="locale" sms-name="" src="" value=""/>
+            </template-param>
+         </service-input>
+         <service-output>
+            <dataset id="MembersList" src="//SearchResult">
+               <param datatype="string" format="None" formatvalue="" name="Email" sms-name="" src="a:MemberResponse/a:Email" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="FirstName" sms-name="" src="a:MemberResponse/a:FirstName" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="LastName" sms-name="" src="a:MemberResponse/a:LastName" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="ShippingAddr1" sms-name="" src="a:MemberResponse/a:ShippingAddress/a:Address1" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EmailID" sms-name="" src="a:MemberResponse/a:Link/a:EmailID" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EnterpriseID" sms-name="" src="a:MemberResponse/a:Link/a:EnterpriseID" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LinkType" sms-name="" src="a:MemberResponse/a:Link/a:LinkType" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="UserName" sms-name="" src="a:MemberResponse/a:Link/a:UserName" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CountryID" sms-name="" src="a:MemberResponse/a:CountryID" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="SubscriptionType" sms-name="" src="a:MemberResponse/a:MemberSubscription/a:SubscriptionType" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ExpirationDate" sms-name="" src="a:MemberResponse/a:MemberSubscription/a:ExpirationDate" srcformatvalue="" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" srcformatvalue="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="MemberMilestone" passwordencrypted="true" smscode="" smsenabled="false" type="soapserviceConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.meg.qat2.weightwatchers.com/MemberMilestone.svc"/>
+            <config-param name="soapAction" value="http://api.meg.weightwatchers.com/Service/GetMemberMilestone"/>
+            <config-param name="userid" value=""/>
+            <config-param name="soap-version" value="1.1"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <template-param name="message" value="&lt;soapenv:Envelope xmlns:con=&quot;http://api.meg.weightwatchers.com/Contract&quot; xmlns:ser=&quot;http://api.meg.weightwatchers.com/Service&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;soapenv:Header&gt;&lt;con:MegHeader&gt;&lt;!--Optional:--&gt;&lt;con:AccessToken&gt;$accessToken&lt;/con:AccessToken&gt;&lt;!--Optional:--&gt;&lt;con:DeviceID&gt;$deviceID&lt;/con:DeviceID&gt;&lt;!--Optional:--&gt;&lt;con:EmployeeID&gt;$SPID&lt;/con:EmployeeID&gt;&lt;!--Optional:--&gt;&lt;con:LastSyncDate&gt;$HeaderDate&lt;/con:LastSyncDate&gt;&lt;con:Locale&gt;$locale&lt;/con:Locale&gt;&lt;!--Optional:--&gt;&lt;con:Source&gt;$Source&lt;/con:Source&gt;&lt;/con:MegHeader&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;ser:Get&gt;&lt;!--Optional:--&gt;&lt;ser:memberID&gt;$MemberID&lt;/ser:memberID&gt;&lt;/ser:Get&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;">
+               <param datatype="string" encode="true" name="accessToken" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="deviceID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="SPID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="HeaderDate" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="MemberID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="Source" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="locale" sms-name="" src="" value=""/>
+            </template-param>
+         </service-input>
+         <service-output>
+            <dataset id="AchievedMilestones" src="//GetResult/a:AchievedMilestones">
+               <param datatype="string" format="None" formatvalue="" name="AchMilestoneID" sms-name="" src="a:AchievedMilestone/a:MilestoneID" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="AchReachedDate" sms-name="" src="a:AchievedMilestone/a:ReachedDate" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="AchMemberID" sms-name="" src="a:AchievedMilestone/a:MemberID" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="AchWeighInDate" sms-name="" src="a:AchievedMilestone/a:WeighInDate" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MemberMilestoneID" sms-name="" src="a:AchievedMilestone/a:MemberMilestoneID" srcformatvalue="" target="response"/>
+            </dataset>
+            <dataset id="EligibleMilestones" src="//GetResult/a:EligibleMilestones">
+               <param datatype="string" format="None" formatvalue="" name="ElgID" sms-name="" src="a:EligibleMilestone/a:ID" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ElgTargetWeight" sms-name="" src="a:EligibleMilestone/a:TargetWeight" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ElgMemberID" sms-name="" src="a:EligibleMilestone/a:MemberID" srcformatvalue="" target="response"/>
+            </dataset>
+            <param datatype="string" format="None" formatvalue="" name="errorCode" sms-name="" src="//con:errorCode" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="errorMessage" sms-name="" src="//con:reason" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="CountryID" sms-name="" src="//GetAllResult/a:CountryID" srcformatvalue="" target="response"/>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" srcformatvalue="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="MemberWeight" passwordencrypted="true" smscode="" smsenabled="false" type="soapserviceConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.meg.qat2.weightwatchers.com/Weight.svc"/>
+            <config-param name="soapAction" value="http://api.meg.weightwatchers.com/Service/IWeightService/Get"/>
+            <config-param name="userid" value=""/>
+            <config-param name="soap-version" value="1.1"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <template-param name="message" value="&lt;soapenv:Envelope xmlns:con=&quot;http://api.meg.weightwatchers.com/Contract&quot; xmlns:ser=&quot;http://api.meg.weightwatchers.com/Service&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;soapenv:Header&gt;&lt;con:MegHeader&gt;&lt;!--Optional:--&gt;&lt;con:AccessToken&gt;$accessToken&lt;/con:AccessToken&gt;&lt;!--Optional:--&gt;&lt;con:DeviceID&gt;$deviceID&lt;/con:DeviceID&gt;&lt;!--Optional:--&gt;&lt;con:EmployeeID&gt;$SPID&lt;/con:EmployeeID&gt;&lt;!--Optional:--&gt;&lt;con:LastSyncDate&gt;$HeaderDate&lt;/con:LastSyncDate&gt;&lt;con:Locale&gt;$locale&lt;/con:Locale&gt;&lt;!--Optional:--&gt;&lt;con:Source&gt;$Source&lt;/con:Source&gt;&lt;/con:MegHeader&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;ser:Get&gt;&lt;!--Optional:--&gt;&lt;ser:memberID&gt;$MemberID&lt;/ser:memberID&gt;&lt;/ser:Get&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;">
+               <param datatype="string" encode="true" name="MemberID" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="deviceID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="accessToken" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="SPID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="HeaderDate" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="Source" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="locale" sms-name="" src="" value=""/>
+            </template-param>
+         </service-input>
+         <service-output>
+            <dataset id="MemberWeightList" src="//GetResult">
+               <param datatype="string" format="None" formatvalue="" name="DPT" sms-name="" src="a:WeightResponse/a:DailyPointsTarget" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="Height" sms-name="" src="a:WeightResponse/a:Height" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LastModifiedDate" sms-name="" src="a:WeightResponse/a:LastModifiedDate" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LocationID" sms-name="" src="a:WeightResponse/a:LocationID" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ManualWeighIn" sms-name="" src="a:WeightResponse/a:ManualWeighIn" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MemberID" sms-name="" src="a:WeightResponse/a:MemberID" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="NoWeighIn" sms-name="" src="a:WeightResponse/a:NoWeighIn" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="SessionNumber" sms-name="" src="a:WeightResponse/a:SessionNumber" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="WeekNo" sms-name="" src="a:WeightResponse/a:WeekNo" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="WeighInDate" sms-name="" src="a:WeightResponse/a:WeighInDate" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="Weight" sms-name="" src="a:WeightResponse/a:Weight" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="WeightLoss" sms-name="" src="a:WeightResponse/a:WeightLoss" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="IsAttendingMeeting" sms-name="" src="a:WeightResponse/a:IsAttendingMeeting" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CountryID" sms-name="" src="a:WeightResponse/a:CountryID" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="WeeklyPointsAllowance" sms-name="" src="a:WeightResponse/a:WeeklyPointsAllowance" srcformatvalue="" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" srcformatvalue="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="PeripheralStatusLog" passwordencrypted="true" smscode="" smsenabled="false" type="soapserviceConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.meg.qat2.weightwatchers.com/ClickStreamLog.svc"/>
+            <config-param name="soapAction" value="http://www.weightwatchers.com/meg/ClickStreamLogService/IClickStreamLogService/PeripheralStatusLog"/>
+            <config-param name="userid" value=""/>
+            <config-param name="soap-version" value="1.1"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <template-param name="message" value="&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:con=&quot;http://api.meg.weightwatchers.com/Contract&quot; xmlns:clic=&quot;http://www.weightwatchers.com/meg/ClickStreamLogService&quot;&gt;&lt;soapenv:Header&gt;&lt;con:MegHeader&gt;&lt;!--Optional:--&gt;&lt;con:AccessToken&gt;$accessToken&lt;/con:AccessToken&gt;&lt;!--Optional:--&gt;&lt;con:DeviceID&gt;$deviceID&lt;/con:DeviceID&gt;&lt;!--Optional:--&gt;&lt;con:EmployeeID&gt;$SPID&lt;/con:EmployeeID&gt;&lt;!--Optional:--&gt;&lt;con:LastSyncDate&gt;$HeaderDate&lt;/con:LastSyncDate&gt;&lt;con:Locale&gt;$locale&lt;/con:Locale&gt;&lt;!--Optional:--&gt;&lt;con:Source&gt;$Source&lt;/con:Source&gt;&lt;/con:MegHeader&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;clic:PeripheralStatusLog&gt;&lt;!--Optional:--&gt;&lt;clic:request&gt;&lt;con:DeviceID&gt;$deviceID&lt;/con:DeviceID&gt;&lt;!--Optional:--&gt;&lt;con:EmployeeID&gt;$EmployeeID&lt;/con:EmployeeID&gt;&lt;con:LocationID&gt;$LocationID&lt;/con:LocationID&gt;&lt;con:MetaInfo&gt;$MetaInfo&lt;/con:MetaInfo&gt;&lt;con:PeripheralType&gt;$PeripheralType&lt;/con:PeripheralType&gt;&lt;con:Status&gt;$Status&lt;/con:Status&gt;&lt;/clic:request&gt;&lt;/clic:PeripheralStatusLog&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;">
+               <param datatype="string" encode="true" name="accessToken" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="deviceID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="SPID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="HeaderDate" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="locale" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="Source" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="MetaInfo" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="EmployeeID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="LocationID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="PeripheralType" sms-name="" src="" value=""/>
+               <param datatype="boolean" encode="true" name="Status" sms-name="" src="" value=""/>
+            </template-param>
+         </service-input>
+         <service-output>
+            <param datatype="boolean" format="None" formatvalue="" name="response" sms-name="" src="//PeripheralStatusLogResponse/PeripheralStatusLogResult" srcformatvalue="" target="response"/>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" srcformatvalue="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="PreActivate" passwordencrypted="true" smscode="" smsenabled="false" type="soapserviceConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.meg.qat2.weightwatchers.com/Subscription.svc"/>
+            <config-param name="soapAction" value="http://api.meg.weightwatchers.com/Service/PreActivate"/>
+            <config-param name="userid" value=""/>
+            <config-param name="soap-version" value="1.1"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <template-param name="message" value="&lt;soapenv:Envelope xmlns:con=&quot;http://api.meg.weightwatchers.com/Contract&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:sub=&quot;http://www.weightwatchers.com/meg/SubscriptionService&quot;&gt;&lt;soapenv:Header&gt;&lt;con:MegHeader&gt;&lt;!--Optional:--&gt;&lt;con:AccessToken&gt;$AccessToken&lt;/con:AccessToken&gt;&lt;!--Optional:--&gt;&lt;con:DeviceID&gt;$DeviceID&lt;/con:DeviceID&gt;&lt;!--Optional:--&gt;&lt;con:EmployeeID&gt;$SPID&lt;/con:EmployeeID&gt;&lt;!--Optional:--&gt;&lt;con:LastSyncDate&gt;$HeaderDate&lt;/con:LastSyncDate&gt;&lt;con:Locale&gt;$Locale&lt;/con:Locale&gt;&lt;!--Optional:--&gt;&lt;con:Source&gt;$Source&lt;/con:Source&gt;&lt;/con:MegHeader&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;sub:PreActivate&gt;&lt;!--Optional:--&gt;&lt;sub:preActivateRequest&gt;&lt;!--Optional:--&gt;&lt;con:CommitmentDuration&gt;$CommitmentDuration&lt;/con:CommitmentDuration&gt;&lt;!--Optional:--&gt;&lt;con:OfferId&gt;$OfferId&lt;/con:OfferId&gt;&lt;!--Optional:--&gt;&lt;con:PlanType&gt;$PlanType&lt;/con:PlanType&gt;&lt;con:ProgramDuration&gt;$ProgramDuration&lt;/con:ProgramDuration&gt;&lt;con:SubscriptionType&gt;$SubscriptionType&lt;/con:SubscriptionType&gt;&lt;/sub:preActivateRequest&gt;&lt;/sub:PreActivate&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;">
+               <param datatype="string" encode="true" name="AccessToken" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="DeviceID" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="SPID" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="HeaderDate" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="Locale" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="Source" sms-name="" src="request" value=""/>
+               <param datatype="number" encode="true" name="OfferId" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="ProgramDuration" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="SubscriptionType" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="CommitmentDuration" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="PlanType" sms-name="" src="request" value=""/>
+            </template-param>
+         </service-input>
+         <service-output>
+            <dataset id="PreActivationList" src="//PreActivateResult">
+               <param datatype="string" format="None" formatvalue="" name="CouponCode" sms-name="" src="a:CouponCode" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ExpirationDate" sms-name="" src="a:ExpirationDate" srcformatvalue="" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" srcformatvalue="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="RegNumberValidate" passwordencrypted="true" smscode="" smsenabled="false" type="soapserviceConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.meg.qat2.weightwatchers.com/Member.svc"/>
+            <config-param name="soapAction" value="http://www.weightwatchers.com/meg/MemberService/IMemberService/SearchMember"/>
+            <config-param name="userid" value=""/>
+            <config-param name="soap-version" value="1.1"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <template-param name="message" value="&lt;soapenv:Envelope xmlns:con=&quot;http://api.meg.weightwatchers.com/Contract&quot; xmlns:mem=&quot;http://www.weightwatchers.com/meg/MemberService&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;soapenv:Header&gt;&lt;con:MegHeader&gt;&lt;!--Optional:--&gt;&lt;con:AccessToken&gt;$AccessToken&lt;/con:AccessToken&gt;&lt;!--Optional:--&gt;&lt;con:DeviceID&gt;$DeviceID&lt;/con:DeviceID&gt;&lt;!--Optional:--&gt;&lt;con:EmployeeID&gt;$SPID&lt;/con:EmployeeID&gt;&lt;!--Optional:--&gt;&lt;con:LastSyncDate&gt;$HeaderDate&lt;/con:LastSyncDate&gt;&lt;con:Locale&gt;$locale&lt;/con:Locale&gt;&lt;!--Optional:--&gt;&lt;con:Source&gt;$Source&lt;/con:Source&gt;&lt;/con:MegHeader&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;mem:SearchMember&gt;&lt;!--Optional:--&gt;&lt;mem:request&gt;&lt;!--Optional:--&gt;&lt;con:memberId&gt;$MemberID&lt;/con:memberId&gt;&lt;!--Optional:--&gt;&lt;con:registrationNumber&gt;$RegNumber&lt;/con:registrationNumber&gt;&lt;/mem:request&gt;&lt;/mem:SearchMember&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;">
+               <param datatype="string" encode="true" name="AccessToken" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="DeviceID" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="SPID" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="Source" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="HeaderDate" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="RegNumber" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="MemberID" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="locale" sms-name="" src="" value=""/>
+            </template-param>
+         </service-input>
+         <service-output>
+            <dataset id="SearchMemberResponse" src="//SearchMemberResponse">
+               <param datatype="string" format="None" formatvalue="" name="IsUsed" sms-name="" src="SearchMemberResult" srcformatvalue="" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" srcformatvalue="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="RenewSession" passwordencrypted="true" smscode="" smsenabled="false" type="soapserviceConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.meg.qat2.weightwatchers.com/Authentication.svc"/>
+            <config-param name="soapAction" value="http://api.meg.weightwatchers.com/Service/IAuthenticationService/RenewSession"/>
+            <config-param name="userid" value=""/>
+            <config-param name="soap-version" value="1.1"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <template-param name="message" value="&lt;soapenv:Envelope xmlns:con=&quot;http://api.meg.weightwatchers.com/Contract&quot; xmlns:ser=&quot;http://api.meg.weightwatchers.com/Service&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;soapenv:Header&gt;&lt;con:MegHeader&gt;&lt;con:AccessToken&gt;$accessToken&lt;/con:AccessToken&gt;&lt;con:DeviceID&gt;$deviceID&lt;/con:DeviceID&gt;&lt;con:EmployeeID&gt;$SPID&lt;/con:EmployeeID&gt;&lt;con:LastSyncDate&gt;$HeaderDate&lt;/con:LastSyncDate&gt;&lt;con:Locale&gt;$locale&lt;/con:Locale&gt;&lt;!--Optional:--&gt;&lt;con:Source&gt;$Source&lt;/con:Source&gt;&lt;/con:MegHeader&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;ser:RenewSession&gt;&lt;ser:request&gt;&lt;con:EmployeeNumber&gt;$empNumber&lt;/con:EmployeeNumber&gt;&lt;con:LocationID&gt;$locationId&lt;/con:LocationID&gt;&lt;con:RefreshToken&gt;$refreshToken&lt;/con:RefreshToken&gt;&lt;/ser:request&gt;&lt;/ser:RenewSession&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;">
+               <param datatype="string" encode="true" name="deviceID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="empNumber" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="locationId" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="refreshToken" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="accessToken" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="SPID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="HeaderDate" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="Source" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="locale" sms-name="" src="" value=""/>
+            </template-param>
+         </service-input>
+         <service-output>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" srcformatvalue="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="runTranBillingWithToken" passwordencrypted="true" smscode="" smsenabled="false" type="soapserviceConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="https://ics2wstesta.ic3.com/commerce/1.x/transactionProcessor"/>
+            <config-param name="soapAction" value="runTransaction"/>
+            <config-param name="userid" value=""/>
+            <config-param name="soap-version" value="1.1"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value=""/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <template-param name="message" value="&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:urn=&quot;urn:schemas-cybersource-com:transaction-data-1.120&quot;&gt;&lt;soapenv:Header&gt;&lt;o:Security xmlns:o=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd&quot; urn:mustUnderstand=&quot;1&quot;&gt;&lt;urn:Timestamp urn:Id=&quot;_0&quot;&gt;&lt;urn:Created&gt;$CreatedTime&lt;/urn:Created&gt;&lt;urn:Expires&gt;$ExpireTime&lt;/urn:Expires&gt;&lt;/urn:Timestamp&gt;&lt;o:UsernameToken urn:Id=&quot;$UsernameToken&quot;&gt;&lt;o:Username&gt;ww_meg&lt;/o:Username&gt;&lt;o:Password Type=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText&quot;&gt;CzOOzXQYVLEHn2klKqhrsllAiFii2Oj7RbQkA87aJdZsU7m10EV3b5fdMTLA7mGyPQqdPeZGLP1Pq3GCM4rICdKZB9QybQUZCyx9dqIChg+OBQDaCnDf6wXHkLJ4gcsiDpuxDuIOoq20VWfHDua9Q6q3Ck2QxfiWMGuNbfsTKzo1Fj5biSNx4vbcAGwknf4MCHli6nqAhh6AvF7XaFq72REY7ao8HVfqiAEkCk/v4aHAquPVbpsIqaDkU7sX3X7iIVQmGtOZYiBGUrHgzToG49HQXW/jylHb+6A6T0cuYVtwjmRuGsWM9VEE9Z7fU4aY0fmqD+U6DYk+zsKUVVKBbA==&lt;/o:Password&gt;&lt;/o:UsernameToken&gt;&lt;/o:Security&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;urn:requestMessage&gt;&lt;!--Optional:--&gt;&lt;urn:merchantID&gt;$merchantID&lt;/urn:merchantID&gt;&lt;!--Optional:--&gt;&lt;urn:merchantReferenceCode&gt;$merchantReferenceCode&lt;/urn:merchantReferenceCode&gt;&lt;!--Optional:--&gt;&lt;urn:purchaseTotals&gt;&lt;!--Optional:--&gt;&lt;urn:currency&gt;$currency&lt;/urn:currency&gt;&lt;urn:grandTotalAmount&gt;$grandTotalAmount&lt;/urn:grandTotalAmount&gt;&lt;/urn:purchaseTotals&gt;&lt;!--Optional:--&gt;&lt;urn:recurringSubscriptionInfo&gt;&lt;urn:subscriptionID&gt;$Token&lt;/urn:subscriptionID&gt;&lt;/urn:recurringSubscriptionInfo&gt;&lt;urn:ccAuthService run=&quot;true&quot;/&gt;&lt;urn:ccCaptureService run=&quot;true&quot;/&gt;&lt;!--Optional:--&gt;&lt;/urn:requestMessage&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;">
+               <param datatype="string" encode="false" name="CreatedTime" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="ExpireTime" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="UsernameToken" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="merchantID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="merchantReferenceCode" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="currency" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="grandTotalAmount" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="Username" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="Password" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="Token" sms-name="" src="request" value=""/>
+            </template-param>
+         </service-input>
+         <service-output>
+            <param datatype="string" format="None" formatvalue="" name="merchantRefCode" sms-name="" src="//c:replyMessage/c:merchantReferenceCode" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="RequestId" sms-name="" src="//c:replyMessage/c:requestID" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="reasonCode" sms-name="" src="//c:replyMessage/c:reasonCode" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="decision" sms-name="" src="//c:replyMessage/c:decision" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="requestToken" sms-name="" src="//c:replyMessage/c:requestToken" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="amount" sms-name="" src="//c:replyMessage/c:ccAuthReply/c:amount" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="AuthorizationCode" sms-name="" src="//c:replyMessage/c:ccAuthReply/c:authorizationCode" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="avsCode" sms-name="" src="//c:replyMessage/c:ccAuthReply/c:avsCode" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="authorizedDateTime" sms-name="" src="//c:replyMessage/c:ccAuthReply/c:authorizedDateTime" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="processorResponse" sms-name="" src="//c:replyMessage/c:ccAuthReply/c:processorResponse" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="requestDateTime" sms-name="" src="//c:replyMessage/c:ccCaptureReply/c:requestDateTime" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="ccreplyamount" sms-name="" src="//c:replyMessage/c:ccCaptureReply/c:amount" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="ReferenceNumber" sms-name="" src="//c:replyMessage/c:ccCaptureReply/c:reconciliationID" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="Token" sms-name="" src="//c:replyMessage/c:paySubscriptionCreateReply/c:subscriptionID" srcformatvalue="" target="response"/>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" srcformatvalue="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="runTransaction" passwordencrypted="true" smscode="" smsenabled="false" type="soapserviceConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="https://ics2wstesta.ic3.com/commerce/1.x/transactionProcessor"/>
+            <config-param name="soapAction" value="runTransaction"/>
+            <config-param name="userid" value=""/>
+            <config-param name="soap-version" value="1.1"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value=""/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <template-param name="message" value="&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:urn=&quot;urn:schemas-cybersource-com:transaction-data-1.120&quot;&gt;&lt;soapenv:Header&gt;&lt;o:Security xmlns:o=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd&quot; urn:mustUnderstand=&quot;1&quot;&gt;&lt;urn:Timestamp urn:Id=&quot;_0&quot;&gt;&lt;urn:Created&gt;$CreatedTime&lt;/urn:Created&gt;&lt;urn:Expires&gt;$ExpireTime&lt;/urn:Expires&gt;&lt;/urn:Timestamp&gt;&lt;o:UsernameToken urn:Id=&quot;$UsernameToken&quot;&gt;&lt;o:Username&gt;ww_meg&lt;/o:Username&gt;&lt;o:Password Type=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText&quot;&gt;CzOOzXQYVLEHn2klKqhrsllAiFii2Oj7RbQkA87aJdZsU7m10EV3b5fdMTLA7mGyPQqdPeZGLP1Pq3GCM4rICdKZB9QybQUZCyx9dqIChg+OBQDaCnDf6wXHkLJ4gcsiDpuxDuIOoq20VWfHDua9Q6q3Ck2QxfiWMGuNbfsTKzo1Fj5biSNx4vbcAGwknf4MCHli6nqAhh6AvF7XaFq72REY7ao8HVfqiAEkCk/v4aHAquPVbpsIqaDkU7sX3X7iIVQmGtOZYiBGUrHgzToG49HQXW/jylHb+6A6T0cuYVtwjmRuGsWM9VEE9Z7fU4aY0fmqD+U6DYk+zsKUVVKBbA==&lt;/o:Password&gt;&lt;/o:UsernameToken&gt;&lt;/o:Security&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;urn:requestMessage&gt;&lt;!--Optional:--&gt;&lt;urn:merchantID&gt;$merchantID&lt;/urn:merchantID&gt;&lt;!--Optional:--&gt;&lt;urn:merchantReferenceCode&gt;$merchantReferenceCode&lt;/urn:merchantReferenceCode&gt;&lt;urn:billTo&gt;&lt;!--Optional:--&gt;&lt;urn:title&gt;$billingTitle&lt;/urn:title&gt;&lt;!--Optional:--&gt;&lt;urn:firstName&gt;$billingFirstName&lt;/urn:firstName&gt;&lt;!--Optional:--&gt;&lt;urn:middleName&gt;$billingMiddleName&lt;/urn:middleName&gt;&lt;!--Optional:--&gt;&lt;urn:lastName&gt;$billingLastName&lt;/urn:lastName&gt;&lt;!--Optional:--&gt;&lt;urn:street1&gt;$billingStreet1&lt;/urn:street1&gt;&lt;!--Optional:--&gt;&lt;urn:street2&gt;$billingStreet2&lt;/urn:street2&gt;&lt;!--Optional:--&gt;&lt;urn:city&gt;$billingCity&lt;/urn:city&gt;&lt;!--Optional:--&gt;&lt;urn:state&gt;$billingState&lt;/urn:state&gt;&lt;!--Optional:--&gt;&lt;urn:postalCode&gt;$billingPostalCode&lt;/urn:postalCode&gt;&lt;!--Optional:--&gt;&lt;urn:country&gt;$billingCountry&lt;/urn:country&gt;&lt;!--Optional:--&gt;&lt;urn:email&gt;$billingEmail&lt;/urn:email&gt;&lt;/urn:billTo&gt;&lt;!--Optional:--&gt;&lt;urn:purchaseTotals&gt;&lt;!--Optional:--&gt;&lt;urn:currency&gt;$currency&lt;/urn:currency&gt;&lt;urn:grandTotalAmount&gt;$grandTotalAmount&lt;/urn:grandTotalAmount&gt;&lt;/urn:purchaseTotals&gt;&lt;!--Optional:--&gt;&lt;urn:pos&gt;&lt;!--Optional:--&gt;&lt;urn:entryMode&gt;$entryMode&lt;/urn:entryMode&gt;&lt;!--Optional:--&gt;&lt;urn:cardPresent&gt;$cardPresent&lt;/urn:cardPresent&gt;&lt;!--Optional:--&gt;&lt;urn:terminalCapability&gt;$terminalCapability&lt;/urn:terminalCapability&gt;&lt;!--Optional:--&gt;&lt;!--Optional:--&gt;&lt;urn:terminalID&gt;$terminalID&lt;/urn:terminalID&gt;&lt;!--Optional:--&gt;&lt;urn:catLevel&gt;$catLevel&lt;/urn:catLevel&gt;&lt;!--Optional:--&gt;&lt;urn:paymentData&gt;$paymentData&lt;/urn:paymentData&gt;&lt;!--Optional:--&gt;&lt;urn:deviceReaderData&gt;$deviceReaderData&lt;/urn:deviceReaderData&gt;&lt;!--Optional:--&gt;&lt;urn:encryptionAlgorithm&gt;$encryptionAlgorithm&lt;/urn:encryptionAlgorithm&gt;&lt;!--Optional:--&gt;&lt;urn:encodingMethod&gt;$encodingMethod&lt;/urn:encodingMethod&gt;&lt;/urn:pos&gt;&lt;urn:card&gt;&lt;urn:cardType&gt;$cardType&lt;/urn:cardType&gt;&lt;/urn:card&gt;&lt;urn:recurringSubscriptionInfo&gt;&lt;urn:frequency&gt;$recurringFrequency&lt;/urn:frequency&gt;&lt;/urn:recurringSubscriptionInfo&gt;&lt;!--Optional:--&gt;&lt;urn:ccAuthService run=&quot;true&quot;&gt;&lt;!--Optional:--&gt;&lt;urn:commerceIndicator&gt;$commerceIndicator&lt;/urn:commerceIndicator&gt;&lt;urn:reconciliationID&gt;$merchantReferenceCode&lt;/urn:reconciliationID&gt;&lt;!--Optional:--&gt;&lt;urn:partialAuthIndicator&gt;true&lt;/urn:partialAuthIndicator&gt;&lt;/urn:ccAuthService&gt;&lt;!--Optional:--&gt;&lt;urn:ccCaptureService run=&quot;true&quot;&gt;&lt;!--Optional:--&gt;&lt;urn:reconciliationID&gt;$merchantReferenceCode&lt;/urn:reconciliationID&gt;&lt;/urn:ccCaptureService&gt;&lt;urn:paySubscriptionCreateService run=&quot;true&quot;/&gt;&lt;urn:businessRules&gt;&lt;!--Optional:--&gt;&lt;urn:ignoreAVSResult&gt;true&lt;/urn:ignoreAVSResult&gt;&lt;!--Optional:--&gt;&lt;urn:ignoreCVResult&gt;true&lt;/urn:ignoreCVResult&gt;&lt;/urn:businessRules&gt;&lt;/urn:requestMessage&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;">
+               <param datatype="string" encode="false" name="CreatedTime" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="ExpireTime" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="UsernameToken" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="merchantID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="merchantReferenceCode" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="currency" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="grandTotalAmount" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="entryMode" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="cardPresent" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="terminalCapability" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="terminalID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="catLevel" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="paymentData" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="deviceReaderData" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="encryptionAlgorithm" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="encodingMethod" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="commerceIndicator" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="cardType" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="recurringFrequency" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="Username" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="Password" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="partialAuthorization" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="billingTitle" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="billingFirstName" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="billingMiddleName" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="billingLastName" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="billingStreet1" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="billingStreet2" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="billingCity" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="billingState" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="billingPostalCode" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="billingCountry" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="billingEmail" sms-name="" src="" value=""/>
+            </template-param>
+         </service-input>
+         <service-output>
+            <param datatype="string" format="None" formatvalue="" name="merchantRefCode" sms-name="" src="//c:replyMessage/c:merchantReferenceCode" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="RequestId" sms-name="" src="//c:replyMessage/c:requestID" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="reasonCode" sms-name="" src="//c:replyMessage/c:reasonCode" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="decision" sms-name="" src="//c:replyMessage/c:decision" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="requestToken" sms-name="" src="//c:replyMessage/c:requestToken" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="amount" sms-name="" src="//c:replyMessage/c:ccAuthReply/c:amount" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="AuthorizationCode" sms-name="" src="//c:replyMessage/c:ccAuthReply/c:authorizationCode" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="avsCode" sms-name="" src="//c:replyMessage/c:ccAuthReply/c:avsCode" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="authorizedDateTime" sms-name="" src="//c:replyMessage/c:ccAuthReply/c:authorizedDateTime" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="processorResponse" sms-name="" src="//c:replyMessage/c:ccAuthReply/c:processorResponse" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="requestDateTime" sms-name="" src="//c:replyMessage/c:ccCaptureReply/c:requestDateTime" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="ccreplyamount" sms-name="" src="//c:replyMessage/c:ccCaptureReply/c:amount" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="ReferenceNumber" sms-name="" src="//c:replyMessage/c:ccCaptureReply/c:reconciliationID" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="Token" sms-name="" src="//c:replyMessage/c:paySubscriptionCreateReply/c:subscriptionID" srcformatvalue="" target="response"/>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" srcformatvalue="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="runTransaction_New" passwordencrypted="true" smscode="" smsenabled="false" type="soapserviceConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="https://ics2wstesta.ic3.com/commerce/1.x/transactionProcessor"/>
+            <config-param name="soapAction" value="runTransaction"/>
+            <config-param name="userid" value=""/>
+            <config-param name="soap-version" value="1.1"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value=""/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <template-param name="message" value="&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:urn=&quot;urn:schemas-cybersource-com:transaction-data-1.120&quot;&gt;&lt;soapenv:Header&gt;&lt;o:Security xmlns:o=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd&quot; urn:mustUnderstand=&quot;1&quot;&gt;&lt;urn:Timestamp urn:Id=&quot;_0&quot;&gt;&lt;urn:Created&gt;$CreatedTime&lt;/urn:Created&gt;&lt;urn:Expires&gt;$ExpireTime&lt;/urn:Expires&gt;&lt;/urn:Timestamp&gt;&lt;o:UsernameToken urn:Id=&quot;$UsernameToken&quot;&gt;&lt;o:Username&gt;ww_meg&lt;/o:Username&gt;&lt;o:Password Type=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText&quot;&gt;CzOOzXQYVLEHn2klKqhrsllAiFii2Oj7RbQkA87aJdZsU7m10EV3b5fdMTLA7mGyPQqdPeZGLP1Pq3GCM4rICdKZB9QybQUZCyx9dqIChg+OBQDaCnDf6wXHkLJ4gcsiDpuxDuIOoq20VWfHDua9Q6q3Ck2QxfiWMGuNbfsTKzo1Fj5biSNx4vbcAGwknf4MCHli6nqAhh6AvF7XaFq72REY7ao8HVfqiAEkCk/v4aHAquPVbpsIqaDkU7sX3X7iIVQmGtOZYiBGUrHgzToG49HQXW/jylHb+6A6T0cuYVtwjmRuGsWM9VEE9Z7fU4aY0fmqD+U6DYk+zsKUVVKBbA==&lt;/o:Password&gt;&lt;/o:UsernameToken&gt;&lt;/o:Security&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;urn:requestMessage&gt;&lt;!--Optional:--&gt;&lt;urn:merchantID&gt;$merchantID&lt;/urn:merchantID&gt;&lt;!--Optional:--&gt;&lt;urn:merchantReferenceCode&gt;$merchantReferenceCode&lt;/urn:merchantReferenceCode&gt;&lt;!--Optional:--&gt;&lt;urn:purchaseTotals&gt;&lt;!--Optional:--&gt;&lt;urn:currency&gt;$currency&lt;/urn:currency&gt;&lt;urn:grandTotalAmount&gt;$grandTotalAmount&lt;/urn:grandTotalAmount&gt;&lt;/urn:purchaseTotals&gt;&lt;!--Optional:--&gt;&lt;urn:pos&gt;&lt;!--Optional:--&gt;&lt;urn:entryMode&gt;$entryMode&lt;/urn:entryMode&gt;&lt;!--Optional:--&gt;&lt;urn:cardPresent&gt;$cardPresent&lt;/urn:cardPresent&gt;&lt;!--Optional:--&gt;&lt;urn:terminalCapability&gt;$terminalCapability&lt;/urn:terminalCapability&gt;&lt;!--Optional:--&gt;&lt;!--Optional:--&gt;&lt;urn:terminalID&gt;$terminalID&lt;/urn:terminalID&gt;&lt;!--Optional:--&gt;&lt;urn:catLevel&gt;$catLevel&lt;/urn:catLevel&gt;&lt;!--Optional:--&gt;&lt;urn:paymentData&gt;$paymentData&lt;/urn:paymentData&gt;&lt;!--Optional:--&gt;&lt;urn:deviceReaderData&gt;$deviceReaderData&lt;/urn:deviceReaderData&gt;&lt;!--Optional:--&gt;&lt;urn:encryptionAlgorithm&gt;$encryptionAlgorithm&lt;/urn:encryptionAlgorithm&gt;&lt;!--Optional:--&gt;&lt;urn:encodingMethod&gt;$encodingMethod&lt;/urn:encodingMethod&gt;&lt;/urn:pos&gt;&lt;urn:card&gt;&lt;urn:cardType&gt;$cardType&lt;/urn:cardType&gt;&lt;/urn:card&gt;&lt;urn:recurringSubscriptionInfo&gt;&lt;urn:frequency&gt;$recurringFrequency&lt;/urn:frequency&gt;&lt;/urn:recurringSubscriptionInfo&gt;&lt;!--Optional:--&gt;&lt;urn:ccAuthService run=&quot;true&quot;&gt;&lt;!--Optional:--&gt;&lt;urn:commerceIndicator&gt;$commerceIndicator&lt;/urn:commerceIndicator&gt;&lt;urn:reconciliationID&gt;$merchantReferenceCode&lt;/urn:reconciliationID&gt;&lt;!--Optional:--&gt;&lt;/urn:ccAuthService&gt;&lt;!--Optional:--&gt;&lt;urn:ccCaptureService run=&quot;true&quot;&gt;&lt;!--Optional:--&gt;&lt;urn:reconciliationID&gt;$merchantReferenceCode&lt;/urn:reconciliationID&gt;&lt;/urn:ccCaptureService&gt;&lt;urn:paySubscriptionCreateService run=&quot;true&quot;/&gt;&lt;urn:businessRules&gt;&lt;!--Optional:--&gt;&lt;urn:ignoreAVSResult&gt;true&lt;/urn:ignoreAVSResult&gt;&lt;!--Optional:--&gt;&lt;urn:ignoreCVResult&gt;true&lt;/urn:ignoreCVResult&gt;&lt;/urn:businessRules&gt;&lt;/urn:requestMessage&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;">
+               <param datatype="string" encode="false" name="CreatedTime" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="ExpireTime" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="UsernameToken" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="merchantID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="merchantReferenceCode" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="currency" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="grandTotalAmount" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="entryMode" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="cardPresent" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="terminalCapability" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="terminalID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="catLevel" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="paymentData" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="deviceReaderData" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="encryptionAlgorithm" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="encodingMethod" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="commerceIndicator" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="cardType" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="recurringFrequency" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="Username" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="Password" sms-name="" src="" value=""/>
+            </template-param>
+         </service-input>
+         <service-output>
+            <param datatype="string" format="None" formatvalue="" name="merchantRefCode" sms-name="" src="//c:replyMessage/c:merchantReferenceCode" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="RequestId" sms-name="" src="//c:replyMessage/c:requestID" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="reasonCode" sms-name="" src="//c:replyMessage/c:reasonCode" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="decision" sms-name="" src="//c:replyMessage/c:decision" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="requestToken" sms-name="" src="//c:replyMessage/c:requestToken" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="amount" sms-name="" src="//c:replyMessage/c:ccAuthReply/c:amount" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="AuthorizationCode" sms-name="" src="//c:replyMessage/c:ccAuthReply/c:authorizationCode" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="avsCode" sms-name="" src="//c:replyMessage/c:ccAuthReply/c:avsCode" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="authorizedDateTime" sms-name="" src="//c:replyMessage/c:ccAuthReply/c:authorizedDateTime" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="processorResponse" sms-name="" src="//c:replyMessage/c:ccAuthReply/c:processorResponse" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="requestDateTime" sms-name="" src="//c:replyMessage/c:ccCaptureReply/c:requestDateTime" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="ccreplyamount" sms-name="" src="//c:replyMessage/c:ccCaptureReply/c:amount" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="ReferenceNumber" sms-name="" src="//c:replyMessage/c:ccCaptureReply/c:reconciliationID" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="Token" sms-name="" src="//c:replyMessage/c:paySubscriptionCreateReply/c:subscriptionID" srcformatvalue="" target="response"/>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" srcformatvalue="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="runTranTokenCreation" passwordencrypted="true" smscode="" smsenabled="false" type="soapserviceConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="https://ics2wstesta.ic3.com/commerce/1.x/transactionProcessor"/>
+            <config-param name="soapAction" value="runTransaction"/>
+            <config-param name="userid" value=""/>
+            <config-param name="soap-version" value="1.1"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value=""/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <template-param name="message" value="&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:urn=&quot;urn:schemas-cybersource-com:transaction-data-1.120&quot;&gt;&lt;soapenv:Header&gt;&lt;o:Security xmlns:o=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd&quot; urn:mustUnderstand=&quot;1&quot;&gt;&lt;urn:Timestamp urn:Id=&quot;_0&quot;&gt;&lt;urn:Created&gt;$CreatedTime&lt;/urn:Created&gt;&lt;urn:Expires&gt;$ExpireTime&lt;/urn:Expires&gt;&lt;/urn:Timestamp&gt;&lt;o:UsernameToken urn:Id=&quot;$UsernameToken&quot;&gt;&lt;o:Username&gt;Token_US&lt;/o:Username&gt;&lt;o:Password Type=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText&quot;&gt;T4jHS2HthBjQxHhw+llLM6x7/hycugkHDqIgqSETaaNHXxuJ65K3tYTLj+JSq28xHgio2Pem1K/Akhud/zeJeAUt1D/VGrOf9ILpIsqu31tzYLeiNDr8PwynKPQyla3DFmdVlqrIdIB4ORsyS5iSeOGnAa614SoewgHa/lPepPcRRfoY5Uu0K4yYrx1PRRX2FLMXcgqTI51FKzmdFNxSx09ZCt8jSWTlOS80Ax6wb56fjgTslkKZwO+6INPDBMIMhnUvkraB0eVJ3ORcYxvv8jX32/DoyfX3fgBpKpkeVpPaFTswnKTGOfBOIJgHhxfrIktvzM6qtRC1ITaZEmDCxw==&lt;/o:Password&gt;&lt;/o:UsernameToken&gt;&lt;/o:Security&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;urn:requestMessage&gt;&lt;!--Optional:--&gt;&lt;urn:merchantID&gt;$merchantID&lt;/urn:merchantID&gt;&lt;!--Optional:--&gt;&lt;urn:merchantReferenceCode&gt;$merchantReferenceCode&lt;/urn:merchantReferenceCode&gt;&lt;urn:billTo&gt;&lt;!--Optional:--&gt;&lt;urn:title&gt;$billingTitle&lt;/urn:title&gt;&lt;!--Optional:--&gt;&lt;urn:firstName&gt;$billingFirstName&lt;/urn:firstName&gt;&lt;!--Optional:--&gt;&lt;urn:middleName&gt;$billingMiddleName&lt;/urn:middleName&gt;&lt;!--Optional:--&gt;&lt;urn:lastName&gt;$billingLastName&lt;/urn:lastName&gt;&lt;!--Optional:--&gt;&lt;urn:street1&gt;$billingStreet1&lt;/urn:street1&gt;&lt;!--Optional:--&gt;&lt;urn:street2&gt;$billingStreet2&lt;/urn:street2&gt;&lt;!--Optional:--&gt;&lt;urn:city&gt;$billingCity&lt;/urn:city&gt;&lt;!--Optional:--&gt;&lt;urn:state&gt;$billingState&lt;/urn:state&gt;&lt;!--Optional:--&gt;&lt;urn:postalCode&gt;$billingPostalCode&lt;/urn:postalCode&gt;&lt;!--Optional:--&gt;&lt;urn:country&gt;$billingCountry&lt;/urn:country&gt;&lt;!--Optional:--&gt;&lt;urn:email&gt;$billingEmail&lt;/urn:email&gt;&lt;/urn:billTo&gt;&lt;!--Optional:--&gt;&lt;urn:purchaseTotals&gt;&lt;!--Optional:--&gt;&lt;urn:currency&gt;$currency&lt;/urn:currency&gt;&lt;/urn:purchaseTotals&gt;&lt;!--Optional:--&gt;&lt;urn:pos&gt;&lt;!--Optional:--&gt;&lt;urn:entryMode&gt;$entryMode&lt;/urn:entryMode&gt;&lt;!--Optional:--&gt;&lt;urn:cardPresent&gt;$cardPresent&lt;/urn:cardPresent&gt;&lt;!--Optional:--&gt;&lt;urn:terminalCapability&gt;$terminalCapability&lt;/urn:terminalCapability&gt;&lt;!--Optional:--&gt;&lt;!--Optional:--&gt;&lt;urn:terminalID&gt;$terminalID&lt;/urn:terminalID&gt;&lt;!--Optional:--&gt;&lt;urn:catLevel&gt;$catLevel&lt;/urn:catLevel&gt;&lt;!--Optional:--&gt;&lt;urn:paymentData&gt;$paymentData&lt;/urn:paymentData&gt;&lt;!--Optional:--&gt;&lt;urn:deviceReaderData&gt;$deviceReaderData&lt;/urn:deviceReaderData&gt;&lt;!--Optional:--&gt;&lt;urn:encryptionAlgorithm&gt;$encryptionAlgorithm&lt;/urn:encryptionAlgorithm&gt;&lt;!--Optional:--&gt;&lt;urn:encodingMethod&gt;$encodingMethod&lt;/urn:encodingMethod&gt;&lt;/urn:pos&gt;&lt;urn:card&gt;&lt;urn:cardType&gt;$cardType&lt;/urn:cardType&gt;&lt;/urn:card&gt;&lt;urn:recurringSubscriptionInfo&gt;&lt;urn:frequency&gt;$recurringFrequency&lt;/urn:frequency&gt;&lt;/urn:recurringSubscriptionInfo&gt;&lt;urn:paySubscriptionCreateService run=&quot;true&quot;/&gt;&lt;urn:businessRules&gt;&lt;!--Optional:--&gt;&lt;urn:ignoreAVSResult&gt;true&lt;/urn:ignoreAVSResult&gt;&lt;!--Optional:--&gt;&lt;urn:ignoreCVResult&gt;true&lt;/urn:ignoreCVResult&gt;&lt;/urn:businessRules&gt;&lt;/urn:requestMessage&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;">
+               <param datatype="string" encode="false" name="CreatedTime" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="ExpireTime" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="UsernameToken" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="merchantID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="merchantReferenceCode" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="entryMode" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="cardPresent" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="terminalCapability" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="terminalID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="catLevel" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="paymentData" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="deviceReaderData" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="encryptionAlgorithm" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="encodingMethod" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="commerceIndicator" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="cardType" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="recurringFrequency" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="Username" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="Password" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="partialAuthorization" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="billingTitle" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="billingFirstName" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="billingMiddleName" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="billingLastName" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="billingStreet1" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="billingStreet2" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="billingCity" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="billingState" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="billingPostalCode" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="billingCountry" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="billingEmail" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="currency" sms-name="" src="" value=""/>
+            </template-param>
+         </service-input>
+         <service-output>
+            <param datatype="string" format="None" formatvalue="" name="merchantRefCode" sms-name="" src="//c:replyMessage/c:merchantReferenceCode" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="RequestId" sms-name="" src="//c:replyMessage/c:requestID" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="reasonCode" sms-name="" src="//c:replyMessage/c:reasonCode" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="decision" sms-name="" src="//c:replyMessage/c:decision" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="requestToken" sms-name="" src="//c:replyMessage/c:requestToken" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="AuthorizationCode" sms-name="" src="//c:replyMessage/c:ccAuthReply/c:authorizationCode" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="avsCode" sms-name="" src="//c:replyMessage/c:ccAuthReply/c:avsCode" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="authorizedDateTime" sms-name="" src="//c:replyMessage/c:ccAuthReply/c:authorizedDateTime" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="processorResponse" sms-name="" src="//c:replyMessage/c:ccAuthReply/c:processorResponse" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="Token" sms-name="" src="//c:replyMessage/c:paySubscriptionCreateReply/c:subscriptionID" srcformatvalue="" target="response"/>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" srcformatvalue="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="SearchEmployee" passwordencrypted="true" smscode="" smsenabled="false" type="soapserviceConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.meg.qat2.weightwatchers.com/Employee.svc"/>
+            <config-param name="soapAction" value="http://api.meg.weightwatchers.com/Service/EmployeeSearch"/>
+            <config-param name="userid" value=""/>
+            <config-param name="soap-version" value="1.1"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <template-param name="message" value="&lt;soapenv:Envelope xmlns:con=&quot;http://api.meg.weightwatchers.com/Contract&quot; xmlns:ser=&quot;http://api.meg.weightwatchers.com/Service&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;soapenv:Header&gt;&lt;con:MegHeader&gt;&lt;!--Optional:--&gt;&lt;con:AccessToken&gt;$AccessToken&lt;/con:AccessToken&gt;&lt;!--Optional:--&gt;&lt;con:DeviceID&gt;$DeviceID&lt;/con:DeviceID&gt;&lt;!--Optional:--&gt;&lt;con:EmployeeID&gt;$SPID&lt;/con:EmployeeID&gt;&lt;!--Optional:--&gt;&lt;con:LastSyncDate&gt;$HeaderDate&lt;/con:LastSyncDate&gt;&lt;con:Locale&gt;$locale&lt;/con:Locale&gt;&lt;!--Optional:--&gt;&lt;con:Source&gt;$Source&lt;/con:Source&gt;&lt;/con:MegHeader&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;ser:Search&gt;&lt;!--Optional:--&gt;&lt;ser:criteria&gt;&lt;con:LocationID&gt;$LocationID&lt;/con:LocationID&gt;&lt;!--Optional:--&gt;&lt;con:SearchText&gt;$searchText&lt;/con:SearchText&gt;&lt;!--Optional:--&gt;&lt;con:SearchType&gt;$searchType&lt;/con:SearchType&gt;&lt;/ser:criteria&gt;&lt;/ser:Search&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;">
+               <param datatype="string" encode="true" name="searchText" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="searchType" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="LocationID" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="AccessToken" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="DeviceID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="SPID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="HeaderDate" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="Source" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="locale" sms-name="" src="" value=""/>
+            </template-param>
+         </service-input>
+         <service-output>
+            <dataset id="EmployeeList" src="//SearchResult">
+               <param datatype="string" format="None" formatvalue="" name="EmployeeID" sms-name="" src="a:EmployeeResponse/a:EmployeeID" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EmployeeNumber" sms-name="" src="a:EmployeeResponse/a:EmployeeNumber" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="FirstName" sms-name="" src="a:EmployeeResponse/a:FirstName" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LastName" sms-name="" src="a:EmployeeResponse/a:LastName" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CountryID" sms-name="" src="a:EmployeeResponse/a:CountryID" srcformatvalue="" target="response"/>
+               <param datatype="boolean" format="None" formatvalue="" name="IsCurrentWeekWeighed" sms-name="" src="a:EmployeeResponse/a:IsCurrentWeekWeighed" srcformatvalue="" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" srcformatvalue="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="SearchMember" passwordencrypted="true" smscode="" smsenabled="false" type="soapserviceConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://api.meg.devstage2.weightwatchers.com/Member.svc"/>
+            <config-param name="soapAction" value="http://www.weightwatchers.com/meg/MemberService/IMemberService/Search"/>
+            <config-param name="userid" value=""/>
+            <config-param name="soap-version" value="1.1"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value="120000"/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <template-param name="message" value="&lt;soapenv:Envelope xmlns:con=&quot;http://api.meg.weightwatchers.com/Contract&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:mem=&quot;http://www.weightwatchers.com/meg/MemberService&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;soapenv:Header&gt;&lt;con:MegHeader&gt;&lt;con:AccessToken&gt;$accessToken&lt;/con:AccessToken&gt;&lt;con:DeviceID&gt;$deviceID&lt;/con:DeviceID&gt;&lt;con:EmployeeID&gt;$SPID&lt;/con:EmployeeID&gt;&lt;con:LastSyncDate&gt;$HeaderDate&lt;/con:LastSyncDate&gt;&lt;con:Locale&gt;$locale&lt;/con:Locale&gt;&lt;!--Optional:--&gt;&lt;con:Source&gt;$Source&lt;/con:Source&gt;&lt;/con:MegHeader&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;mem:Search&gt;&lt;mem:searchCriteria&gt;&lt;con:City i:nil=&quot;$noCity&quot;&gt;$city&lt;/con:City&gt;&lt;con:FirstName&gt;$firstName&lt;/con:FirstName&gt;&lt;con:LastName&gt;$lastName&lt;/con:LastName&gt;&lt;con:LocationID i:nil=&quot;$noLocationId&quot;&gt;$locationId&lt;/con:LocationID&gt;&lt;con:MaxResults&gt;100&lt;/con:MaxResults&gt;&lt;con:MeetingOccurrenceID i:nil=&quot;$noMtngOccrId&quot;&gt;$mtngOccrId&lt;/con:MeetingOccurrenceID&gt;&lt;con:MemberCategory i:nil=&quot;$noMemCategory&quot;&gt;$memCategory&lt;/con:MemberCategory&gt;&lt;con:SearchText&gt;$searchText&lt;/con:SearchText&gt;&lt;con:SearchType&gt;$searchType&lt;/con:SearchType&gt;&lt;con:StateCode i:nil=&quot;$noState&quot;&gt;$stateCode&lt;/con:StateCode&gt;&lt;con:UserStatus i:nil=&quot;$noUserStatus&quot;&gt;$userStatus&lt;/con:UserStatus&gt;&lt;/mem:searchCriteria&gt;&lt;/mem:Search&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;">
+               <param datatype="string" encode="true" name="accessToken" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="deviceID" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="SPID" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="HeaderDate" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="city" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="firstName" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="lastName" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="locationId" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="mtngOccrId" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="memCategory" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="searchText" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="searchType" sms-name="" src="request" value=""/>
+               <param datatype="string" encode="true" name="stateCode" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="userStatus" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="noLocationId" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="noUserStatus" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="noMemCategory" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="noMtngOccrId" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="noCity" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="noState" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="Source" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="locale" sms-name="" src="" value=""/>
+            </template-param>
+         </service-input>
+         <service-output>
+            <dataset id="MembersList" src="//SearchResult">
+               <param datatype="string" format="None" formatvalue="" name="BillingAddr1" sms-name="" src="a:MemberResponse/a:BillingAddress/a:Address1" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="BillingAddr2" sms-name="" src="a:MemberResponse/a:BillingAddress/a:Address2" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="BillingCity" sms-name="" src="a:MemberResponse/a:BillingAddress/a:City" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="BillingCountry" sms-name="" src="a:MemberResponse/a:BillingAddress/a:Country" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="BillingState" sms-name="" src="a:MemberResponse/a:BillingAddress/a:StateID" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="BillingZipCode" sms-name="" src="a:MemberResponse/a:BillingAddress/a:ZipCode" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="DeviceMemberID" sms-name="" src="a:MemberResponse/a:ClientMemberID" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="ConsecutiveWeightGain" sms-name="" src="a:MemberResponse/a:ConsecutiveWeightGain" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CurrentLifeTimeStatus" sms-name="" src="a:MemberResponse/a:CurrentLifeTimeStatus" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="DateOfBirth" sms-name="" src="a:MemberResponse/a:DateOfBirth" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="DontRecvCalls" sms-name="" src="a:MemberResponse/a:DoNotReceiveCallsForEventsAndOthers" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="DontContByEmail" sms-name="" src="a:MemberResponse/a:DontContactByEmail" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="DontCnctPhone" sms-name="" src="a:MemberResponse/a:DontContactByPhone" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="DontCnctSMS" sms-name="" src="a:MemberResponse/a:DontContactBySMS" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="DontSendCard" sms-name="" src="a:MemberResponse/a:DontSendCards" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="DontSendCoupon" sms-name="" src="a:MemberResponse/a:DontSendCoupons" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="Email" sms-name="" src="a:MemberResponse/a:Email" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="EmpID" sms-name="" src="a:MemberResponse/a:EmployeeID" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="EnrollmentDate" sms-name="" src="a:MemberResponse/a:EnrollmentDate" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="FeePaid" sms-name="" src="a:MemberResponse/a:FeePaid" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="FirstName" sms-name="" src="a:MemberResponse/a:FirstName" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="Gender" sms-name="" src="a:MemberResponse/a:Gender" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="GoalWeight" sms-name="" src="a:MemberResponse/a:GoalWeight" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="Height" sms-name="" src="a:MemberResponse/a:Height" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="IncompleteData" sms-name="" src="a:MemberResponse/a:IncompleteData" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="LastAchievedMileStoneID" sms-name="" src="a:MemberResponse/a:LastAchievedMileStoneID" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="LastContactDate" sms-name="" src="a:MemberResponse/a:LastContactDate" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="LastNoteEntryDate" sms-name="" src="a:MemberResponse/a:LastNoteEntryDate" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="LastName" sms-name="" src="a:MemberResponse/a:LastName" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="LocationID" sms-name="" src="a:MemberResponse/a:LocationID" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="MeetingDate" sms-name="" src="a:MemberResponse/a:MeetingDate" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="MeetingOccuranceID" sms-name="" src="a:MemberResponse/a:MeetingOccuranceID" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="MemberType" sms-name="" src="a:MemberResponse/a:MemberType" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="MemberStatus" sms-name="" src="a:MemberResponse/a:Status" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="MissedWeekPasses" sms-name="" src="a:MemberResponse/a:CountLeft" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="NumberOfWeeksAttended" sms-name="" src="a:MemberResponse/a:NumberOfWeeksAttended" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="ServerMemberID" sms-name="" src="a:MemberResponse/a:MemberID" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="Phone1" sms-name="" src="a:MemberResponse/a:Phone1" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="PhoneType1" sms-name="" src="a:MemberResponse/a:PhoneType1" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="Phone2" sms-name="" src="a:MemberResponse/a:Phone2" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="PhoneType2" sms-name="" src="a:MemberResponse/a:PhoneType2" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="PreRegNumber" sms-name="" src="a:MemberResponse/a:PreRegistrationNumber" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="PrevLifeTimeSta" sms-name="" src="a:MemberResponse/a:PreviousLifeTimeStatus" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="RegDate" sms-name="" src="a:MemberResponse/a:RegistrationDate" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="RegNumber" sms-name="" src="a:MemberResponse/a:RegistrationNumber" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="RegStatus" sms-name="" src="a:MemberResponse/a:RegistrationStatus" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="ShippingAddr1" sms-name="" src="a:MemberResponse/a:ShippingAddress/a:Address1" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ShippingAddr2" sms-name="" src="a:MemberResponse/a:ShippingAddress/a:Address2" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="ShippingCity" sms-name="" src="a:MemberResponse/a:ShippingAddress/a:City" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="ShippingCountry" sms-name="" src="a:MemberResponse/a:ShippingAddress/a:Country" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="ShippingState" sms-name="" src="a:MemberResponse/a:ShippingAddress/a:StateID" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="ShippingZipCode" sms-name="" src="a:MemberResponse/a:ShippingAddress/a:ZipCode" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="StartDate" sms-name="" src="a:MemberResponse/a:RegistrationDate" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="StartWeight" sms-name="" src="a:MemberResponse/a:StartWeight" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="ProductID" sms-name="" src="a:MemberResponse/a:MemberSubscription/a:ProductID" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="SubscriptnID" sms-name="" src="a:MemberResponse/a:MemberSubscription/a:ID" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="SubscriptnType" sms-name="" src="a:MemberResponse/a:MemberSubscription/a:SubscriptionType" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="ExpirationDate" sms-name="" src="a:MemberResponse/a:MemberSubscription/a:ExpirationDate" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="SubMemberID" sms-name="" src="a:MemberResponse/a:MemberSubscription/a:MemberID" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="CouponCode" sms-name="" src="a:MemberResponse/a:MemberSubscription/a:CouponCode" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="LastUsedDate" sms-name="" src="a:MemberResponse/a:MemberSubscription/a:LastUsedDate" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="TransactionType" sms-name="" src="a:MemberResponse/a:TransactionType" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="WeeksCompleted" sms-name="" src="a:MemberResponse/a:WeeksCompleted" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="WeightGain" sms-name="" src="a:MemberResponse/a:WeightGain" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="UniqueID" sms-name="" src="a:MemberResponse/a:UniqueID" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="UserComments" sms-name="" src="a:MemberResponse/a:UserComments" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="UserStsEndPrd" sms-name="" src="a:MemberResponse/a:UserStatusEndPeriod" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="UserStsChngRsn" sms-name="" src="a:MemberResponse/a:UserStatusChangeReason" srcformatvalue="" target=""/>
+               <param datatype="string" format="None" formatvalue="" name="EmailID" sms-name="" src="a:MemberResponse/a:Link/a:EmailID" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EnterpriseID" sms-name="" src="a:MemberResponse/a:Link/a:EnterpriseID" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LinkType" sms-name="" src="a:MemberResponse/a:Link/a:LinkType" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="UserName" sms-name="" src="a:MemberResponse/a:Link/a:UserName" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="TrackerID" sms-name="" src="a:MemberResponse/a:MaintainenanceTracker/a:ID" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MaintenanceMode" sms-name="" src="a:MemberResponse/a:MaintainenanceTracker/a:MaintenanceMode" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="TrackerStartDate" sms-name="" src="a:MemberResponse/a:MaintainenanceTracker/a:StartDate" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="FailedDate" sms-name="" src="a:MemberResponse/a:MaintainenanceTracker/a:FailedDate" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="Eligible" sms-name="" src="a:MemberResponse/a:MaintainenanceTracker/a:Eligible" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="EligibleDate" sms-name="" src="a:MemberResponse/a:MaintainenanceTracker/a:EligibleDate" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="PaidLastFee" sms-name="" src="a:MemberResponse/a:MaintainenanceTracker/a:PaidLastFee" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="WeightCountMet" sms-name="" src="a:MemberResponse/a:MaintainenanceTracker/a:WeightCountMet" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="SessionNumber" sms-name="" src="a:MemberResponse/a:SessionNumber" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="IsCurrentWeekWeighed" sms-name="" src="a:MemberResponse/a:IsCurrentWeekWeighed" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="MemberRole" sms-name="" src="a:MemberResponse/a:MemberRole" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ProgramDuration" sms-name="" src="a:MemberResponse/a:MemberSubscription/a:ProgramDuration" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="LastAttendanceDate" sms-name="" src="a:MemberResponse/a:LastAttendanceDate" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="PersonalGoalWeightDate" sms-name="" src="a:MemberResponse/a:LastPromptDate" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="PersonalGoalWeight" sms-name="" src="a:MemberResponse/a:PersonalGoal" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CountryID" sms-name="" src="a:MemberResponse/a:CountryID" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="Usertype" sms-name="" src="a:MemberResponse/a:UserType" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="CommitmentDuration" sms-name="" src="a:MemberResponse/a:MemberSubscription/a:CommitmentDuration" srcformatvalue="" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="PlanType" sms-name="" src="a:MemberResponse/a:MemberSubscription/a:PlanType" srcformatvalue="" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" srcformatvalue="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="voidCCTransaction" passwordencrypted="true" smscode="" smsenabled="false" type="soapserviceConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="https://ics2wstesta.ic3.com/commerce/1.x/transactionProcessor"/>
+            <config-param name="soapAction" value="runTransaction"/>
+            <config-param name="userid" value=""/>
+            <config-param name="soap-version" value="1.1"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value=""/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <template-param name="message" value="&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:urn=&quot;urn:schemas-cybersource-com:transaction-data-1.120&quot;&gt;&lt;soapenv:Header&gt;&lt;o:Security xmlns:o=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd&quot; urn:mustUnderstand=&quot;1&quot;&gt;&lt;urn:Timestamp urn:Id=&quot;_0&quot;&gt;&lt;urn:Created&gt;$CreatedTime&lt;/urn:Created&gt;&lt;urn:Expires&gt;$ExpireTime&lt;/urn:Expires&gt;&lt;/urn:Timestamp&gt;&lt;o:UsernameToken urn:Id=&quot;$UsernameToken&quot;&gt;&lt;o:Username&gt;ww_meg&lt;/o:Username&gt;&lt;o:Password Type=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText&quot;&gt;CzOOzXQYVLEHn2klKqhrsllAiFii2Oj7RbQkA87aJdZsU7m10EV3b5fdMTLA7mGyPQqdPeZGLP1Pq3GCM4rICdKZB9QybQUZCyx9dqIChg+OBQDaCnDf6wXHkLJ4gcsiDpuxDuIOoq20VWfHDua9Q6q3Ck2QxfiWMGuNbfsTKzo1Fj5biSNx4vbcAGwknf4MCHli6nqAhh6AvF7XaFq72REY7ao8HVfqiAEkCk/v4aHAquPVbpsIqaDkU7sX3X7iIVQmGtOZYiBGUrHgzToG49HQXW/jylHb+6A6T0cuYVtwjmRuGsWM9VEE9Z7fU4aY0fmqD+U6DYk+zsKUVVKBbA==&lt;/o:Password&gt;&lt;/o:UsernameToken&gt;&lt;/o:Security&gt;&lt;/soapenv:Header&gt;&lt;soapenv:Body&gt;&lt;urn:requestMessage&gt;&lt;!--Optional:--&gt;&lt;urn:merchantID&gt;$merchantID&lt;/urn:merchantID&gt;&lt;!--Optional:--&gt;&lt;urn:merchantReferenceCode&gt;$merchantReferenceCode&lt;/urn:merchantReferenceCode&gt;&lt;!--Optional:--&gt;&lt;urn:purchaseTotals&gt;&lt;!--Optional:--&gt;&lt;urn:currency&gt;$currency&lt;/urn:currency&gt;&lt;urn:grandTotalAmount&gt;$grandTotalAmount&lt;/urn:grandTotalAmount&gt;&lt;/urn:purchaseTotals&gt;&lt;!--Optional:--&gt;&lt;urn:ccCreditService run=&quot;true&quot;&gt;&lt;urn:captureRequestID&gt;$requestID&lt;/urn:captureRequestID&gt;&lt;urn:reconciliationID&gt;$merchantReferenceCode&lt;/urn:reconciliationID&gt;&lt;/urn:ccCreditService&gt;&lt;!--Optional:--&gt;&lt;/urn:requestMessage&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;">
+               <param datatype="string" encode="false" name="requestID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="merchantID" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="merchantReferenceCode" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="CreatedTime" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="ExpireTime" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="UsernameToken" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="Username" sms-name="" src="" value=""/>
+               <param datatype="string" encode="true" name="Password" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="currency" sms-name="" src="" value=""/>
+               <param datatype="string" encode="false" name="grandTotalAmount" sms-name="" src="" value=""/>
+            </template-param>
+         </service-input>
+         <service-output>
+            <param datatype="string" format="None" formatvalue="" name="merchantRefCode" sms-name="" src="//c:replyMessage/c:merchantReferenceCode" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="requestID" sms-name="" src="//c:replyMessage/c:requestID" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="reasonCode" sms-name="" src="//c:replyMessage/c:reasonCode" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="decision" sms-name="" src="//c:replyMessage/c:decision" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="requestToken" sms-name="" src="//c:replyMessage/c:requestToken" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="reconciliationID" sms-name="" src="//c:replyMessage/c:ccCreditReply/c:reconciliationID" srcformatvalue="" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="amount" sms-name="" src="//c:replyMessage/c:ccCreditReply/c:amount" srcformatvalue="" target="response"/>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" srcformatvalue="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" srcformatvalue="" target=""/>
+         </service-output>
+      </service>
+   </services>
+</application>

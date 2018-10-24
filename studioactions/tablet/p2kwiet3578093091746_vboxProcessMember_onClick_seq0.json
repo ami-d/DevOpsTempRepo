@@ -1,0 +1,27 @@
+{
+    "p2kwiet3578093091746_vboxProcessMember_onClick_seq0": {
+        "id": "p2kwiet3578093091746_vboxProcessMember_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "context",
+            "value": "context"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_75449357809309986",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonClickvbxProcessMemberForProfileSearch",
+            "display": "eventonClickvbxProcessMemberForProfileSearch",
+            "inputparams": []
+        }, {
+            "id": "customcode_onClick_370823578093099212",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "displayNote",
+            "display": "displayNote",
+            "inputparams": []
+        }]
+    }
+}

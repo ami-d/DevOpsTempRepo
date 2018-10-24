@@ -1,0 +1,16 @@
+{
+    "AS_VBox_fd8d3b8a9f514fa6af6cb126e7cd5feb": {
+        "id": "AS_VBox_fd8d3b8a9f514fa6af6cb126e7cd5feb",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_ea00106f990a41b4be853f47859d6f29",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmHomeScreen.show();"
+        }]
+    }
+}

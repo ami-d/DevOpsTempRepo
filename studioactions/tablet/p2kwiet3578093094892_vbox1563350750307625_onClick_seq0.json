@@ -1,0 +1,22 @@
+{
+    "p2kwiet3578093094892_vbox1563350750307625_onClick_seq0": {
+        "id": "p2kwiet3578093094892_vbox1563350750307625_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_830913578093092173",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "popupShowWeeklyAlert.destroy();"
+        }, {
+            "id": "customcode_onClick_223563578093091896",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "checkAttendMeetingForWeighIn",
+            "display": "checkAttendMeetingForWeighIn",
+            "inputparams": []
+        }]
+    }
+}

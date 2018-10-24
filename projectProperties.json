@@ -1,0 +1,149 @@
+{
+    "wap_android360_fontsize": "13",
+    "isA11yConfigEnabled": false,
+    "spaipadbasefontsize": "17",
+    "watchos_notificationcentericon_42": "",
+    "wap_android440_fontsize": "15",
+    "wap_spaandroidtabxhdpi_fontsize": "18",
+    "defaultlocalekey": "en_US",
+    "apppackagekey": "com.konylabs.MEGDS",
+    "wap_android400_fontsize": "14",
+    "nativeContainerProperties": {
+        "isModified": true,
+        "isEnableJSContainer": false,
+        "isEnableJSContainerAndroid": false,
+        "isEnableJSContaineriOS": false
+    },
+    "wap_spaandroidtabhdpi_fontsize": "16",
+    "iphonebundleidentifierkey": "com.weight-watchers.meg-ds",
+    "cordovaVersionInfo": {
+        "useGlobalCordova": false
+    },
+    "desktopwebaligenmentoption": "left",
+    "appversionkey": "6.0.9",
+    "watchos_longlooknotificationicon_38": "",
+    "desktopwebwidthoption": "Percentage",
+    "applogokey": "app_icon.png",
+    "spaandroidtabbasefontsize": "17",
+    "startupformkey": "",
+    "wap_bb480_fontsize": "12",
+    "wap_winphone480_fontsize": "12",
+    "wap_android640_fontsize": "19",
+    "vendornamekey": "WW",
+    "wap_android320_fontsize": "12",
+    "wap_android_fontsize": "10",
+    "statusBarStyle": "STATUS_BAR_STYLE_DEFAULT",
+    "createdgaversion": "7.2.1.GA_v201705160556_r6",
+    "watchos_notificationcentericon_38": "",
+    "extendTop": "false",
+    "enableactionbar": false,
+    "watchos_shortlooknotificationicon_42": "",
+    "wap_android480_fontsize": "16",
+    "mastersProperties": {
+        "masterVersion": "2.0.0"
+    },
+    "wap_winphone320_fontsize": "12",
+    "watchos_longlooknotificationicon_42": "",
+    "appmenu": {
+        "tablet": {
+            "data": []
+        },
+        "desktop": {
+            "data": [
+                {
+                    "kuid": "bbea0422a4d049d789278d03402999f7",
+                    "icon": {
+                        "default": "option1.png"
+                    },
+                    "id": "appmenuitemid1",
+                    "title": "Item 1"
+                },
+                {
+                    "kuid": "95ef7bbf1eec45e186f6e0eb73103280",
+                    "icon": {
+                        "default": "option2.png"
+                    },
+                    "id": "appmenuitemid2",
+                    "title": "Item 2"
+                },
+                {
+                    "kuid": "51ee1e4f1f0a4c6bafb3786f90a5619d",
+                    "icon": {
+                        "default": "option3.png"
+                    },
+                    "id": "appmenuitemid3",
+                    "title": "Item 3"
+                },
+                {
+                    "kuid": "5a68806e54c74aee84a9697c050820da",
+                    "icon": {
+                        "default": "option4.png"
+                    },
+                    "id": "appmenuitemid4",
+                    "title": "Item 4"
+                }
+            ]
+        },
+        "wType": "Appmenu",
+        "mobile": {
+            "data": []
+        }
+    },
+    "wap_spaipad_fontsize": "17",
+    "mwportkey": "80",
+    "islocalserverurl": "false",
+    "supportedorientations": [
+        "portrait",
+        "landscape"
+    ],
+    "wap_bb440_fontsize": "12",
+    "desktopwebwidthval": "100",
+    "wap_bb400_fontsize": "12",
+    "appidkey": "MEG7REST",
+    "statusBarHidden": "false",
+    "wap_bb360_fontsize": "12",
+    "isNewAppWithRespectToAndroidPackageName": "true",
+    "wap_spawindowstab_fontsize": "12",
+    "defaulttheme": "defaultTheme",
+    "iphonebundleversionkey": "6.0.5",
+    "watchos_shortlooknotificationicon_38": "",
+    "iphoneipadglossyeffectkey": "false",
+    "extendBottom": "false",
+    "tabletstartupformkey": "frmLogin",
+    "pasteboardType": "2",
+    "appnamekey": "MEGNAQA0905",
+    "currentgaversion": "7.2.0",
+    "wap_bb320_fontsize": "12",
+    "enableCordova": false,
+    "wap_bb240_fontsize": "12",
+    "enableIdForAutomation": false,
+    "desktopwebbasefontsize": "16",
+    "mfappguid": {
+        "f992b483-e97f-45f9-a843-3066765f5330": "b52c032f-5372-4000-9479-167eb02faeff"
+    },
+    "wap_android240_fontsize": "10",
+    "@class": "com.kony.gen.appprops.KVizAppProps",
+    "wap_spaandroidtabldpi_fontsize": "17",
+    "wap_spaandroidtabmdpi_fontsize": "14",
+    "konyVizVersion": "7.2.1.3",
+    "wap_spaandroidtab_fontsize": "17",
+    "isDpScaleFactor": true,
+    "referenceWidth": "320",
+    "winmobileguidkey": "",
+    "ide_appEvents": {
+        "tablet": {
+            "postappinit": "MEGDevelopmentpostappinit",
+            "preappinit": "MEGDevelopmentpreappinit"
+        }
+    },
+    "build": "debug",
+    "project_version": "sprint25",
+    "cloud_url": "https://weightwatchers-ds1.konycloud.com",
+    "ipadlandscapemodekey": "portrait",
+    "wap_ip_fontsize": "12",
+    "createdVizVersion": "7.2.1.3",
+    "watchos_companionSettings3x29": "",
+    "watchos_homeScreen40": "",
+    "watchos_companionSettings2x29": "",
+    "watchos_watchMarketing1x": ""
+}

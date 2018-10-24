@@ -1,0 +1,16 @@
+{
+    "p2kwiet3578093094249_vboxCancelImage_onClick_seq0": {
+        "id": "p2kwiet3578093094249_vboxCancelImage_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_994753578093096742",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "gblIsMemberSearchPage = false;\n popupMemberType.dismiss();"
+        }]
+    }
+}

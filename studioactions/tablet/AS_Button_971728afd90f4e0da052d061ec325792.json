@@ -1,0 +1,27 @@
+{
+    "AS_Button_971728afd90f4e0da052d061ec325792": {
+        "id": "AS_Button_971728afd90f4e0da052d061ec325792",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEnrollReturningMember",
+            "type": "forms",
+            "platform": "",
+            "KUID": "p2kwiet3578093091416"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___1c3100f02e51416195b791cfc3bc33c7",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "startBarcodeForSubID",
+            "display": "startBarcodeForSubID",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

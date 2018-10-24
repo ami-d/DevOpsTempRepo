@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093094322_vbox1332450755740884_onClick_seq0": {
+        "id": "p2kwiet3578093094322_vbox1332450755740884_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_90573357809309631",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onCheckedAllProductReturnList",
+            "display": "onCheckedAllProductReturnList",
+            "inputparams": []
+        }]
+    }
+}

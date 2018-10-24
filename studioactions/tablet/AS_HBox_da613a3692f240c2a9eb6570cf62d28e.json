@@ -1,0 +1,30 @@
+{
+    "AS_HBox_da613a3692f240c2a9eb6570cf62d28e": {
+        "id": "AS_HBox_da613a3692f240c2a9eb6570cf62d28e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTallyMeetingCashout",
+            "type": "forms",
+            "platform": "",
+            "KUID": "p2kwiet3578093092425"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___99fb4411ccf44d86bdf64a00af281981",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonClickSlipDate",
+            "display": "eventonClickSlipDate",
+            "inputparams": [{
+                "name": "section",
+                "value": "frmTallyMeetingCashout.lbl2ndSlip.text"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

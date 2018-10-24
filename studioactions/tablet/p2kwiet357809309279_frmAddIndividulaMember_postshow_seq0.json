@@ -1,0 +1,19 @@
+{
+    "p2kwiet357809309279_frmAddIndividulaMember_postshow_seq0": {
+        "id": "p2kwiet357809309279_frmAddIndividulaMember_postshow_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_postshow_291123578093092903",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "isMissedWeekPopupShowed=false;\n popupMissedWeeks.destroy();"
+        }]
+    }
+}

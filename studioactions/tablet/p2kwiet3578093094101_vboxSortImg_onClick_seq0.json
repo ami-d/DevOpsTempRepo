@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093094101_vboxSortImg_onClick_seq0": {
+        "id": "p2kwiet3578093094101_vboxSortImg_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_406133578093097974",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnClickVboxSortImgLinkMember",
+            "display": "eventOnClickVboxSortImgLinkMember",
+            "inputparams": []
+        }]
+    }
+}

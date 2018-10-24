@@ -1,0 +1,26 @@
+{
+    "p2kwiet3578093095026_vboxMemberIdCancelImage_onClick_seq0": {
+        "id": "p2kwiet3578093095026_vboxMemberIdCancelImage_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_583623578093094910",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "ClearAdvancedSearchFields",
+            "display": "ClearAdvancedSearchFields",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "customcode_onClick_17913578093098906",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnClickCancelAdvanceSearchPopup",
+            "display": "eventOnClickCancelAdvanceSearchPopup",
+            "inputparams": []
+        }]
+    }
+}

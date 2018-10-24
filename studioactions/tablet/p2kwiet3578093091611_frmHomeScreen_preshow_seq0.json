@@ -1,0 +1,27 @@
+{
+    "p2kwiet3578093091611_frmHomeScreen_preshow_seq0": {
+        "id": "p2kwiet3578093091611_frmHomeScreen_preshow_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_preshow_26393578093092011",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "displayLocationTitleInHeader",
+            "display": "displayLocationTitleInHeader",
+            "inputparams": []
+        }, {
+            "id": "customcode_preshow_204353578093098672",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "ResetHomeScreenComboValues",
+            "display": "ResetHomeScreenComboValues",
+            "inputparams": []
+        }]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "p2kwiet3578093092033_btnOK_onClick_seq0": {
+        "id": "p2kwiet3578093092033_btnOK_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___4dc9984e47a1489aa13c3298ffaf6990",
+            "type": "INVOKE_FUNCTION",
+            "display": "eventOnClickOkBtn",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }, {
+            "id": "expression_onClick_416083578093098474",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "evenOnPostShowHomeScreen();"
+        }]
+    }
+}

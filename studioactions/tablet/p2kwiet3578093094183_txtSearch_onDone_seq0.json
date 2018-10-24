@@ -1,0 +1,21 @@
+{
+    "p2kwiet3578093094183_txtSearch_onDone_seq0": {
+        "id": "p2kwiet3578093094183_txtSearch_onDone_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "changedtext",
+            "value": "changedtext"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onDone_107343578093094740",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnClickSearchProvider",
+            "display": "eventOnClickSearchProvider",
+            "inputparams": []
+        }]
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "p2kwiet357809309147_vboxEditIconInSegment_onClick_seq0": {
+        "id": "p2kwiet357809309147_vboxEditIconInSegment_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "context",
+            "value": "context"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_565293578093092900",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonClickvboxEditIcon",
+            "display": "eventonClickvboxEditIcon",
+            "inputparams": []
+        }]
+    }
+}

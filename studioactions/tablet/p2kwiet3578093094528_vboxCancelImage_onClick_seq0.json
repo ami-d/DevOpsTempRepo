@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093094528_vboxCancelImage_onClick_seq0": {
+        "id": "p2kwiet3578093094528_vboxCancelImage_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_747863578093093293",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonClickvboxCancelImageHeaderForTallyReason",
+            "display": "eventonClickvboxCancelImageHeaderForTallyReason",
+            "inputparams": []
+        }]
+    }
+}

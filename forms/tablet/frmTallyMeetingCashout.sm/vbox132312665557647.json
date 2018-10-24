@@ -1,0 +1,44 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizVBox",
+    "DNDConfig": null,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_position_": 3,
+    "_skin_": "sba6874252ac44c49b5804420a58257c",
+    "allboxes": [],
+    "canUpdateUI": true,
+    "children": [
+        "hboxSlipDate2Section"
+    ],
+    "containerweight": 32,
+    "contextmenu": null,
+    "donotUpdateContainerWeight": false,
+    "id": "vbox132312665557647",
+    "info": null,
+    "isvisible": true,
+    "kuid": "74033372ff844d019548c474827d78d5",
+    "layouttype": 0,
+    "name": "kony.ui.Box",
+    "paddInPixel": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "parent": "hboxbankslip2",
+    "pf": "frmTallyMeetingCashout",
+    "wType": "VBox",
+    "widgetalignment": 1
+}

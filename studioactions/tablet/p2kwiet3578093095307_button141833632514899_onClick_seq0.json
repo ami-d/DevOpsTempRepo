@@ -1,0 +1,24 @@
+{
+    "p2kwiet3578093095307_button141833632514899_onClick_seq0": {
+        "id": "p2kwiet3578093095307_button141833632514899_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_771653578093098448",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonClickvboxPaymentProcessMember",
+            "display": "eventonClickvboxPaymentProcessMember",
+            "inputparams": []
+        }, {
+            "id": "customcode_onClick_448423578093095239",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onDoneCurrentWeight",
+            "display": "onDoneCurrentWeight",
+            "inputparams": []
+        }]
+    }
+}

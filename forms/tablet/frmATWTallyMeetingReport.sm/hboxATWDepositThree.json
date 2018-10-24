@@ -1,0 +1,93 @@
+{
+    "DNDConfig": null,
+    "_enabled_": false,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_position_": 3,
+    "_resize_": true,
+    "_skin_": "saff37a73c684fcba9aee89b0a5f1340",
+    "allboxes": [],
+    "android": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.AndroidHBoxProperty",
+        "_position_": 3,
+        "position": 3,
+        "render": true
+    },
+    "borderCollapse": false,
+    "canUpdateUI": true,
+    "children": [
+        "lblIssued049d56f98a5b84a",
+        "lblIssued0d85c67ed4a9540",
+        "lblIssued08b393d90528840",
+        "lblDepositDateThree",
+        "lblIssued03dfe6cd911584a",
+        "lblDepositSlipThree",
+        "lblDepositAmtThree"
+    ],
+    "containerweight": 100,
+    "id": "hboxATWDepositThree",
+    "info": null,
+    "ipad": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.IPadHBoxProperty",
+        "_padding_": [
+            20,
+            0,
+            0,
+            0
+        ],
+        "_position_": 3,
+        "padding": [
+            20,
+            0,
+            0,
+            0
+        ],
+        "paddingInPixel": true,
+        "position": 3,
+        "render": true
+    },
+    "isvisible": true,
+    "kuid": "b15bc6ffa5ec4b218141b3bc6f8dc029",
+    "layoutalignment": 3,
+    "margininpixel": false,
+    "name": "kony.ui.Box",
+    "paddinginpixel": false,
+    "parent": "frmATWTallyMeetingReport",
+    "pf": "frmATWTallyMeetingReport",
+    "spa": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.SPAHBoxProperty"
+    },
+    "spaandroidtablet": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.SPAAndroidTabletHBoxProperty",
+        "render": true
+    },
+    "spaipad": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.SPAIPadHBoxProperty",
+        "render": true
+    },
+    "spawindowstablet": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.SPAWindowsTabletHBoxProperty",
+        "render": true
+    },
+    "templateType": "forms",
+    "wType": "HBox",
+    "widgetalignment": 1,
+    "windows8": {
+        "@class": "com.kony.gen.viz.model.container.property.hbox.Windows8HBoxProperty",
+        "_position_": 3,
+        "position": 3,
+        "render": true
+    }
+}

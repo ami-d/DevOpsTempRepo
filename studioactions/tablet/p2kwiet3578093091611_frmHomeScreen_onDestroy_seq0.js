@@ -1,0 +1,1 @@
+function p2kwiet3578093091611_frmHomeScreen_onDestroy_seq0(eventobject, neworientation) {}

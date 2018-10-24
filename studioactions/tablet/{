@@ -1,0 +1,77 @@
+{
+  "EmployeeID": "$EmployeeID",
+  "EmployeeNumber": "$EmployeeNumber",
+  "LocationID": "$LocationID",
+  "MeetingOccuranceID": "$MeetingOccuranceID",
+  "MeetingDate": "$MeetingDate",
+  "MemberID": "$MemberID",
+  "SaleDate": "$SaleDate",
+  "TotalSalePrice": "$TotalSalePrice",
+  "TotalSaleTax": "$TotalSaleTax",
+  "IsReturn": $IsReturn,
+  "IsReturnTransaction": $IsReturnTransaction,
+  "IsVoid": $IsSaleVoid,
+  "IsEmployeeSale": $IsEmployeeSale,
+  "IsPreActivate": $IsPreActivated,
+  "ClientSaleTransactionId": "$SaleTransactionID",
+  "Items": [
+    #foreach($item in $Items.records){
+      "ProductID": "$item.getParam("ProductID").value",
+      "ProductSku": "$item.getParam("ProductSku").value",
+      "MissedWeeksPassesNo": "$item.getParam("MissWeekPassNo").value",
+      "IsReturnItem": $item.getParam("IsReturnItem").value,
+      "PrepaidCouponNo": "$item.getParam("PrepaidCoupNo").value",
+      "OfferId": "$item.getParam("OfferId").value",
+      "ReasonCode": "$item.getParam("ReasonCode").value",
+      "Quantity": "$item.getParam("Quantity").value",
+      "OriginalQuantity": "$item.getParam("OriginalQuantity").value",
+      "UnitPrice": "$item.getParam("UnitPrice").value",
+      "UnitPriceTax": "$item.getParam("UnitPriceTax").value",
+      "AdjustedTotal": "$item.getParam("AdjustTotal").value",
+      "CalculatedTotal": "$item.getParam("CalcTotal").value",
+      "IsVoid": $item.getParam("IsSaleItemVoid").value,
+      "CouponCode": "$item.getParam("CouponCode").value",
+      "OfferCouponCode": "$item.getParam("OfrCouponCode").value",
+      "QuantityReturned": "$item.getParam("ReturnQuantity").value",
+      "ClientSaleItemId": "$item.getParam("ClientSaleItemId").value",
+      "PriceOverrideReasonId": "$item.getParam("ReasonId").value"
+    },
+    #end
+  ],
+  "Payments": [
+    #foreach($payment in $Payments.records){
+      "Type": "$payment.getParam("Type").value",
+      "SplitPayments": [
+        #foreach($splitpayment in $SplitPayments.records)
+        #if($payment.getParam("Type").value == $splitpayment.getParam("SplitType").value)
+        {
+          "SplitNo": $splitpayment.getParam("SplitNumber").value,
+          "Amount": $splitpayment.getParam("SplitAmount").value
+        },
+        #end
+        #end
+      ],
+      "Amount": "$payment.getParam("Amount").value",
+      "PaymentDate": "$payment.getParam("PaymentDate").value",
+      "IsRefundAmount": $payment.getParam("IsRefundAmount").value,
+      #if($payment.getParam("HasToken").value!='')"Track": {
+        "CardType": "$payment.getParam("CardType").value",
+        "HasToken": $payment.getParam("HasToken").value,
+        "InvoiceNumber": "$payment.getParam("InvoiceNumber").value",
+        "CCLastFourDigits": "$payment.getParam("CCLastFourDigits").value",
+        "CardSignature": "$payment.getParam("CardSignature").value",
+        "Token": "$payment.getParam("Token").value",
+        "ExpirationDate": "$payment.getParam("ExpirationDate").value",
+        "TransactionStatus": "$payment.getParam("TransactionStatus").value",
+        "TransactionType": "$payment.getParam("TransactionType").value",
+        "RequestId": "$payment.getParam("RequestId").value",
+        "ReferenceNumber": "$payment.getParam("ReferenceNumber").value",
+        "AuthorizationCode": "$payment.getParam("AuthorizationCode").value",
+        "PaymentGateway": "$payment.getParam("PaymentGateway").value"
+      }#end
+    },
+    #end
+  ],
+  "IsSplitPayment": $HasSplitPayment,
+  "SubsidyAmount": "$SubsidyAmount"
+}

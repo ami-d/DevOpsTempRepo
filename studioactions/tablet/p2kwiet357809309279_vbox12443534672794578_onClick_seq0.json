@@ -1,0 +1,16 @@
+{
+    "p2kwiet357809309279_vbox12443534672794578_onClick_seq0": {
+        "id": "p2kwiet357809309279_vbox12443534672794578_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_601883578093096116",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "isMissedWeekPopupShowed=false;\n popupMissedWeeks.destroy();"
+        }]
+    }
+}

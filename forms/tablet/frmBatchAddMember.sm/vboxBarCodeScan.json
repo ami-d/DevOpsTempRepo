@@ -1,0 +1,46 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizVBox",
+    "DNDConfig": null,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        3,
+        0,
+        1,
+        0
+    ],
+    "_percent_": true,
+    "_position_": 3,
+    "_skin_": "sd5ac4f7014b4b2ab6f6319bddad3070",
+    "allboxes": [],
+    "canUpdateUI": true,
+    "children": [
+        "btnBarCodeScan"
+    ],
+    "containerweight": 19,
+    "contextmenu": null,
+    "donotUpdateContainerWeight": false,
+    "id": "vboxBarCodeScan",
+    "info": null,
+    "isvisible": true,
+    "kuid": "20aad923264a4edda42f0472ed397a9e",
+    "layouttype": 0,
+    "name": "kony.ui.Box",
+    "paddInPixel": [
+        0,
+        0,
+        10,
+        0
+    ],
+    "paddinginpixel": false,
+    "parent": "hbox12443534675486900",
+    "pf": "frmBatchAddMember",
+    "templateType": "forms",
+    "wType": "VBox",
+    "widgetalignment": 1
+}

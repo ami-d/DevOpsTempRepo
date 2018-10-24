@@ -1,0 +1,24 @@
+{
+    "AS_VBox_d9b5ee6e28204d89915fda540c914e51": {
+        "id": "AS_VBox_d9b5ee6e28204d89915fda540c914e51",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmATWTallyReports",
+            "type": "forms",
+            "platform": null,
+            "KUID": "30deef9e917c4d3e9a5d8e70e0bce686"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_83894443a8784b22bd50b8552396f075",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onClickTallyTabs",
+            "display": "onClickTallyTabs",
+            "inputparams": []
+        }]
+    }
+}

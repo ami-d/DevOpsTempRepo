@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093092425_btnContinue_onClick_seq0": {
+        "id": "p2kwiet3578093092425_btnContinue_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_144463578093092513",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonclickNavigatetoTimeSheet",
+            "display": "eventonclickNavigatetoTimeSheet",
+            "inputparams": []
+        }]
+    }
+}

@@ -1,0 +1,110 @@
+{
+    "DNDConfig": null,
+    "_enabled_": false,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s1d5df81b6ae4bb3a3b4be6d7cb0e28e",
+    "_text_": "",
+    "android": {
+        "@class": "com.kony.gen.viz.model.component.property.radio.AndroidRadioProperty",
+        "render": true
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "context": {
+        "channel": "mobile",
+        "formID": "BasicWidgets1",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "focusskin": "s43ebda0e86d415a941a4105322e279b",
+    "hexpand": true,
+    "id": "radioPaymentOption",
+    "info": null,
+    "ipad": {
+        "@class": "com.kony.gen.viz.model.component.property.radio.IPadRadioProperty",
+        "psp": {
+            "groupCells": false,
+            "viewConfig": {
+                "toggleViewConfig": {
+                    "enableTintColor": false,
+                    "equalSegments": true,
+                    "viewStyle": 0
+                }
+            },
+            "viewType": 1
+        },
+        "render": true
+    },
+    "isvisible": true,
+    "itemorientation": "vertical",
+    "kuid": "p2kwiet3578093094881",
+    "margininpixel": false,
+    "masterdata": [
+        [
+            "1",
+            "IPC",
+            "strLBLIPC"
+        ],
+        [
+            "2",
+            "Ingenico",
+            "strLBLIngenico"
+        ]
+    ],
+    "name": "kony.ui.RadioButtonGroup",
+    "paddinginpixel": false,
+    "parent": "popupSelectPaymentOption",
+    "pf": "popupSelectPaymentOption",
+    "selectedkey": "",
+    "selectedkeyvalue": [],
+    "spa": {
+        "@class": "com.kony.gen.viz.model.component.property.radio.SPARadioProperty"
+    },
+    "spaandroidtablet": {
+        "@class": "com.kony.gen.viz.model.component.property.radio.SPAAndroidTabletRadioProperty",
+        "render": true
+    },
+    "spaipad": {
+        "@class": "com.kony.gen.viz.model.component.property.radio.SPAIPadRadioProperty",
+        "render": true
+    },
+    "spawindowstablet": {
+        "@class": "com.kony.gen.viz.model.component.property.radio.SPAWindowsTabletRadioProperty",
+        "render": true
+    },
+    "vexpand": false,
+    "wType": "RadioButtonGroup",
+    "widgetalignment": 5,
+    "windows8": {
+        "@class": "com.kony.gen.viz.model.component.property.radio.Windows8RadioProperty",
+        "_margin_": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "margin": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "marginInPixel": true,
+        "psp": {
+            "hoverSkin": "Skin Defaults"
+        },
+        "render": true
+    }
+}

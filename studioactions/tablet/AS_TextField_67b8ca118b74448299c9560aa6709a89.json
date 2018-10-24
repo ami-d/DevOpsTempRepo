@@ -1,0 +1,26 @@
+{
+    "AS_TextField_67b8ca118b74448299c9560aa6709a89": {
+        "id": "AS_TextField_67b8ca118b74448299c9560aa6709a89",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onDone_a3cdcdf26a1e4d1aa18e200c627b183f",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "clearValidationSkin",
+            "display": "clearValidationSkin",
+            "inputparams": [{
+                "name": "eventObj",
+                "value": " eventobject"
+            }],
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

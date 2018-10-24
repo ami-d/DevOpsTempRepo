@@ -1,0 +1,34 @@
+{
+    "AS_VBox_0eabf483dc274e40ac10095d4730ed59": {
+        "id": "AS_VBox_0eabf483dc274e40ac10095d4730ed59",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmATWTallyReports",
+            "type": "forms",
+            "platform": null,
+            "KUID": "30deef9e917c4d3e9a5d8e70e0bce686"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___d63f577174a24f6dbd203962cbd622d4",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onClickATWvboxMeetingsReport",
+            "display": "onClickATWvboxMeetingsReport",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }, {
+            "id": "INVOKE_FUNCTION__ide_onClick_efdfeca496e14382b72c74a538252303",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onClickvboxMeetingsReport",
+            "display": "onClickvboxMeetingsReport",
+            "inputparams": [],
+            "disabled": true
+        }]
+    }
+}

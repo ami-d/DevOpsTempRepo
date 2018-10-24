@@ -1,0 +1,24 @@
+{
+    "p2kwiet3578093094060_txtUnitPrice_onTextChange_seq0": {
+        "id": "p2kwiet3578093094060_txtUnitPrice_onTextChange_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "changedtext",
+            "value": "changedtext"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onTextChange_640023578093099498",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "removeCommaFromUnitPriceTextBox",
+            "display": "removeCommaFromUnitPriceTextBox",
+            "inputparams": [{
+                "name": "textBox",
+                "value": "\"txtUnitPrice\""
+            }]
+        }]
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "AS_Button_a93e3b2970294dacaf962f2bf577bdcb": {
+        "id": "AS_Button_a93e3b2970294dacaf962f2bf577bdcb",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "context",
+            "value": "context"
+        }],
+        "contextObj": {
+            "name": "vbox357809309770",
+            "type": "templates",
+            "platform": "",
+            "KUID": "p2kwiet3578093092086"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_64cdf8b2d8784963bb6739102fbb67ec",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnclickMeetingSegment",
+            "display": "eventOnclickMeetingSegment",
+            "inputparams": []
+        }]
+    }
+}

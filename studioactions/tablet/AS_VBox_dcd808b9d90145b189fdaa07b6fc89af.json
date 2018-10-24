@@ -1,0 +1,18 @@
+{
+    "AS_VBox_dcd808b9d90145b189fdaa07b6fc89af": {
+        "id": "AS_VBox_dcd808b9d90145b189fdaa07b6fc89af",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_15dadabd74464b72be1e4225b2a1ca7c",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "checkDevice",
+            "display": "checkDevice",
+            "inputparams": []
+        }]
+    }
+}

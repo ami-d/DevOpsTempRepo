@@ -1,0 +1,64 @@
+{
+    "p2kwiet3578093091638_frmHomeScreenNoMeeting_postshow_seq0": {
+        "id": "p2kwiet3578093091638_frmHomeScreenNoMeeting_postshow_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_postshow_250713578093097118",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "ClearLinkObject",
+            "display": "ClearLinkObject",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_140783578093097653",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "addDataForGlobalMenu",
+            "display": "addDataForGlobalMenu",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_807873578093093403",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "createDynamicMenu",
+            "display": "createDynamicMenu",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_972153578093091092",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "UnitLbsORKg",
+            "display": "UnitLbsORKg",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_3255357809309964",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "displayLocationTitleInHeader",
+            "display": "displayLocationTitleInHeader",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_706863578093097498",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "generateIncrementalMemberID",
+            "display": "generateIncrementalMemberID",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_24493578093097460",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "ClearTangibleProductsSegments",
+            "display": "ClearTangibleProductsSegments",
+            "inputparams": [{
+                "name": "all",
+                "value": "true"
+            }]
+        }, {
+            "id": "expression_postshow_222663578093096862",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "popupStateRefineSearch.pickerState.setSelectedKeyInComponent(\"\", 0);\n popupMemberType.pickerMemberType.setSelectedKeyInComponent(\"All\", 0);\n popupMemberStatus.pickerMemberStatus.setSelectedKeyInComponent(\"All\", 0);\n \n frmMemberProfileSearch.lblStateInfo.text = \"\";\n frmMemberProfileSearch.lblMemberTypeInfo.text = \"All\";\n frmMemberProfileSearch.lblMemberStatusInfo.text = \"All\";\n \n \n frmMemberProfileSearch.txtCity.text = \"\";"
+        }]
+    }
+}

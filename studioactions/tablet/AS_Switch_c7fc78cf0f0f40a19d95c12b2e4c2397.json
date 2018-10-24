@@ -1,0 +1,18 @@
+{
+    "AS_Switch_c7fc78cf0f0f40a19d95c12b2e4c2397": {
+        "id": "AS_Switch_c7fc78cf0f0f40a19d95c12b2e4c2397",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onSlide_4683efb2371a4a86a254e0f9822532b9",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonSlideswitchOffers",
+            "display": "eventonSlideswitchOffers",
+            "inputparams": []
+        }]
+    }
+}

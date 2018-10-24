@@ -1,0 +1,16 @@
+{
+    "p2kwiet3578093092060_vbox12443534676066565_onClick_seq0": {
+        "id": "p2kwiet3578093092060_vbox12443534676066565_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_26253357809309550",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmSavedLocations.destroy();\n popupAddSavedLocation.dismiss();\n //frmLogin.show();\n if(glbMeetingNum != \"\" )\n {\n frmHomeScreen.show();\n }\n else if(glbMeetingNum == \"\"){\n frmHomeScreenNoMeeting.show();\n }"
+        }]
+    }
+}

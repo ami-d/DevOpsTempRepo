@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093092017_vbox1332450755510435_onClick_seq0": {
+        "id": "p2kwiet3578093092017_vbox1332450755510435_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_66585357809309476",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnClickTimeSortImg",
+            "display": "eventOnClickTimeSortImg",
+            "inputparams": []
+        }]
+    }
+}

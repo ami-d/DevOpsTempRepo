@@ -1,0 +1,21 @@
+{
+    "p2kwiet3578093091638_frmHomeScreenNoMeeting_onhide_seq0": {
+        "id": "p2kwiet3578093091638_frmHomeScreenNoMeeting_onhide_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onhide_149973578093095309",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "stopBarcoeScan",
+            "display": "stopBarcoeScan",
+            "inputparams": []
+        }]
+    }
+}

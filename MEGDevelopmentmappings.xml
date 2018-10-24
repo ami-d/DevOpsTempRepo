@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application id="MEGDevelopment" name="MEGDevelopment">
+    <container isflex="false" displayname="Popup" id="hdrAdvSearchResultTemplate" type="dialog">
+        <component displayname="TextBox2" id="tbxLastNameHeader" type="textbox2"/>
+        <component displayname="TextBox2" id="tbxFirstNameHeader" type="textbox2"/>
+        <component displayname="TextBox2" id="tbxPhoneNumberHeader" type="textbox2"/>
+        <component displayname="TextBox2" id="tbxUserIDHeader" type="textbox2"/>
+        <component displayname="TextBox2" id="tbxMemberIDHeader" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="hdrAdvancedSearchTemplate" type="dialog">
+        <component displayname="TextBox2" id="tbxLastNameHeader" type="textbox2"/>
+        <component displayname="TextBox2" id="tbxFirstNameHeader" type="textbox2"/>
+        <component displayname="TextBox2" id="tbxMemberIDHeader" type="textbox2"/>
+        <component displayname="TextBox2" id="tbxPhoneNumberHeader" type="textbox2"/>
+        <component displayname="TextBox2" id="tbxUserIDHeader" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="hdrCommon" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="hdrDetailMemberProfile" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="hdrEnrollNewMemberTemplate" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="hdrHomeScreen" type="dialog">
+        <component displayname="ComboBox" id="cmbxMeetingMemberType" type="combobox"/>
+        <component displayname="TextBox2" id="tbxLastNameHeader" type="textbox2"/>
+        <component displayname="TextBox2" id="tbxFirstNameHeader" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="hdrLableWithCancleBtnTemplate" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="hdrNoMeetingScreen" type="dialog">
+        <component displayname="TextBox2" id="tbxLastNameHeader" type="textbox2"/>
+        <component displayname="TextBox2" id="tbxFirstNameHeader" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="testhdrTemplate" type="dialog">
+        <component displayname="ComboBox" id="cmbCurrentMeeting" type="combobox"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="ftrEnrollMember" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="ftrMemberProcess" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="segAttendanceReportHeaderTemp" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="segAttendanceReportRowTemp" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="segHomeScreenRawdata" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="segMeetingDisableTemp" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="segMeetingTemp" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="segMemberSearchDuplicateMemberTemp" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="segMemberSearchInActiveTemp" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="segMemberSearchTemp" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="segMemberWeightHistoryOldTemp" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="segMemberWeightHistoryTemp" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="segProductReturnHeaderTemp" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="segProductSaleReportHeaderTemp" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="segProductSaleReportRowTemp" type="dialog"/>
+    <container isflex="false" displayname="Form" id="frmAddAndWeighMemberTransaction" type="form">
+        <component displayname="TextBox2" id="txtSearchProduct" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Form" id="frmAddIndividulaMember" type="form">
+        <component displayname="TextBox2" id="txtFirstName" type="textbox2"/>
+        <component displayname="TextBox2" id="txtLastName" type="textbox2"/>
+        <component displayname="ComboBox" id="cmbGender" type="combobox"/>
+        <component displayname="TextBox2" id="txtEmailID" type="textbox2"/>
+        <component displayname="TextBox2" id="txtWeeksCompleted" type="textbox2"/>
+        <component displayname="TextBox2" id="txtMemberID" type="textbox2"/>
+        <component displayname="TextBox2" id="txtRemainingWeeks" type="textbox2"/>
+        <component displayname="TextBox2" id="txtStartWeight" type="textbox2"/>
+        <component displayname="TextBox2" id="txtGoalWeight" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Form" id="frmBatchAddMember" type="form">
+        <component displayname="TextBox2" id="txtSubID" type="textbox2"/>
+        <component displayname="TextBox2" id="txtMemberId" type="textbox2"/>
+        <component displayname="TextBox2" id="txtStartWeight" type="textbox2"/>
+        <component displayname="TextBox2" id="txtFirstName" type="textbox2"/>
+        <component displayname="TextBox2" id="txtLastName" type="textbox2"/>
+        <component displayname="ComboBox" id="cmbGender" type="combobox"/>
+        <component displayname="TextBox2" id="txtNickName" type="textbox2"/>
+        <component displayname="TextBox2" id="txtAddr1" type="textbox2"/>
+        <component displayname="TextBox2" id="txtCity" type="textbox2"/>
+        <component displayname="TextBox2" id="txtAddr2" type="textbox2"/>
+        <component displayname="TextBox2" id="txtZip" type="textbox2"/>
+        <component displayname="TextBox2" id="txtEmail" type="textbox2"/>
+        <component displayname="TextBox2" id="txtPhone" type="textbox2"/>
+        <component displayname="TextBox2" id="txtGoalWeight" type="textbox2"/>
+        <component displayname="TextBox2" id="txtRemainingMissedWeek" type="textbox2"/>
+        <component displayname="TextBox2" id="txtWeeksCompleted" type="textbox2"/>
+        <component displayname="TextBox2" id="txtBillingCity" type="textbox2"/>
+        <component displayname="TextBox2" id="txtBillingAdd1" type="textbox2"/>
+        <component displayname="TextBox2" id="txtBillingZip" type="textbox2"/>
+        <component displayname="TextBox2" id="txtBillingAddr2" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Form" id="frmCheckout" type="form">
+        <component displayname="TextBox2" id="txtSubscriptionID" type="textbox2"/>
+        <component displayname="TextBox2" id="txtEmailID" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Form" id="frmDirectSaleProductList" type="form">
+        <component displayname="TextBox2" id="txtSearchProduct" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Form" id="frmEditMemberProfile" type="form">
+        <component displayname="TextBox2" id="txtSubID" type="textbox2"/>
+        <component displayname="TextBox2" id="txtMemberId" type="textbox2"/>
+        <component displayname="TextBox2" id="txtFirstName" type="textbox2"/>
+        <component displayname="TextBox2" id="txtLastName" type="textbox2"/>
+        <component displayname="ComboBox" id="cmbGender" type="combobox"/>
+        <component displayname="TextBox2" id="txtNickName" type="textbox2"/>
+        <component displayname="TextBox2" id="txtAddr1" type="textbox2"/>
+        <component displayname="TextBox2" id="txtCity" type="textbox2"/>
+        <component displayname="TextBox2" id="txtAddr2" type="textbox2"/>
+        <component displayname="TextBox2" id="txtZip" type="textbox2"/>
+        <component displayname="TextBox2" id="txtEmail" type="textbox2"/>
+        <component displayname="TextBox2" id="txtPhone" type="textbox2"/>
+        <component displayname="TextBox2" id="txtGoalWeight" type="textbox2"/>
+        <component displayname="TextBox2" id="txtRemainingMissedWeek" type="textbox2"/>
+        <component displayname="TextBox2" id="txtPersonalGoalWeight" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Form" id="frmEnrollNewMember" type="form">
+        <component displayname="TextBox2" id="txtFirstName" type="textbox2"/>
+        <component displayname="TextBox2" id="txtLastName" type="textbox2"/>
+        <component displayname="ComboBox" id="cmbGender" type="combobox"/>
+        <component displayname="TextBox2" id="txtEmailID" type="textbox2"/>
+        <component displayname="TextBox2" id="txtMemberIDInfo" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Form" id="frmEnrollNewMemberPayment" type="form">
+        <component displayname="ComboBox" id="cmbPaymentMode" type="combobox"/>
+        <component displayname="ComboBox" id="cmbpaymentType" type="combobox"/>
+    </container>
+    <container isflex="false" displayname="Form" id="frmEnrollReturningMember" type="form">
+        <component displayname="TextBox2" id="txtRegistrationID" type="textbox2"/>
+        <component displayname="ComboBox" id="cmbGender" type="combobox"/>
+        <component displayname="TextBox2" id="lblAddr1Info" type="textbox2"/>
+        <component displayname="TextBox2" id="lblCityInfo" type="textbox2"/>
+        <component displayname="TextBox2" id="lblAddr2Info" type="textbox2"/>
+        <component displayname="TextBox2" id="lblZipInfo" type="textbox2"/>
+        <component displayname="TextBox2" id="lblPhone" type="textbox2"/>
+        <component displayname="TextBox2" id="lblEmailInfo" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Form" id="frmEnrollWeighMember" type="form">
+        <component displayname="ComboBox" id="cmbStats" type="combobox"/>
+        <component displayname="TextBox2" id="txtDPTValue" type="textbox2"/>
+        <component displayname="TextBox2" id="txtWeight" type="textbox2"/>
+        <component displayname="TextBox2" id="txtSubscriptionID" type="textbox2"/>
+        <component displayname="TextBox2" id="txtEmailID" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Form" id="frmHelp" type="form"/>
+    <container isflex="false" displayname="Form" id="frmHomeScreen" type="form"/>
+    <container isflex="false" displayname="Form" id="frmHomeScreenNoMeeting" type="form"/>
+    <container isflex="false" displayname="Form" id="frmLogin" type="form">
+        <component displayname="TextBox2" id="tbxLogin" type="textbox2"/>
+        <component displayname="TextBox2" id="tbxPassword" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Form" id="frmMemberProfileSearch" type="form">
+        <component displayname="TextBox2" id="txtCity" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Form" id="frmPayment" type="form">
+        <component displayname="TextBox2" id="txtBoxAmount" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Form" id="frmProcessMember" type="form">
+        <component displayname="ComboBox" id="cmbStats" type="combobox"/>
+        <component displayname="TextBox2" id="txtAreaWeightProcess" type="textbox2"/>
+        <component displayname="TextBox2" id="txtSubscriptionID" type="textbox2"/>
+        <component displayname="TextBox2" id="txtEmailID" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Form" id="frmProductReturns" type="form">
+        <component displayname="ComboBox" id="cmbxMemberType" type="combobox"/>
+        <component displayname="TextBox2" id="txtLname" type="textbox2"/>
+        <component displayname="TextBox2" id="txtFname" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Form" id="frmReceipt" type="form"/>
+    <container isflex="false" displayname="Form" id="frmSavedLocations" type="form"/>
+    <container isflex="false" displayname="Form" id="frmSelectMeeting" type="form"/>
+    <container isflex="false" displayname="Form" id="frmTallyMeeting" type="form"/>
+    <container isflex="false" displayname="Form" id="frmTallyMeetingCashout" type="form">
+        <component displayname="TextBox2" id="txtBanksInThisMeeting" type="textbox2"/>
+        <component displayname="TextBox2" id="txtCash" type="textbox2"/>
+        <component displayname="TextBox2" id="txtChecks" type="textbox2"/>
+        <component displayname="TextBox2" id="txtCreditCard" type="textbox2"/>
+        <component displayname="TextBox2" id="txtDebitCard" type="textbox2"/>
+        <component displayname="TextBox2" id="txtCreditSlipsRedeemed" type="textbox2"/>
+        <component displayname="TextBox2" id="txtCreditSlipsIssued" type="textbox2"/>
+        <component displayname="TextBox2" id="txtBankDepositSlipNumber" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Form" id="frmTallyMeetingReport" type="form">
+        <component displayname="TextBox2" id="txtCallsMade" type="textbox2"/>
+        <component displayname="TextBox2" id="txtMailingSent" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Form" id="frmTallyMeetingTimeSheet" type="form"/>
+    <container isflex="false" displayname="Form" id="frmTallyReports" type="form"/>
+    <container isflex="false" displayname="Form" id="frmViewMemberProfile" type="form"/>
+    <container isflex="false" displayname="Popup" id="popupActionsForAddMember" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupActionsForAttendence" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupActionsForEnrollMember" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupActionsForProcessMember" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupAddEmail" type="dialog">
+        <component displayname="TextBox2" id="txtEmailAddress" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupAddNote" type="dialog">
+        <component displayname="ComboBox" id="comboboxNoteType" type="combobox"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupAddSavedLocation" type="dialog">
+        <component displayname="TextBox2" id="txtZip" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupAddTime" type="dialog">
+        <component displayname="TextBox2" id="txtTraineeName" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupAddWeigh" type="dialog">
+        <component displayname="TextBox2" id="txtAddWeight" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupAdvancedSearch" type="dialog">
+        <component displayname="ComboBox" id="cmbSearchCriteria" type="combobox"/>
+        <component displayname="ComboBox" id="cmbLocationCityState" type="combobox"/>
+        <component displayname="TextBox2" id="txtCity" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupAlert" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupAlertHandler" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupBMINote" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupCategoryType" type="dialog">
+        <component displayname="PickerView" id="pickerCategories" type="pickerview">
+            <attributes datatype="string" name="customPicker" platform="spa" value="1"/>
+        </component>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupChangeMemberStatus" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupChangeMemberStatusTransition" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupChangeMemberType" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupChangeMemberTypeForProcessMember" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupChangePersonalGoal" type="dialog">
+        <component displayname="TextBox2" id="txtPersonalGoalWeight" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupChangeStartWeight" type="dialog">
+        <component displayname="TextBox2" id="txtWeight" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupChangeTermedMemberStatus" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupCheckedInFilter" type="dialog">
+        <component displayname="PickerView" id="pickerCheckedInMember" type="pickerview">
+            <attributes datatype="string" name="customPicker" platform="spa" value="1"/>
+        </component>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupCurrentMeeting" type="dialog">
+        <component displayname="PickerView" id="pickerCurrMeeting" type="pickerview">
+            <attributes datatype="string" name="customPicker" platform="spa" value="1"/>
+        </component>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupDateOfBirth" type="dialog">
+        <component displayname="Calendar" id="calEnrollMemberDOB" type="calendar"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupDiscount" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupDiscountData" type="dialog">
+        <component displayname="ComboBox" id="cmbApplyDiscount" type="combobox"/>
+        <component displayname="TextBox2" id="txtOfferCoupon" type="textbox2"/>
+        <component displayname="TextBox2" id="txtQuantity" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupDuration" type="dialog">
+        <component displayname="Calendar" id="calDuration" type="calendar"/>
+        <component displayname="Calendar" id="calDuration1" type="calendar"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupEditMemberProfile" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupEmpAddWeigh" type="dialog">
+        <component displayname="TextBox2" id="txtAddWeight" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupEmployeeSearch" type="dialog">
+        <component displayname="TextBox2" id="txtSearch" type="textbox2"/>
+        <component displayname="TextBox2" id="txtManualSearch" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupGoalWeight" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupHeight" type="dialog">
+        <component displayname="PickerView" id="pckrSelectHeight" type="pickerview">
+            <attributes datatype="string" name="customPicker" platform="spa" value="1"/>
+        </component>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupHomeMenu" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupItemDetails" type="dialog">
+        <component displayname="TextBox2" id="txtUnits" type="textbox2"/>
+        <component displayname="TextBox2" id="txtUnitPrice" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupLinkMember" type="dialog">
+        <component displayname="TextBox2" id="txtSearch" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupListOfNotes" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupLogin" type="dialog">
+        <component displayname="TextBox2" id="tbxEmployeeNumber" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupLookupServiceProvider" type="dialog">
+        <component displayname="TextBox2" id="txtSearch" type="textbox2"/>
+        <component displayname="TextBox2" id="txtManualEmployeeNumber" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupMPActivation" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupMPPreActivated" type="dialog">
+        <component displayname="TextBox2" id="txtEmailAddress" type="textbox2"/>
+        <component displayname="TextBox2" id="txtSearch" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupMeetingLocation" type="dialog">
+        <component displayname="PickerView" id="pickerMeetingLocation" type="pickerview">
+            <attributes datatype="string" name="customPicker" platform="spa" value="1"/>
+        </component>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupMemberNotFound" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupMemberStatus" type="dialog">
+        <component displayname="PickerView" id="pickerMemberStatus" type="pickerview">
+            <attributes datatype="string" name="customPicker" platform="spa" value="1"/>
+        </component>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupMemberType" type="dialog">
+        <component displayname="PickerView" id="pickerMemberType" type="pickerview">
+            <attributes datatype="string" name="customPicker" platform="spa" value="1"/>
+        </component>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupMemberWeightHistory" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupMissedWeeks" type="dialog">
+        <component displayname="TextBox2" id="txtWeight" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupNextMeeting" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupNonTengibleoffers" type="dialog">
+        <component displayname="TextBox2" id="txtUnitPrice" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupNumberOfBanks" type="dialog">
+        <component displayname="PickerView" id="pickerBanks" type="pickerview">
+            <attributes datatype="string" name="customPicker" platform="spa" value="1"/>
+        </component>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupOfferRegions" type="dialog">
+        <component displayname="PickerView" id="pickerTypes" type="pickerview">
+            <attributes datatype="string" name="customPicker" platform="spa" value="1"/>
+        </component>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupOutOfBalance" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupOutOfBalanceReason" type="dialog">
+        <component displayname="PickerView" id="pickerviewTallyMismatchReasons" type="pickerview">
+            <attributes datatype="string" name="customPicker" platform="spa" value="1"/>
+        </component>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupPhoneType" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupPreActivation" type="dialog">
+        <component displayname="TextBox2" id="txtVoucherNumber" type="textbox2"/>
+        <component displayname="TextBox2" id="txtEmail" type="textbox2"/>
+        <component displayname="TextBox2" id="txtRegNum" type="textbox2"/>
+        <component displayname="TextBox2" id="txtAddress1" type="textbox2"/>
+        <component displayname="TextBox2" id="txtAddress2" type="textbox2"/>
+        <component displayname="TextBox2" id="txtCity" type="textbox2"/>
+        <component displayname="TextBox2" id="txtZip" type="textbox2"/>
+        <component displayname="TextBox2" id="txtShippingAdd1" type="textbox2"/>
+        <component displayname="TextBox2" id="txtShippingAdd2" type="textbox2"/>
+        <component displayname="TextBox2" id="txtShippingCity" type="textbox2"/>
+        <component displayname="TextBox2" id="txtShippingZip" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupProductOffers" type="dialog">
+        <component displayname="PickerView" id="pickerTypes" type="pickerview">
+            <attributes datatype="string" name="customPicker" platform="spa" value="1"/>
+        </component>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupProductReturns" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupQuantityPicker" type="dialog">
+        <component displayname="PickerView" id="quantityPicker" type="pickerview">
+            <attributes datatype="string" name="customPicker" platform="spa" value="1"/>
+        </component>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupReEnrollEditProfile" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupReEntrollOrActiveTermedMember" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupReasonForStatusChange" type="dialog">
+        <component displayname="PickerView" id="pickerReasonForStatusChange" type="pickerview">
+            <attributes datatype="string" name="customPicker" platform="spa" value="1"/>
+        </component>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupRefferalSearch" type="dialog">
+        <component displayname="TextBox2" id="tbxLastNameHeader" type="textbox2"/>
+        <component displayname="TextBox2" id="tbxFirstNameHeader" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupSearchLocation" type="dialog">
+        <component displayname="TextBox2" id="txtZip" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupSelectPaymentOption" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupShowWeeklyAlert" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupStaffGuideline" type="dialog">
+        <component displayname="TextBox2" id="txtGuideline" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupState" type="dialog">
+        <component displayname="PickerView" id="pickerState" type="pickerview">
+            <attributes datatype="string" name="customPicker" platform="spa" value="1"/>
+        </component>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupStateRefineSearch" type="dialog">
+        <component displayname="PickerView" id="pickerState" type="pickerview">
+            <attributes datatype="string" name="customPicker" platform="spa" value="1"/>
+        </component>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupStickyNote" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupSubscriptionType" type="dialog">
+        <component displayname="PickerView" id="pickerSubType" type="pickerview">
+            <attributes datatype="string" name="customPicker" platform="spa" value="1"/>
+        </component>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupTallyReportOptions" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="popupTimePicker" type="dialog">
+        <component displayname="PickerView" id="timePicker" type="pickerview">
+            <attributes datatype="string" name="customPicker" platform="spa" value="1"/>
+        </component>
+    </container>
+    <container isflex="false" displayname="Popup" id="popupTimesheetSelectPosition" type="dialog"/>
+    <globalsequences/>
+    <skins/>
+</application>

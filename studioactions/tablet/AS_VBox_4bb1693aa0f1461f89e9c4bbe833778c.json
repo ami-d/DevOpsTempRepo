@@ -1,0 +1,18 @@
+{
+    "AS_VBox_4bb1693aa0f1461f89e9c4bbe833778c": {
+        "id": "AS_VBox_4bb1693aa0f1461f89e9c4bbe833778c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_800f69ed8328436e8f8ea23b5d0af11c",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonClickAtRiskCheckBoxOnAddWeightPopup",
+            "display": "eventonClickAtRiskCheckBoxOnAddWeightPopup",
+            "inputparams": []
+        }]
+    }
+}

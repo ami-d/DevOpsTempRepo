@@ -1,0 +1,15 @@
+{
+    "p2kwiet357809309145_vbox1244353467115134_onClick_seq0": {
+        "id": "p2kwiet357809309145_vbox1244353467115134_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "context",
+            "value": "context"
+        }],
+        "language": "js",
+        "actions": []
+    }
+}

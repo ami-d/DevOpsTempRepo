@@ -1,0 +1,21 @@
+{
+    "p2kwiet3578093093649_cmbSearchCriteria_onSelection_seq0": {
+        "id": "p2kwiet3578093093649_cmbSearchCriteria_onSelection_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onSelection_505493578093095751",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnSelectionCmbSearchCriteria",
+            "display": "eventOnSelectionCmbSearchCriteria",
+            "inputparams": [{
+                "name": "val",
+                "value": "eventobject"
+            }]
+        }]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "MEGDevelopmentpreappinit": {
+        "id": "MEGDevelopmentpreappinit",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "params",
+            "value": "params"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_preappinit_168173578093093534",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "getDeviceLocaleInfo",
+            "display": "getDeviceLocaleInfo",
+            "inputparams": []
+        }, {
+            "id": "customcode_preappinit_645603578093093649",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "setSyncAndUsbSettingsForScanners",
+            "display": "setSyncAndUsbSettingsForScanners",
+            "inputparams": []
+        }]
+    }
+}

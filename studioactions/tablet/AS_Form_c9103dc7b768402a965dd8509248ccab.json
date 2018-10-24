@@ -1,0 +1,37 @@
+{
+    "AS_Form_c9103dc7b768402a965dd8509248ccab": {
+        "id": "AS_Form_c9103dc7b768402a965dd8509248ccab",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "contextObj": {
+            "name": "frmATWTallyReports",
+            "type": "forms",
+            "platform": null,
+            "KUID": "30deef9e917c4d3e9a5d8e70e0bce686"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_postShow_b66750c0897e4783a051bbf273715d49",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onPostShowTallyReports",
+            "display": "onPostShowTallyReports",
+            "inputparams": [],
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION___1c8d2e07eb35478eaa038f85b907c6a6",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onPostShowATWTallyReports",
+            "display": "onPostShowATWTallyReports",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

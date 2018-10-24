@@ -1,0 +1,24 @@
+{
+    "AS_Image_d26b9046dae94465bb6c9626f46fcc78": {
+        "id": "AS_Image_d26b9046dae94465bb6c9626f46fcc78",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "imagesrc"
+        }, {
+            "datatype": "boolean",
+            "name": "issuccess"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "p2kwiet3578093091675"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

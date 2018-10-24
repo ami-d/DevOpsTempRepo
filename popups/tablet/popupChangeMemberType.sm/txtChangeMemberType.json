@@ -1,0 +1,100 @@
+{
+    "DNDConfig": null,
+    "_enabled_": false,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_render_": true,
+    "_skin_": "s9a9d2fd0a984b42bd261979da6273a0",
+    "_text_": "",
+    "android": {
+        "@class": "com.kony.gen.viz.model.component.property.textarea2.AndroidTextArea2Property",
+        "render": true
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "closebuttontext": "",
+    "containerweight": 60,
+    "contentalignment": 1,
+    "focusskin": "s9a9d2fd0a984b42bd261979da6273a0",
+    "hexpand": true,
+    "id": "txtChangeMemberType",
+    "info": null,
+    "ipad": {
+        "@class": "com.kony.gen.viz.model.component.property.textarea2.IPadTextArea2Property",
+        "autoCorrect": false,
+        "psp": {
+            "keyboardActionLabel": 1,
+            "pasteboardType": 1,
+            "showCloseButton": true,
+            "showProgressIndicator": true
+        },
+        "render": true
+    },
+    "isvisible": true,
+    "keyboardactionlabel": "",
+    "keyboardstyle": "A",
+    "keyboardtype": "A",
+    "kuid": "p2kwiet3578093093749",
+    "margininpixel": false,
+    "mode": "A",
+    "name": "kony.ui.TextArea2",
+    "numberofvisiblelines": 3,
+    "paddinginpixel": false,
+    "parent": "hbox12443534676077363",
+    "pf": "popupChangeMemberType",
+    "securetextentry": false,
+    "showclosebutton": false,
+    "showoprogressindicator": true,
+    "showprogressindicator": false,
+    "spa": {
+        "@class": "com.kony.gen.viz.model.component.property.textarea2.SPATextArea2Property",
+        "autoCorrect": false
+    },
+    "spaandroidtablet": {
+        "@class": "com.kony.gen.viz.model.component.property.textarea2.SPAAndroidTabletTextArea2Property",
+        "render": true
+    },
+    "spaipad": {
+        "@class": "com.kony.gen.viz.model.component.property.textarea2.SPAIPadTextArea2Property",
+        "render": true
+    },
+    "spawindowstablet": {
+        "@class": "com.kony.gen.viz.model.component.property.textarea2.SPAWindowsTabletTextArea2Property",
+        "render": true
+    },
+    "textinputmode": "A",
+    "vexpand": false,
+    "viewtype": "default",
+    "wType": "TextArea",
+    "widgetalignment": 5,
+    "windows8": {
+        "@class": "com.kony.gen.viz.model.component.property.textarea2.Windows8TextArea2Property",
+        "_margin_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "margin": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "marginInPixel": false,
+        "render": true
+    }
+}

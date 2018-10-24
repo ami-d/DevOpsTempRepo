@@ -1,0 +1,21 @@
+{
+    "p2kwiet3578093091276_btnCompleteProcessMember_onClick_seq0": {
+        "id": "p2kwiet3578093091276_btnCompleteProcessMember_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_86385357809309411",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onclickCompleteEnrollProcess",
+            "display": "onclickCompleteEnrollProcess",
+            "inputparams": [{
+                "name": "updatedEmailFromMPActivated",
+                "value": ""
+            }]
+        }]
+    }
+}

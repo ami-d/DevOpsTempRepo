@@ -1,0 +1,19 @@
+{
+    "p2kwiet3578093092017_frmProductReturns_onhide_seq0": {
+        "id": "p2kwiet3578093092017_frmProductReturns_onhide_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onhide_193543578093096871",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "hboxHeaderWithCancelBtn.btnScan.setVisibility(true);"
+        }]
+    }
+}

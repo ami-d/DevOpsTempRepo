@@ -1,0 +1,24 @@
+{
+    "AS_HBox_204b047f31f44ace963fb0eafc803339": {
+        "id": "AS_HBox_204b047f31f44ace963fb0eafc803339",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmATWTallyMeetingReport",
+            "type": "forms",
+            "platform": null,
+            "KUID": "36eb28026e8d44a4836fcb8c66b2fec8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_f602384fc2a049e4b342159fe0698d04",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "checkBoxATWToggle",
+            "display": "checkBoxATWToggle",
+            "inputparams": []
+        }]
+    }
+}

@@ -1,0 +1,104 @@
+{
+    "DNDConfig": null,
+    "_enabled_": false,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_render_": true,
+    "_skin_": "s4b316b554bf42d9a444811c022eb6cb",
+    "_text_": "",
+    "android": {
+        "@class": "com.kony.gen.viz.model.component.property.textarea2.AndroidTextArea2Property",
+        "ide_onEndEditing": "p2kwiet3578093093977_textareaGoalweight_Android_onEndEditing_seq0",
+        "render": true
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "closebuttontext": "",
+    "containerweight": 100,
+    "contentalignment": 1,
+    "focusskin": "scca5ba0b3e040a7b2e633dfb5fd8d7e",
+    "hexpand": true,
+    "id": "textareaGoalweight",
+    "ide_onDone": "p2kwiet3578093093977_textareaGoalweight_onDone_seq0",
+    "info": null,
+    "ipad": {
+        "@class": "com.kony.gen.viz.model.component.property.textarea2.IPadTextArea2Property",
+        "_margin_": [
+            2,
+            0,
+            2,
+            0
+        ],
+        "autoCorrect": false,
+        "ide_onEndEditing": "p2kwiet3578093093977_textareaGoalweight_iPad_onEndEditing_seq0",
+        "margin": [
+            2,
+            0,
+            2,
+            0
+        ],
+        "marginInPixel": false,
+        "psp": {
+            "keyboardActionLabel": 1,
+            "pasteboardType": 1,
+            "showCloseButton": true,
+            "showProgressIndicator": true
+        },
+        "render": true
+    },
+    "isvisible": true,
+    "keyboardactionlabel": "",
+    "keyboardstyle": "A",
+    "keyboardtype": "A",
+    "kuid": "p2kwiet3578093093969",
+    "margininpixel": false,
+    "maxtextlength": 5,
+    "mode": "A",
+    "name": "kony.ui.TextArea2",
+    "numberofvisiblelines": 3,
+    "paddinginpixel": false,
+    "parent": "popupGoalWeight",
+    "pf": "popupGoalWeight",
+    "securetextentry": false,
+    "showclosebutton": false,
+    "showoprogressindicator": true,
+    "showprogressindicator": false,
+    "spa": {
+        "@class": "com.kony.gen.viz.model.component.property.textarea2.SPATextArea2Property",
+        "autoCorrect": false
+    },
+    "spaandroidtablet": {
+        "@class": "com.kony.gen.viz.model.component.property.textarea2.SPAAndroidTabletTextArea2Property",
+        "render": true
+    },
+    "spaipad": {
+        "@class": "com.kony.gen.viz.model.component.property.textarea2.SPAIPadTextArea2Property",
+        "render": true
+    },
+    "spawindowstablet": {
+        "@class": "com.kony.gen.viz.model.component.property.textarea2.SPAWindowsTabletTextArea2Property",
+        "render": true
+    },
+    "textinputmode": "N",
+    "vexpand": false,
+    "viewtype": "default",
+    "wType": "TextArea",
+    "widgetalignment": 5,
+    "windows8": {
+        "@class": "com.kony.gen.viz.model.component.property.textarea2.Windows8TextArea2Property",
+        "render": true
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "p2kwiet3578093094754_segPrdReturns_onRowClick_seq0": {
+        "id": "p2kwiet3578093094754_segPrdReturns_onRowClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "sectionNumber",
+            "value": "sectionNumber"
+        }, {
+            "name": "rowNumber",
+            "value": "rowNumber"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "navigation_onRowClick_934983578093091774",
+            "type": "DISPLAY_POPUP",
+            "popupId": "popupProductReturns",
+            "popupKUID": "p2kwiet3578093094754",
+            "mappings": {},
+            "mappingsOrder": [],
+            "enableMappingEditor": true
+        }]
+    }
+}

@@ -1,0 +1,110 @@
+{
+    "DNDConfig": null,
+    "_enabled_": false,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        1,
+        0,
+        1
+    ],
+    "_skin_": "sc6af22f66894bcba53685c76b790f63",
+    "_text_": "",
+    "android": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.AndroidComboBoxProperty",
+        "render": true
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "focusskin": "s91dbdc8c02e4534b570636625f5c716",
+    "hexpand": true,
+    "id": "cmbStats",
+    "ide_onSelection": "p2kwiet3578093091972_cmbStats_onSelection_seq0",
+    "info": null,
+    "ipad": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.IPadComboBoxProperty",
+        "psp": {
+            "groupCells": false,
+            "viewConfig": {
+                "toggleViewConfig": {
+                    "enableTintColor": false,
+                    "equalSegments": false,
+                    "tintColor": "0080ff00",
+                    "viewStyle": 2
+                }
+            },
+            "viewType": 2
+        },
+        "render": true
+    },
+    "isvisible": true,
+    "kuid": "p2kwiet3578093091889",
+    "margininpixel": false,
+    "masterdata": [
+        [
+            "stats",
+            "Statistics",
+            "tabStatistics"
+        ],
+        [
+            "milestones",
+            "Milestones",
+            "tabMilestones"
+        ],
+        [
+            "goals",
+            "Goals",
+            "tabGoals"
+        ]
+    ],
+    "name": "kony.ui.ComboBox",
+    "paddinginpixel": false,
+    "parent": "vbox781097",
+    "pf": "frmProcessMember",
+    "selectedkey": "stats",
+    "selectedkeyvalue": [
+        "stats",
+        "Statistics"
+    ],
+    "spa": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.SPAComboBoxProperty"
+    },
+    "spaandroidtablet": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.SPAAndroidTabletComboBoxProperty",
+        "render": true
+    },
+    "spaipad": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.SPAIPadComboBoxProperty",
+        "render": true
+    },
+    "spawindowstablet": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.SPAWindowsTabletComboBoxProperty",
+        "render": true
+    },
+    "vexpand": false,
+    "wType": "ComboBox",
+    "widgetalignment": 5,
+    "windows8": {
+        "@class": "com.kony.gen.viz.model.component.property.combobox.Windows8ComboBoxProperty",
+        "_margin_": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "margin": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "marginInPixel": true,
+        "render": true
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093091835_vbox205284547264059_onClick_seq0": {
+        "id": "p2kwiet3578093091835_vbox205284547264059_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_211953578093099917",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onclickeventEraseBtn",
+            "display": "onclickeventEraseBtn",
+            "inputparams": []
+        }]
+    }
+}

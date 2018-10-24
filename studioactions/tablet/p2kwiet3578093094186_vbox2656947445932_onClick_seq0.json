@@ -1,0 +1,21 @@
+{
+    "p2kwiet3578093094186_vbox2656947445932_onClick_seq0": {
+        "id": "p2kwiet3578093094186_vbox2656947445932_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "context",
+            "value": "context"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_552053578093094882",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onClickEmpWeighIcon",
+            "display": "onClickEmpWeighIcon",
+            "inputparams": []
+        }]
+    }
+}

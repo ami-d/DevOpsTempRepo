@@ -1,0 +1,18 @@
+{
+    "AS_Button_2bd36f2d16b54f17befa1da63dc9990c": {
+        "id": "AS_Button_2bd36f2d16b54f17befa1da63dc9990c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_3dec29e58c654d6cb3e1cf18b49ad703",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "startBarcodeForSubID",
+            "display": "startBarcodeForSubID",
+            "inputparams": []
+        }]
+    }
+}

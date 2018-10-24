@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093093594_vboxCancelImage_onClick_seq0": {
+        "id": "p2kwiet3578093093594_vboxCancelImage_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_121713578093091070",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "dismissWeightPopup",
+            "display": "dismissWeightPopup",
+            "inputparams": []
+        }]
+    }
+}

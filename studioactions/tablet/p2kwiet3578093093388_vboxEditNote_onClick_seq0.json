@@ -1,0 +1,21 @@
+{
+    "p2kwiet3578093093388_vboxEditNote_onClick_seq0": {
+        "id": "p2kwiet3578093093388_vboxEditNote_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_97853578093098230",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "showPopupAddNote",
+            "display": "showPopupAddNote",
+            "inputparams": [{
+                "name": "action",
+                "value": "\"edit\""
+            }]
+        }]
+    }
+}

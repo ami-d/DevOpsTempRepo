@@ -1,0 +1,22 @@
+{
+    "p2kwiet3578093094352_popupMPActivation_init_seq0": {
+        "id": "p2kwiet3578093094352_popupMPActivation_init_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_init_891673578093097081",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "showMpActivatedMemberData",
+            "display": "showMpActivatedMemberData",
+            "inputparams": [],
+            "disabled": true
+        }]
+    }
+}

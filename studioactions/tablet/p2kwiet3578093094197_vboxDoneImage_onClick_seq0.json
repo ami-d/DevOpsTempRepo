@@ -1,0 +1,16 @@
+{
+    "p2kwiet3578093094197_vboxDoneImage_onClick_seq0": {
+        "id": "p2kwiet3578093094197_vboxDoneImage_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_314023578093092285",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "popupAdvancedSearch.lblMeetingLocationInfo.text=popupMeetingLocation.pickerMeetingLocation.selectedKeys[0];\n popupMeetingLocation.dismiss();"
+        }]
+    }
+}

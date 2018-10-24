@@ -1,0 +1,21 @@
+{
+    "p2kwiet3578093091835_frmPayment_preshow_seq0": {
+        "id": "p2kwiet3578093091835_frmPayment_preshow_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_preshow_187213578093097697",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "preShow_FormPayment",
+            "display": "preShow_FormPayment",
+            "inputparams": []
+        }]
+    }
+}

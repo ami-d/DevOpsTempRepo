@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093093649_hboxMeetingLocationSection_onClick_seq0": {
+        "id": "p2kwiet3578093093649_hboxMeetingLocationSection_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_945223578093094496",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "evenOnClickHboxMeetingLocationSection",
+            "display": "evenOnClickHboxMeetingLocationSection",
+            "inputparams": []
+        }]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "p2kwiet3578093094882_vboxPaymentOptionCancelImage_onClick_seq0": {
+        "id": "p2kwiet3578093094882_vboxPaymentOptionCancelImage_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_532923578093097781",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "popupSelectPaymentOption.dismiss();"
+        }]
+    }
+}

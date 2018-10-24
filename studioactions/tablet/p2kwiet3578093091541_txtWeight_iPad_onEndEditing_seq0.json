@@ -1,0 +1,21 @@
+{
+    "p2kwiet3578093091541_txtWeight_iPad_onEndEditing_seq0": {
+        "id": "p2kwiet3578093091541_txtWeight_iPad_onEndEditing_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "changedtext",
+            "value": "changedtext"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onEndEditing_404303578093096241",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonDoneTextAreaWeighCalculations",
+            "display": "eventonDoneTextAreaWeighCalculations",
+            "inputparams": []
+        }]
+    }
+}

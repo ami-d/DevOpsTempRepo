@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093092083_vboxSelMeetingLogout_onClick_seq0": {
+        "id": "p2kwiet3578093092083_vboxSelMeetingLogout_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_459663578093093118",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "logoutApplication",
+            "display": "logoutApplication",
+            "inputparams": []
+        }]
+    }
+}

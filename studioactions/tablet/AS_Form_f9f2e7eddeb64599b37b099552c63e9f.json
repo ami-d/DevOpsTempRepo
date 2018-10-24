@@ -1,0 +1,30 @@
+{
+    "AS_Form_f9f2e7eddeb64599b37b099552c63e9f": {
+        "id": "AS_Form_f9f2e7eddeb64599b37b099552c63e9f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "contextObj": {
+            "name": "frmPreRegAddMember",
+            "type": "forms",
+            "platform": null,
+            "KUID": "f68c3a90f8924603858fdf1a10ad9053"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___ed0bee97039a4f83b56c642d87532cd8",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "ClearPreRegMemberVariables",
+            "display": "ClearPreRegMemberVariables",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

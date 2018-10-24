@@ -1,0 +1,24 @@
+{
+    "p2kwiet3578093094967_timePicker_onSelection_seq0": {
+        "id": "p2kwiet3578093094967_timePicker_onSelection_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "component",
+            "value": "component"
+        }, {
+            "name": "keyselected",
+            "value": "keyselected"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onSelection_961733578093093782",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonSelectionTimerPicker",
+            "display": "eventonSelectionTimerPicker",
+            "inputparams": []
+        }]
+    }
+}

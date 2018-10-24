@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093093731_vboxSubscriptionTypeSection_onClick_seq0": {
+        "id": "p2kwiet3578093093731_vboxSubscriptionTypeSection_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_596813578093093468",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonClickhboxMemberStatusSection",
+            "display": "eventonClickhboxMemberStatusSection",
+            "inputparams": []
+        }]
+    }
+}

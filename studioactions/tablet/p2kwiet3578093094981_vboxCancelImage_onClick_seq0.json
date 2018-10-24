@@ -1,0 +1,16 @@
+{
+    "p2kwiet3578093094981_vboxCancelImage_onClick_seq0": {
+        "id": "p2kwiet3578093094981_vboxCancelImage_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_81853578093096299",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "popupTimesheetSelectPosition.dismiss();\n popupTimesheetSelectPosition.destroy();"
+        }]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093091187_hboxDOBSection1_onClick_seq0": {
+        "id": "p2kwiet3578093091187_hboxDOBSection1_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_512323578093099775",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonClickvboxDOBSection",
+            "display": "eventonClickvboxDOBSection",
+            "inputparams": []
+        }]
+    }
+}

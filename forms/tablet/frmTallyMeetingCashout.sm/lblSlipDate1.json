@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_skin_": "sd07744e5adc49c190acc1c256c67408",
+    "_text_": "",
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 53,
+    "contentalignment": 4,
+    "donotUpdateContainerWeight": false,
+    "id": "lblSlipDate1",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "eb5fe19893fc421e8793077287a5818c",
+    "name": "kony.ui.Label",
+    "paddInPixel": [
+        6.4,
+        6.4,
+        6.4,
+        6.4
+    ],
+    "paddinginpixel": false,
+    "parent": "hboxSlipDate1Section",
+    "pf": "frmTallyMeetingCashout",
+    "tooltip": "",
+    "wType": "Label"
+}

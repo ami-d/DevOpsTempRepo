@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093094767_vboxDoneImage_onClick_seq0": {
+        "id": "p2kwiet3578093094767_vboxDoneImage_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_533013578093098981",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onSelectQuantityPickerValue",
+            "display": "onSelectQuantityPickerValue",
+            "inputparams": []
+        }]
+    }
+}

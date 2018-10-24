@@ -1,0 +1,40 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizHBox",
+    "DNDConfig": null,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_position_": 3,
+    "_skin_": "s9edba43ba6d41ed8e532d1a9ed334d1",
+    "allboxes": [],
+    "canUpdateUI": true,
+    "children": [
+        "label132312665575453",
+        "lblSlipDate3",
+        "image2132312665575457"
+    ],
+    "containerweight": 100,
+    "contextmenu": null,
+    "id": "hboxSlipDate3Section",
+    "ide_onClick": "AS_HBox_43e93ce9134d47f0af8e45f5b2593e71",
+    "info": null,
+    "isvisible": true,
+    "kuid": "a1a7d60188234248b6b5f0f5dcadb785",
+    "layouttype": 0,
+    "name": "kony.ui.Box",
+    "parent": "vbox132312665575449",
+    "pf": "frmTallyMeetingCashout",
+    "wType": "HBox",
+    "widgetalignment": 1
+}

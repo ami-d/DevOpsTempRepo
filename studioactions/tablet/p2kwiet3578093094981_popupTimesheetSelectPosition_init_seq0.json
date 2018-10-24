@@ -1,0 +1,21 @@
+{
+    "p2kwiet3578093094981_popupTimesheetSelectPosition_init_seq0": {
+        "id": "p2kwiet3578093094981_popupTimesheetSelectPosition_init_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_init_892993578093091760",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "bindPositionDatainSegment",
+            "display": "bindPositionDatainSegment",
+            "inputparams": []
+        }]
+    }
+}

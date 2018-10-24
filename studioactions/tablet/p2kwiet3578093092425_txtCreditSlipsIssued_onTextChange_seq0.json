@@ -1,0 +1,39 @@
+{
+    "p2kwiet3578093092425_txtCreditSlipsIssued_onTextChange_seq0": {
+        "id": "p2kwiet3578093092425_txtCreditSlipsIssued_onTextChange_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "changedtext",
+            "value": "changedtext"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onTextChange_913823578093092382",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "removeCommaFromInMyBankTextBox",
+            "display": "removeCommaFromInMyBankTextBox",
+            "inputparams": [{
+                "name": "textBox",
+                "value": "\"txtCreditSlipsIssued\""
+            }]
+        }, {
+            "id": "customcode_onTextChange_710973578093097969",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnTextChangeInMyBankTextboxes",
+            "display": "eventOnTextChangeInMyBankTextboxes",
+            "inputparams": [{
+                "name": "inMyBankAmount",
+                "value": "frmTallyMeetingCashout.txtCreditSlipsIssued.text"
+            }, {
+                "name": "megDrawerAmount",
+                "value": "frmTallyMeetingCashout.lblMEGCreditSlipsIssued.text"
+            }, {
+                "name": "lblDifference",
+                "value": "\"lblDiffCreditSlipsIssued\""
+            }]
+        }]
+    }
+}

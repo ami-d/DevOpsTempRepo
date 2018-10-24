@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093092083_segMeetingsList_onRowClick_seq0": {
+        "id": "p2kwiet3578093092083_segMeetingsList_onRowClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "sectionNumber",
+            "value": "sectionNumber"
+        }, {
+            "name": "rowNumber",
+            "value": "rowNumber"
+        }],
+        "language": "js",
+        "actions": []
+    }
+}

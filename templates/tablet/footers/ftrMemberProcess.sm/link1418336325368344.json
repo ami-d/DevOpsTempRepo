@@ -1,0 +1,82 @@
+{
+    "DNDConfig": null,
+    "_enabled_": false,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s37571a61e304ca39b7ad9e7619aef5a",
+    "_text_": "Goal Weight",
+    "android": {
+        "@class": "com.kony.gen.viz.model.component.property.link.AndroidLinkProperty",
+        "render": true
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "hexpand": true,
+    "id": "link1418336325368344",
+    "ide_onClick": "p2kwiet3578093095307_link1418336325368344_onClick_seq0",
+    "info": null,
+    "ipad": {
+        "@class": "com.kony.gen.viz.model.component.property.link.IPadLinkProperty",
+        "psp": {
+            "glowEffect": false
+        },
+        "render": true
+    },
+    "isvisible": true,
+    "kuid": "p2kwiet3578093095291",
+    "margininpixel": false,
+    "name": "kony.ui.Link",
+    "paddinginpixel": false,
+    "parent": "vboxGoalWeight",
+    "pf": "ftrMemberProcess",
+    "spa": {
+        "@class": "com.kony.gen.viz.model.component.property.link.SPALinkProperty"
+    },
+    "spaandroidtablet": {
+        "@class": "com.kony.gen.viz.model.component.property.link.SPAAndroidTabletLinkProperty",
+        "render": true
+    },
+    "spaipad": {
+        "@class": "com.kony.gen.viz.model.component.property.link.SPAIPadLinkProperty",
+        "render": true
+    },
+    "spawindowstablet": {
+        "@class": "com.kony.gen.viz.model.component.property.link.SPAWindowsTabletLinkProperty",
+        "render": true
+    },
+    "texti18n": "strLblGoalWeight",
+    "vexpand": false,
+    "wType": "Link",
+    "widgetalignment": 5,
+    "windows8": {
+        "@class": "com.kony.gen.viz.model.component.property.link.Windows8LinkProperty",
+        "_margin_": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "margin": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "marginInPixel": true,
+        "psp": {
+            "hoverSkin": "Skin Defaults"
+        },
+        "render": true
+    }
+}

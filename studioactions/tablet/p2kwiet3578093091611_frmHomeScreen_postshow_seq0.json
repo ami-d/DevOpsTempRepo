@@ -1,0 +1,92 @@
+{
+    "p2kwiet3578093091611_frmHomeScreen_postshow_seq0": {
+        "id": "p2kwiet3578093091611_frmHomeScreen_postshow_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_postshow_358753578093095671",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "addDataForGlobalMenu",
+            "display": "addDataForGlobalMenu",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_336633578093097425",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "createDynamicMenu",
+            "display": "createDynamicMenu",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_822223578093091410",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "ClearVariables",
+            "display": "ClearVariables",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_96443578093099431",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "ClearLinkObject",
+            "display": "ClearLinkObject",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_16973357809309745",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "clearRefferalobj",
+            "display": "clearRefferalobj",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_953793578093099498",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "UnitLbsORKg",
+            "display": "UnitLbsORKg",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_487463578093095241",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "generateIncrementalMemberID",
+            "display": "generateIncrementalMemberID",
+            "inputparams": []
+        }, {
+            "id": "expression_postshow_219073578093092978",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "isMissedWeekPopupShowed=false;\n popupMissedWeeks.destroy();\n missedWeek=0;\n MissedWeekWeightData = [];\n glbSelectedMemberMtngOccrID = 0;\n gblLinkInfoForOnlineMember={};\n ProductSale.Cart = new ProductCart();\n glbNonTangibleDataToBeSet = [];\n glbFormName.lblSubType.text = null;\n "
+        }, {
+            "id": "customcode_postshow_796633578093098036",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "setCurrencyType",
+            "display": "setCurrencyType",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_988563578093095885",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "ClearTangibleProductsSegments",
+            "display": "ClearTangibleProductsSegments",
+            "inputparams": [{
+                "name": "all",
+                "value": "true"
+            }]
+        }, {
+            "id": "expression_postshow_139613578093092541",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "popupStateRefineSearch.pickerState.setSelectedKeyInComponent(\"\", 0);\n popupMemberType.pickerMemberType.setSelectedKeyInComponent(\"All\", 0);\n popupMemberStatus.pickerMemberStatus.setSelectedKeyInComponent(\"All\", 0);\n \n frmMemberProfileSearch.lblStateInfo.text = \"\";\n frmMemberProfileSearch.lblMemberTypeInfo.text = \"All\";\n frmMemberProfileSearch.lblMemberStatusInfo.text = \"All\";\n \n \n frmMemberProfileSearch.txtCity.text = \"\";\n gblExpirationDate =\"\";\n isSearchPage = false; \n \n //Added by Ami\n removeProgressView();"
+        }, {
+            "id": "customcode_postshow_542733578093094818",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "bindTallyDiffReasonList",
+            "display": "bindTallyDiffReasonList",
+            "inputparams": []
+        }, {
+            "id": "customcode_postshow_17093578093092737",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "getHomeScreenPaymentData",
+            "display": "getHomeScreenPaymentData",
+            "inputparams": []
+        }]
+    }
+}

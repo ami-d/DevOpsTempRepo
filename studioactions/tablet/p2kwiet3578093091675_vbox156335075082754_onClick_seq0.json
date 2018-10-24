@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093091675_vbox156335075082754_onClick_seq0": {
+        "id": "p2kwiet3578093091675_vbox156335075082754_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_373493578093096156",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "checkDevice",
+            "display": "checkDevice",
+            "inputparams": []
+        }]
+    }
+}

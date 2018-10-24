@@ -1,0 +1,18 @@
+{
+    "p2kwiet357809309639_vbox13850002191432192_onClick_seq0": {
+        "id": "p2kwiet357809309639_vbox13850002191432192_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_992963578093098839",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnClickSubTypeSectionBAMemberPage",
+            "display": "eventOnClickSubTypeSectionBAMemberPage",
+            "inputparams": []
+        }]
+    }
+}

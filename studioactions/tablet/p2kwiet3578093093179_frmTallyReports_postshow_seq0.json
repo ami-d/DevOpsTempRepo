@@ -1,0 +1,21 @@
+{
+    "p2kwiet3578093093179_frmTallyReports_postshow_seq0": {
+        "id": "p2kwiet3578093093179_frmTallyReports_postshow_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_postshow_56653578093097707",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onPostShowTallyReports",
+            "display": "onPostShowTallyReports",
+            "inputparams": []
+        }]
+    }
+}

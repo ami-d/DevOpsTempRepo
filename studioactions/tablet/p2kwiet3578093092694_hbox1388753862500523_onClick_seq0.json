@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093092694_hbox1388753862500523_onClick_seq0": {
+        "id": "p2kwiet3578093092694_hbox1388753862500523_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_506263578093093451",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "checkBoxToggle",
+            "display": "checkBoxToggle",
+            "inputparams": []
+        }]
+    }
+}

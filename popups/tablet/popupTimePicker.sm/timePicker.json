@@ -1,0 +1,522 @@
+{
+    "DNDConfig": null,
+    "__inst": {
+        "_selectedValues": {},
+        "settings": {
+            "ariaDesc": "Select a value",
+            "cancelText": "Cancel",
+            "delay": 300,
+            "disabled": false,
+            "display": "inline",
+            "headerText": "{value}",
+            "height": 40,
+            "id": "NewForm201381416597148_PickerView9501051",
+            "lang": "en-US",
+            "mode": "scroller",
+            "preset": "",
+            "readonly": false,
+            "rows": 3,
+            "scrollLock": true,
+            "setText": "Set",
+            "showLabel": false,
+            "showOnFocus": true,
+            "showOnTap": true,
+            "speedUnit": 0.0012,
+            "tap": true,
+            "theme": "ios",
+            "timeUnit": 0.1,
+            "wheels": [
+                [
+                    {
+                        "keys": [
+                            "y1",
+                            "y2",
+                            "y3"
+                        ],
+                        "values": [
+                            "2009",
+                            "2010",
+                            "2011"
+                        ],
+                        "width": "yearcomp"
+                    },
+                    {
+                        "keys": [
+                            "m1",
+                            "m2",
+                            "m3",
+                            "m4",
+                            "m5",
+                            "m6",
+                            "m7"
+                        ],
+                        "values": [
+                            "Jan",
+                            "Feb",
+                            "Mar",
+                            "Apr",
+                            "May",
+                            "Jun",
+                            "Jul"
+                        ],
+                        "width": "monthcomp"
+                    }
+                ]
+            ],
+            "width": 70,
+            "xwidth": 200
+        },
+        "temp": [
+            "y1",
+            "m1"
+        ],
+        "val": "y1 m1",
+        "values": [
+            "y1",
+            "m1"
+        ]
+    },
+    "__wheels": [
+        [
+            {
+                "keys": [
+                    "y1",
+                    "y2",
+                    "y3"
+                ],
+                "values": [
+                    "2009",
+                    "2010",
+                    "2011"
+                ],
+                "width": "yearcomp"
+            },
+            {
+                "keys": [
+                    "m1",
+                    "m2",
+                    "m3",
+                    "m4",
+                    "m5",
+                    "m6",
+                    "m7"
+                ],
+                "values": [
+                    "Jan",
+                    "Feb",
+                    "Mar",
+                    "Apr",
+                    "May",
+                    "Jun",
+                    "Jul"
+                ],
+                "width": "monthcomp"
+            }
+        ]
+    ],
+    "_dimension_": 18,
+    "_enabled_": false,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        2,
+        0,
+        2
+    ],
+    "_render_": true,
+    "_skin_": "sf04d61416a44599bcfbce6ba90d37f5",
+    "_text_": "",
+    "activeFocusSkin": "slPickerView1379159797987",
+    "activeSkin": "slPickerView1379159787412",
+    "android": {
+        "@class": "com.kony.gen.viz.model.component.property.pickerview.AndroidPickerViewProperty",
+        "render": true
+    },
+    "canUpdateUI": true,
+    "containerWeightLocked": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "groupcells": false,
+    "hexpand": true,
+    "id": "timePicker",
+    "ide_onSelection": "p2kwiet3578093094967_timePicker_onSelection_seq0",
+    "inactiveSkin": "slPickerView1379159813912",
+    "info": null,
+    "ipad": {
+        "@class": "com.kony.gen.viz.model.component.property.pickerview.IPadPickerViewProperty",
+        "render": true
+    },
+    "isvisible": true,
+    "itemorientation": "vertical",
+    "kuid": "p2kwiet3578093094964",
+    "margininpixel": false,
+    "masterdata": [
+        [
+            [
+                "12",
+                "12"
+            ],
+            [
+                "1",
+                "1"
+            ],
+            [
+                "2",
+                "2"
+            ],
+            [
+                "3",
+                "3"
+            ],
+            [
+                "4",
+                "4"
+            ],
+            [
+                "5",
+                "5"
+            ],
+            [
+                "6",
+                "6"
+            ],
+            [
+                "7",
+                "7"
+            ],
+            [
+                "8",
+                "8"
+            ],
+            [
+                "9",
+                "9"
+            ],
+            [
+                "10",
+                "10"
+            ],
+            [
+                "11",
+                "11"
+            ],
+            40,
+            "hours"
+        ],
+        [
+            [
+                "00",
+                "00"
+            ],
+            [
+                "01",
+                "01"
+            ],
+            [
+                "02",
+                "02"
+            ],
+            [
+                "03",
+                "03"
+            ],
+            [
+                "04",
+                "04"
+            ],
+            [
+                "05",
+                "05"
+            ],
+            [
+                "06",
+                "06"
+            ],
+            [
+                "07",
+                "07"
+            ],
+            [
+                "08",
+                "08"
+            ],
+            [
+                "09",
+                "09"
+            ],
+            [
+                "10",
+                "10"
+            ],
+            [
+                "11",
+                "11"
+            ],
+            [
+                "12",
+                "12"
+            ],
+            [
+                "13",
+                "13"
+            ],
+            [
+                "14",
+                "14"
+            ],
+            [
+                "15",
+                "15"
+            ],
+            [
+                "16",
+                "16"
+            ],
+            [
+                "17",
+                "17"
+            ],
+            [
+                "18",
+                "18"
+            ],
+            [
+                "19",
+                "19"
+            ],
+            [
+                "20",
+                "20"
+            ],
+            [
+                "21",
+                "21"
+            ],
+            [
+                "22",
+                "22"
+            ],
+            [
+                "23",
+                "23"
+            ],
+            [
+                "24",
+                "24"
+            ],
+            [
+                "25",
+                "25"
+            ],
+            [
+                "26",
+                "26"
+            ],
+            [
+                "27",
+                "27"
+            ],
+            [
+                "28",
+                "28"
+            ],
+            [
+                "29",
+                "29"
+            ],
+            [
+                "30",
+                "30"
+            ],
+            [
+                "31",
+                "31"
+            ],
+            [
+                "32",
+                "32"
+            ],
+            [
+                "33",
+                "33"
+            ],
+            [
+                "34",
+                "34"
+            ],
+            [
+                "35",
+                "35"
+            ],
+            [
+                "36",
+                "36"
+            ],
+            [
+                "37",
+                "37"
+            ],
+            [
+                "38",
+                "38"
+            ],
+            [
+                "39",
+                "39"
+            ],
+            [
+                "40",
+                "40"
+            ],
+            [
+                "41",
+                "41"
+            ],
+            [
+                "42",
+                "42"
+            ],
+            [
+                "43",
+                "43"
+            ],
+            [
+                "44",
+                "44"
+            ],
+            [
+                "45",
+                "45"
+            ],
+            [
+                "46",
+                "46"
+            ],
+            [
+                "47",
+                "47"
+            ],
+            [
+                "48",
+                "48"
+            ],
+            [
+                "49",
+                "49"
+            ],
+            [
+                "50",
+                "50"
+            ],
+            [
+                "51",
+                "51"
+            ],
+            [
+                "52",
+                "52"
+            ],
+            [
+                "53",
+                "53"
+            ],
+            [
+                "54",
+                "54"
+            ],
+            [
+                "55",
+                "55"
+            ],
+            [
+                "56",
+                "56"
+            ],
+            [
+                "57",
+                "57"
+            ],
+            [
+                "58",
+                "58"
+            ],
+            [
+                "59",
+                "59"
+            ],
+            40,
+            "minuts"
+        ],
+        [
+            [
+                "AM",
+                "AM",
+                "strAM"
+            ],
+            [
+                "PM",
+                "PM",
+                "strPM"
+            ],
+            20,
+            "ampm"
+        ]
+    ],
+    "masterdatamap": null,
+    "name": "kony.ui.PickerView",
+    "paddinginpixel": false,
+    "pageSkin": "slPickerView1379159828015",
+    "parent": "vbox12443534677836869",
+    "pf": "popupTimePicker",
+    "selectedkey": null,
+    "selectedkeys": null,
+    "selectedkeyvalue": null,
+    "selectedkeyvalues": [
+        "2009",
+        "Jan"
+    ],
+    "size": 18,
+    "spa": {
+        "@class": "com.kony.gen.viz.model.component.property.pickerview.SPAPickerViewProperty"
+    },
+    "spaandroidtablet": {
+        "@class": "com.kony.gen.viz.model.component.property.pickerview.SPAAndroidTabletPickerViewProperty",
+        "render": false
+    },
+    "spaipad": {
+        "@class": "com.kony.gen.viz.model.component.property.pickerview.SPAIPadPickerViewProperty",
+        "render": false
+    },
+    "spawindowstablet": {
+        "@class": "com.kony.gen.viz.model.component.property.pickerview.SPAWindowsTabletPickerViewProperty",
+        "render": false
+    },
+    "tickedimage": "checkboxselected.png",
+    "untickedimage": "checkboxnormal.png",
+    "vexpand": false,
+    "viewtype": 0,
+    "wType": "PickerView",
+    "widgetalignment": 5,
+    "windows8": {
+        "@class": "com.kony.gen.viz.model.component.property.pickerview.Windows8PickerViewProperty",
+        "_margin_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "margin": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "marginInPixel": false,
+        "render": false
+    }
+}

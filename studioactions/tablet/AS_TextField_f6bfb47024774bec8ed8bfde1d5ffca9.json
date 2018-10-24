@@ -1,0 +1,33 @@
+{
+    "AS_TextField_f6bfb47024774bec8ed8bfde1d5ffca9": {
+        "id": "AS_TextField_f6bfb47024774bec8ed8bfde1d5ffca9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "frmTallyMeetingCashout",
+            "type": "forms",
+            "platform": "",
+            "KUID": "p2kwiet3578093092425"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___20f2527714604195a98f042a907ed8a8",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "clearValidationSkin",
+            "display": "clearValidationSkin",
+            "inputparams": [{
+                "name": "eventObj",
+                "value": " eventobject"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

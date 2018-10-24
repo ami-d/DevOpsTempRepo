@@ -1,0 +1,16 @@
+{
+    "p2kwiet357809309639_vboxCancelImage_onClick_seq0": {
+        "id": "p2kwiet357809309639_vboxCancelImage_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_196503578093094724",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "ClearVariables();\n batchWeightData =[];\n if(IsNoMeetingSelected)\n {\n frmHomeScreenNoMeeting.show();\n }\n else\n {\n evenOnPostShowHomeScreen();\n //frmHomeScreen.show();\n }\n "
+        }]
+    }
+}

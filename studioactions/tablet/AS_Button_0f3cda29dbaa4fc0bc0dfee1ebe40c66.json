@@ -1,0 +1,24 @@
+{
+    "AS_Button_0f3cda29dbaa4fc0bc0dfee1ebe40c66": {
+        "id": "AS_Button_0f3cda29dbaa4fc0bc0dfee1ebe40c66",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmATWTallyMeetingReport",
+            "type": "forms",
+            "platform": null,
+            "KUID": "36eb28026e8d44a4836fcb8c66b2fec8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_c134bff176bd4d9c9b29d5e879c43b05",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "navigateToTallyTimesheet",
+            "display": "navigateToTallyTimesheet",
+            "inputparams": []
+        }]
+    }
+}

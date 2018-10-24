@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093093566_hbox685083128282838_onClick_seq0": {
+        "id": "p2kwiet3578093093566_hbox685083128282838_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_423283578093098310",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonClickStartTime",
+            "display": "eventonClickStartTime",
+            "inputparams": []
+        }]
+    }
+}

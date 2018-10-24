@@ -1,0 +1,18 @@
+{
+    "MEGDevelopmentpostappinit": {
+        "id": "MEGDevelopmentpostappinit",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "params",
+            "value": "params"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_postappinit_373323578093092229",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "setAppCallBacks",
+            "display": "setAppCallBacks",
+            "inputparams": []
+        }]
+    }
+}

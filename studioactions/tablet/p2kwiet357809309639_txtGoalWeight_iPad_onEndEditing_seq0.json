@@ -1,0 +1,21 @@
+{
+    "p2kwiet357809309639_txtGoalWeight_iPad_onEndEditing_seq0": {
+        "id": "p2kwiet357809309639_txtGoalWeight_iPad_onEndEditing_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "changedtext",
+            "value": "changedtext"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onEndEditing_228923578093096488",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onDoneEditingGoalWeightTextBA",
+            "display": "onDoneEditingGoalWeightTextBA",
+            "inputparams": []
+        }]
+    }
+}

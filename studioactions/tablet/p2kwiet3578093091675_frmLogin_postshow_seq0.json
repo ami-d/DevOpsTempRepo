@@ -1,0 +1,26 @@
+{
+    "p2kwiet3578093091675_frmLogin_postshow_seq0": {
+        "id": "p2kwiet3578093091675_frmLogin_postshow_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___36af86d2da7e404b95ac0f03cf7d0287",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "validateApplicationVersion",
+            "display": "validateApplicationVersion",
+            "inputparams": [{
+                "name": "fromLogin"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }]
+    }
+}

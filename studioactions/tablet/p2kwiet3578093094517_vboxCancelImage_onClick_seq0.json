@@ -1,0 +1,16 @@
+{
+    "p2kwiet3578093094517_vboxCancelImage_onClick_seq0": {
+        "id": "p2kwiet3578093094517_vboxCancelImage_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_895393578093099895",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//Reset Temp Value of tally mismatch reason \n tallyMismatchReason = \"\";\n kony.print(\"tallyMismatchReason----->>\" + tallyMismatchReason);\n popupOutOfBalance.dismiss();"
+        }]
+    }
+}

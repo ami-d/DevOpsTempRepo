@@ -1,0 +1,47 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "_base64_": null,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sd0382b596e8441490038fd0fb76a75e",
+    "_src_": "icn_hope_aerrow.png",
+    "canUpdateUI": true,
+    "containerweight": 17,
+    "context": {
+        "channel": "tablet",
+        "ispercent": true,
+        "platform": "ipad",
+        "templateType": "forms",
+        "topLevelBox": false
+    },
+    "id": "Image0b41464b6bd094a",
+    "imagescalemode": 1,
+    "info": null,
+    "invokedProperty": "src",
+    "ispercent": true,
+    "isvisible": true,
+    "kuid": "6041062a8a9f4e62b5b3c40381b4bc0a",
+    "name": "kony.ui.Image2",
+    "paddInPixel": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "parent": "hboxSlipDate1Section",
+    "pf": "frmTallyMeetingCashout",
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5
+}

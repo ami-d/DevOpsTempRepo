@@ -1,0 +1,27 @@
+{
+    "p2kwiet357809309135_frmAddAndWeighMemberTransaction_preshow_seq0": {
+        "id": "p2kwiet357809309135_frmAddAndWeighMemberTransaction_preshow_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_preshow_290413578093093764",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnPreShowSetHeaderLabelPayment",
+            "display": "eventOnPreShowSetHeaderLabelPayment",
+            "inputparams": []
+        }, {
+            "id": "customcode_preshow_827543578093091134",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "clearSkuTextData",
+            "display": "clearSkuTextData",
+            "inputparams": []
+        }]
+    }
+}

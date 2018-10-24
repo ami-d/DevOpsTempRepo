@@ -1,0 +1,22 @@
+{
+    "p2kwiet3578093095214_btnScan_onClick_seq0": {
+        "id": "p2kwiet3578093095214_btnScan_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_518773578093099657",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "isFromOffersForm = false;"
+        }, {
+            "id": "customcode_onClick_52423578093092744",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onPostShowPopulateBarcodeSKU",
+            "display": "onPostShowPopulateBarcodeSKU",
+            "inputparams": []
+        }]
+    }
+}

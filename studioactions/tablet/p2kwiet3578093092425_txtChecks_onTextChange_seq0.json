@@ -1,0 +1,39 @@
+{
+    "p2kwiet3578093092425_txtChecks_onTextChange_seq0": {
+        "id": "p2kwiet3578093092425_txtChecks_onTextChange_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "changedtext",
+            "value": "changedtext"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onTextChange_770193578093097671",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "removeCommaFromInMyBankTextBox",
+            "display": "removeCommaFromInMyBankTextBox",
+            "inputparams": [{
+                "name": "textBox",
+                "value": "\"txtChecks\""
+            }]
+        }, {
+            "id": "customcode_onTextChange_829463578093096476",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnTextChangeInMyBankTextboxes",
+            "display": "eventOnTextChangeInMyBankTextboxes",
+            "inputparams": [{
+                "name": "inMyBankAmount",
+                "value": "frmTallyMeetingCashout.txtChecks.text"
+            }, {
+                "name": "megDrawerAmount",
+                "value": "frmTallyMeetingCashout.lblMEGChecks.text"
+            }, {
+                "name": "lblDifference",
+                "value": "\"lblDiffChecks\""
+            }]
+        }]
+    }
+}

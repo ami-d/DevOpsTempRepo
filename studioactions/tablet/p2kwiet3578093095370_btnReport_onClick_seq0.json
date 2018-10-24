@@ -1,0 +1,19 @@
+{
+    "p2kwiet3578093095370_btnReport_onClick_seq0": {
+        "id": "p2kwiet3578093095370_btnReport_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "context",
+            "value": "context"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_446663578093097089",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showTalliedMeetingReport();"
+        }]
+    }
+}

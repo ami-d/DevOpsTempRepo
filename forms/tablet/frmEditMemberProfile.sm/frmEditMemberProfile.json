@@ -1,0 +1,178 @@
+{
+    "DNDConfig": null,
+    "_enabled_": false,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sf3d658318904faeb41eae17c9b8bb7c",
+    "_title_": "",
+    "addWidgetsdone": false,
+    "allboxes": [],
+    "android": {
+        "@class": "com.kony.gen.viz.model.container.property.form.AndroidFormProperty",
+        "displayOrientation": 2,
+        "footerOverlap": false,
+        "headerOverlap": false,
+        "inTransitionConfig": {
+            "formAnimation": 0
+        },
+        "isModal": false,
+        "menuPosition": 2,
+        "needAppMenu": true,
+        "outTransitionConfig": {
+            "formAnimation": 0
+        },
+        "psp": {
+            "showActionBar": true,
+            "showActionBarIcon": true,
+            "windowSoftInputMode": 1
+        },
+        "render": true
+    },
+    "canUpdateUI": true,
+    "children": [
+        "hboxHeaderSection",
+        "hbox12443534675479290",
+        "hbox12443534675486822",
+        "hbox12443534675486878",
+        "hboxlblDemoSection",
+        "hboxNameSection",
+        "hboxGenderSection",
+        "hboxDOBSection",
+        "hbox12443534676120028",
+        "hboxAddr1Section",
+        "hboxAddr2Section",
+        "hboxPhoneSection",
+        "hboxPhomeSection",
+        "hboxWeightHistory",
+        "hbox12443534675716629",
+        "hbox1386936634984554",
+        "hboxContactType",
+        "hbox2135581022269653",
+        "hbox2135581022303362",
+        "hboxEmailTitle",
+        "hboxEmailOffers"
+    ],
+    "containerheightreference": 1,
+    "containerweight": 100,
+    "displayorientation": 3,
+    "enabledforidletimeout": true,
+    "footeroverlap": false,
+    "headeroverlap": false,
+    "id": "frmEditMemberProfile",
+    "ide_preShow": "p2kwiet3578093091089_frmEditMemberProfile_preshow_seq0",
+    "info": null,
+    "initdone": false,
+    "intransitionconfig": {
+        "formTransition": "None"
+    },
+    "ipad": {
+        "@class": "com.kony.gen.viz.model.container.property.form.IPadFormProperty",
+        "displayOrientation": 2,
+        "footerOverlap": false,
+        "headerOverlap": false,
+        "inTransitionConfig": {
+            "transitionDirection": "none",
+            "transitionEffect": "none"
+        },
+        "isModal": false,
+        "needAppMenu": true,
+        "outTransitionConfig": {
+            "transitionDirection": "none",
+            "transitionEffect": "none"
+        },
+        "psp": {
+            "bounces": true,
+            "configureExtendBottom": false,
+            "configureExtendTop": false,
+            "configureStatusBarStyle": false,
+            "extendBottom": false,
+            "extendTop": false,
+            "formTransparencyDuringPostShow": 100,
+            "inputaccessoryviewtype": 1,
+            "needsIndicatorDuringPostShow": true,
+            "popupStyle": "kony",
+            "statusBarStyle": "STATUS_BAR_STYLE_DEFAULT",
+            "useNativeTitlebar": true
+        },
+        "render": true
+    },
+    "ismodal": false,
+    "isvisible": true,
+    "kuid": "p2kwiet3578093091089",
+    "margininpixel": false,
+    "menuposition": 2,
+    "name": "kony.ui.Form2",
+    "needappmenu": true,
+    "outtransitionconfig": {
+        "formTransition": "None"
+    },
+    "paddinginpixel": false,
+    "percent": true,
+    "restorewidgetprototypes": true,
+    "retainscrollposition": false,
+    "spa": {
+        "@class": "com.kony.gen.viz.model.container.property.form.SPAFormProperty",
+        "inTransitionConfig": {
+            "formTransition": "none"
+        },
+        "isModal": false,
+        "needAppMenu": false,
+        "outTransitionConfig": {
+            "formTransition": "none"
+        },
+        "psp": {
+            "dockableAppMenu": true,
+            "dockableFooter": true,
+            "dockableHeader": true
+        }
+    },
+    "spaandroidtablet": {
+        "@class": "com.kony.gen.viz.model.container.property.form.SPAAndroidTabletFormProperty",
+        "needAppMenu": true,
+        "render": true
+    },
+    "spaip": {
+        "@class": "com.kony.gen.viz.model.psp.WidgetProperty",
+        "render": true
+    },
+    "spaipad": {
+        "@class": "com.kony.gen.viz.model.container.property.form.SPAIPadFormProperty",
+        "needAppMenu": true,
+        "render": true
+    },
+    "spawindowstablet": {
+        "@class": "com.kony.gen.viz.model.container.property.form.SPAWindowsTabletFormProperty",
+        "needAppMenu": true,
+        "render": true
+    },
+    "templateType": "forms",
+    "titleBarSkin": "sc19af5f8c954a7a90a016c9b037235c",
+    "titlebar": false,
+    "transparencybehindthepopup": 100,
+    "type": 3,
+    "wType": "Form",
+    "widgetalignment": 1,
+    "windows8": {
+        "@class": "com.kony.gen.viz.model.container.property.form.Windows8FormProperty",
+        "displayOrientation": 2,
+        "needAppMenu": true,
+        "psp": {
+            "enableBack": true,
+            "enableOnscreenMenu": false,
+            "layout": 2,
+            "maxAppMenuButtons": 4,
+            "noFixedItems": 0
+        },
+        "render": true
+    }
+}

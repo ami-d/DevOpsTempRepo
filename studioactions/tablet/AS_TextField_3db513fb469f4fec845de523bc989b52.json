@@ -1,0 +1,21 @@
+{
+    "AS_TextField_3db513fb469f4fec845de523bc989b52": {
+        "id": "AS_TextField_3db513fb469f4fec845de523bc989b52",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "changedtext",
+            "value": "changedtext"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onTextChange_3900be87091843618ecbcfe2127eb0e3",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "removeCommaAndDotFromSplitDepositSliNumberTextBox",
+            "display": "removeCommaAndDotFromSplitDepositSliNumberTextBox",
+            "inputparams": []
+        }]
+    }
+}

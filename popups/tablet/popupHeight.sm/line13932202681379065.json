@@ -1,0 +1,75 @@
+{
+    "DNDConfig": null,
+    "_enabled_": false,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sfcd153065d34b47a2d5ed4472ac2d82",
+    "_text_": "",
+    "_thickness_": 1,
+    "android": {
+        "@class": "com.kony.gen.viz.model.component.property.line.AndroidLineProperty",
+        "render": true
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "hexpand": true,
+    "id": "line13932202681379065",
+    "info": null,
+    "ipad": {
+        "@class": "com.kony.gen.viz.model.component.property.line.IPadLineProperty",
+        "render": true
+    },
+    "isvisible": true,
+    "kuid": "p2kwiet3578093093988",
+    "margininpixel": false,
+    "name": "kony.ui.Line",
+    "paddinginpixel": false,
+    "parent": "popupHeight",
+    "pf": "popupHeight",
+    "spa": {
+        "@class": "com.kony.gen.viz.model.component.property.line.SPALineProperty"
+    },
+    "spaandroidtablet": {
+        "@class": "com.kony.gen.viz.model.component.property.line.SPAAndroidTabletLineProperty",
+        "render": true
+    },
+    "spaipad": {
+        "@class": "com.kony.gen.viz.model.component.property.line.SPAIPadLineProperty",
+        "render": true
+    },
+    "spawindowstablet": {
+        "@class": "com.kony.gen.viz.model.component.property.line.SPAWindowsTabletLineProperty",
+        "render": true
+    },
+    "vexpand": false,
+    "wType": "Line",
+    "widgetalignment": 5,
+    "windows8": {
+        "@class": "com.kony.gen.viz.model.component.property.line.Windows8LineProperty",
+        "_margin_": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "margin": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "marginInPixel": true,
+        "render": true
+    }
+}

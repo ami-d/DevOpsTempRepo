@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093093965_hbox12443534678040623_onClick_seq0": {
+        "id": "p2kwiet3578093093965_hbox12443534678040623_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_348753578093094907",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonClickForManualEmpEntry",
+            "display": "eventonClickForManualEmpEntry",
+            "inputparams": []
+        }]
+    }
+}

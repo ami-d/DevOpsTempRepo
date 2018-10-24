@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093093989_vboxDoneImage_onClick_seq0": {
+        "id": "p2kwiet3578093093989_vboxDoneImage_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_39723578093091476",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventonClickDoneHeightPopUp",
+            "display": "eventonClickDoneHeightPopUp",
+            "inputparams": []
+        }]
+    }
+}

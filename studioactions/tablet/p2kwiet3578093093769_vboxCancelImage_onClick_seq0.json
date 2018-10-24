@@ -1,0 +1,26 @@
+{
+    "p2kwiet3578093093769_vboxCancelImage_onClick_seq0": {
+        "id": "p2kwiet3578093093769_vboxCancelImage_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_660283578093093713",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "popupChangeMemberTypeForProcessMember.dismiss();",
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION___a56acde7f6ba4ef1b36b976d46ce7614",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "closePopupChangeMemberType",
+            "display": "closePopupChangeMemberType",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

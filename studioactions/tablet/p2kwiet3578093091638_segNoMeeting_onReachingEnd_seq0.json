@@ -1,0 +1,18 @@
+{
+    "p2kwiet3578093091638_segNoMeeting_onReachingEnd_seq0": {
+        "id": "p2kwiet3578093091638_segNoMeeting_onReachingEnd_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onReachingEnd_215793578093095108",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnClickBtnLoadMoreDetails",
+            "display": "eventOnClickBtnLoadMoreDetails",
+            "inputparams": []
+        }]
+    }
+}

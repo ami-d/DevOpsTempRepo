@@ -1,0 +1,22 @@
+{
+    "p2kwiet3578093094225_btnAdd_onClick_seq0": {
+        "id": "p2kwiet3578093094225_btnAdd_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onClick_523293578093099464",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "popupMemberNotFound.dismiss();"
+        }, {
+            "id": "customcode_onClick_222203578093096613",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "eventOnClickAddIconHeader",
+            "display": "eventOnClickAddIconHeader",
+            "inputparams": []
+        }]
+    }
+}

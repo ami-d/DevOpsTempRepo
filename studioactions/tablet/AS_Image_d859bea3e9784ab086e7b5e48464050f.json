@@ -1,0 +1,24 @@
+{
+    "AS_Image_d859bea3e9784ab086e7b5e48464050f": {
+        "id": "AS_Image_d859bea3e9784ab086e7b5e48464050f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "imagesrc"
+        }, {
+            "datatype": "boolean",
+            "name": "issuccess"
+        }],
+        "contextObj": {
+            "name": "popupNonTengibleoffers",
+            "type": "popups",
+            "platform": "",
+            "KUID": "p2kwiet3578093094475"
+        },
+        "language": "js",
+        "actions": []
+    }
+}
