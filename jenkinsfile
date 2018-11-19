@@ -1,0 +1,29 @@
+node(label: 'testNode') {
+    stage('Checkout Project') {
+            git branch: 'featureBranch-2',
+                credentialsId: 'e3b6b55b-a257-4507-b8a0-daf841a90dc7',
+                url: 'https://github.com/ami-d/DevOpsTempRepo.git'
+
+            sh "ls -lat"
+        
+    }
+    stage('Ant Build')
+    {
+        sh "./setEnv.sh"
+        withAnt(installation: 'Ant1.10.5') {
+        sh "ant"
+        }
+    }
+    stage('Xcode Build')
+    {
+        sh "./build.sh"
+    }
+    stage ('Deploy') 
+    {
+        withCredentials([sshUserPrivateKey(credentialsId: "c09ec154-b893-4588-a5ab-919c75fc6808", keyFileVariable: 'KEY_FILE')]) {
+            echo '$KEY_FILE'
+            sh "scp -i ${KEY_FILE} $WORKSPACE/package/KRelease.ipa kavit.patel@10.12.46.130:/Users/kavit.patel/Desktop"
+        }
+      
+    }
+}
